@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_application_1/clock_view.dart';
 
 void main() {
   runApp(MyApp());
@@ -99,6 +100,7 @@ class _MyHomePageState extends State<MyHomePage> {
           // horizontal).
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
+            ClockView(),
             Text(
               'You have pushed the button this many times:',
               style: TextStyle(color: Colors.white70),

@@ -27,10 +27,21 @@ class _ClockViewState extends State<ClockView> {
       var centerY = size.height/2;
       var center = Offset(centerX, centerY);
       var radius = min(centerX, centerY);
-      var paint_circle = Paint()
+
+      var paint_circle1 = Paint()
       ..color = Color(0xFF00BFA5);
 
-      canvas.drawCircle(center, radius-50, paint_circle);
+      var paint_circle2 = Paint()
+      ..color = Color(0xFFFFF3E0)
+      ..style = PaintingStyle.stroke
+      ..strokeWidth = 16;
+
+      var paint_circle3 = Paint()
+      ..color = Color(0xFF212121);
+
+      canvas.drawCircle(center, radius-50, paint_circle1);
+      canvas.drawCircle(center, radius-50, paint_circle2);
+      canvas.drawCircle(center, radius-140, paint_circle3);
     }
   
     @override

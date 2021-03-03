@@ -102,7 +102,7 @@ class _MyHomePageState extends State<MyHomePage> {
           children: <Widget>[
             ClockView(),
             Text(
-              'You have pushed the button this many times:',
+              'Você apertou o botão:',
               style: TextStyle(color: Colors.white70),
             ),
             Text(

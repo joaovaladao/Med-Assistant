@@ -1,4 +1,5 @@
 import 'dart:math';
+import 'dart:ui';
 
 import 'package:flutter/material.dart';
 
@@ -39,9 +40,26 @@ class _ClockViewState extends State<ClockView> {
       var paint_circle3 = Paint()
       ..color = Color(0xFF212121);
 
-      canvas.drawCircle(center, radius-50, paint_circle1);
-      canvas.drawCircle(center, radius-50, paint_circle2);
-      canvas.drawCircle(center, radius-140, paint_circle3);
+      var minPont = Paint()
+      ..color = Colors.pink[300]
+      ..style = PaintingStyle.stroke
+      ..strokeCap = StrokeCap.round
+      ..strokeWidth = 16;
+
+      var horPont = Paint()
+      ..color = Colors.orange[300]
+      ..style = PaintingStyle.stroke
+      ..strokeCap = StrokeCap.round
+      ..strokeWidth = 16;
+
+      canvas.drawCircle(center, radius-50, paint_circle1);//Círculo interno
+      canvas.drawCircle(center, radius-50, paint_circle2);//Círculo externo
+ 
+      canvas.drawLine(center, Offset(100, 100), minPont);//Ponteiro minutos
+      canvas.drawLine(center, Offset(150, 100), horPont);//Ponteiro horas
+
+
+      canvas.drawCircle(center, radius-140, paint_circle3);//Círculo do centro, deve ficar por último
     }
   
     @override

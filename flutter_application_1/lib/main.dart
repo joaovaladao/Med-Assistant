@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_application_1/clock_view.dart';
+//import 'package:flutter_application_1/clock_digital.dart';
 
 void main() {
   runApp(MyApp());
@@ -101,6 +102,7 @@ class _MyHomePageState extends State<MyHomePage> {
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
             ClockView(),
+            //DigitalClock(),
             Text(
               'Você apertou o botão:',
               style: TextStyle(color: Colors.white70),

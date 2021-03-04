@@ -1,4 +1,4 @@
-## 1. Objetivo da _Sprint 3_
+## 1. Objetivo da _Sprint 4_
 
 <p align="justify">Esta <i>Sprint</i> tem como objetivo:</p>
 
@@ -9,14 +9,14 @@
 
 ## 2. Tamanho da _Sprint_
 
-| Data de Início | 02/03/2021 |
+| Data de Início | 04/03/2021 |
 |:--|:--:|
-| **Data de Término** | **09/03/2021** |
+| **Data de Término** | **11/03/2021** |
 | **Duração** | **7 dias** |
 
 
 ## 3. Sprint Backlog
 
-[Milestone](https://github.com/fga-eps-mds/MDS-2020-2-G3/milestone/1) da _Sprint_
+[Milestone](https://github.com/fga-eps-mds/MDS-2020-2-G3/milestone/2) da _Sprint_
 
 

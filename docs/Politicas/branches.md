@@ -120,19 +120,19 @@ hotfix/v2.6
 * Toda nova documentação tem sua própria branch, seguindo o seguinte padrão de nome:
 
 ```
-docs/issueID-Nome_da_Issue
+docs/issueID-Descricao_da_Documentacao
 ```
 
 <p align = "justify">&emsp;&emsp;Onde:</p>
 
-* <b>"feature"</b> é padrão;
-* <b>"issueID"</b> é o número da issue ao qual a funcionalidade se refere;
+* <b>"docs"</b> é padrão;
+* <b>"issueID"</b> é o número da issue a qual a documentação se refere;
 
 <p align = "justify">&emsp;&emsp;Exemplo:</p>
 
 ```
-feature/#67-Adicionar_Documento_de_Visao
+docs/#67-Documento_de_Visao
 ```
 
 ## Referências
-GABRIEL, Enzo; et al. Política de Branches - Vamos Cuidar. Disponível em: <https://fga-eps-mds.github.io/2020.1-VC_Usuario/#/docs/policies/branches>. Acesso em: 03 mar 2021.
+GABRIEL, Enzo; et al. Política de Branches - Vamos Cuidar. Disponível em: <https://fga-eps-mds.github.io/2020.1-VC_Usuario/#/docs/policies/branches>. Acesso em: 04 mar 2021.

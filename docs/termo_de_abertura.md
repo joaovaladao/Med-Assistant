@@ -26,7 +26,7 @@ Data|Versão|Descrição|Autor
 |:-|:-|
 |Christian Fleury|email|
 |Gabriel Avelino|email|
-|Ítalo|email|
+|Ítalo Serra|italoserra99@gmail.com|
 |João Victor Valadão|joaovaladao161274@gmail.com|
 |Thiago Gomes|email|
 |Vinícius Roriz|viniciusroriz21@gmail.com|

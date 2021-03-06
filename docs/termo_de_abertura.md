@@ -28,7 +28,7 @@ Data|Versão|Descrição|Autor
 |Gabriel Avelino|email|
 |Ítalo Serra|italoserra99@gmail.com|
 |João Victor Valadão|joaovaladao161274@gmail.com|
-|Thiago Gomes|email|
+|Thiago Gomes|thiagosiqgomes@gmail.com|
 |Vinícius Roriz|viniciusroriz21@gmail.com|
 
 

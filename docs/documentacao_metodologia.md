@@ -10,12 +10,10 @@ Data|Descrição|Autor
 
 ## 1 <a name="1">Introdução</a>
 
- <p align = "justify"> &emsp;&emsp; ESCREVA AQUI. </p>
+ <p align = "justify"> &emsp;&emsp; Este documento tem como objetivo evidenciar a comunicação interna da equipe e as metodologias utilizadas para criação de conteúdo. As metodologias esolhidas tem principal função de facilitar a comunicação e aumenatar a produtividade da nossa equipe. </p>
 
 
 ## 2 <a name="2">Metodologias utilizadas</a>
-
- <p align = "justify"> &emsp;&emsp; ESCREVA AQUI.</p>
 
 ### 2.1 <a name="2.1">Scrum</a>
 ESCREVER AQUI.

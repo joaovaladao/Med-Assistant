@@ -3,6 +3,7 @@
 Data|Versão|Descrição|Autor
 -|-|-|-
 04/03|0.1|Criação do Termo de Abertura e adição dos itens 1, 2 e 3| Vinícius|
+08/03|0.2|Adição do email dos participantes|Vinícius|
 
 
 ## 1. <a name="1">Descrição do Projeto</a>
@@ -24,8 +25,8 @@ Data|Versão|Descrição|Autor
 
 |**Nome**|**Email**|
 |:-|:-|
-|Christian Fleury|email|
-|Gabriel Avelino|email|
+|Christian Fleury|chfleurysiq@gmail.com|
+|Gabriel Avelino|blackzinh8@gmail.com|
 |Ítalo Serra|italoserra99@gmail.com|
 |João Victor Valadão|joaovaladao161274@gmail.com|
 |Thiago Gomes|thiagosiqgomes@gmail.com|

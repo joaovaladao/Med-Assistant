@@ -8,8 +8,8 @@ Com esse aplicativo esperamos atingir tanto jovens como também pessoas mais vel
 
 |**Nome**|**Email**|**Github**|
 |:-|:-|:-|
-|Christian Fleury|email|[chfleury](https://github.com/chfleury)|
-|Gabriel Avelino|email|[gabrielavelino](https://github.com/gabrielavelino)|
+|Christian Fleury|chfleurysiq@gmail.com|[chfleury](https://github.com/chfleury)|
+|Gabriel Avelino|blackzinh8@gmail.com|[gabrielavelino](https://github.com/gabrielavelino)|
 |Ítalo Serra|italoserra99@gmail.com|[italofernandes13](https://github.com/italofernandes13)|
 |João Victor Valadão|joaovaladao161274@gmail.com|[joaovaladao](https://github.com/joaovaladao)|
 |Thiago Gomes|thiagosiqgomes@gmail.com|[thgomes](https://github.com/thgomes)|

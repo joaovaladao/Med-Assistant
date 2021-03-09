@@ -2,10 +2,13 @@
 
 <p align="justify">Esta <i>Sprint</i> tem como objetivo:</p>
 
-- Organização do repositório
-- Criação de documentação
-- Apresentação visual do projeto
-- Estudar sobre GitHub e GIT 
+- Organização do repositório;
+
+- Criação de documentação;
+
+- Apresentação visual do projeto;
+
+- Estudar sobre GitHub e GIT;
 
 ## 2. Tamanho da _Sprint_
 

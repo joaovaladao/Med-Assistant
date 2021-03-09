@@ -1,6 +1,6 @@
 # MED Assistant
 
-![teste](imagens\medassistantBRANCO.png)
+![teste](imagens/medassistantBRANCO.png)
 
 ## Prévia
 

@@ -1,4 +1,4 @@
-## 1. Objetivo da _Sprint "NUMERO"_
+## 1. Objetivo da _Sprint 3_
 
 <p align="justify">Esta <i>Sprint</i> tem como objetivo:</p>
 

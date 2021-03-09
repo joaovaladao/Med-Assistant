@@ -2,7 +2,7 @@
 
 |Data|Versão|Alteração|Autor|
 |:-:|:-:|:-:|:-:|
-| 04/03/2021 |   0.1  | Criação do Roadmap e documentação das sprints 1 e 2 | Ítalo|
+| 04/03/2021 |   0.1  | Criação do Roadmap e documentação das sprints 1 e 2 | Ítalo Serra|
 
 
 ## Release 1

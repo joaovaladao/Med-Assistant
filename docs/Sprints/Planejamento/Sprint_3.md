@@ -3,7 +3,9 @@
 <p align="justify">Esta <i>Sprint</i> tem como objetivo:</p>
 
 - Adicionar Templates de Planejamento/Revisão.
+
 - Organizar repositório no Git.
+
 - Estudo da Metodologia SCRUM.
 
 ## 2. Tamanho da _Sprint_

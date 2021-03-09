@@ -3,8 +3,11 @@
 <p align="justify">Esta <i>Sprint</i> tem como objetivo:</p>
 
 - Definir a plataforma/linguagem de uso;
+
 - Criar um escopo do projeto;
+
 - Aprender o básico da linguagem selecionada;
+
 - Fazer o canvas;
 
 ## 2. Tamanho da _Sprint_

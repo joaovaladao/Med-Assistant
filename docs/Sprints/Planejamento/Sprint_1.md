@@ -2,11 +2,11 @@
 
 <p align="justify">Esta <i>Sprint</i> tem como objetivo:</p>
 
--Baixem o Flutter em alguma plataforma disponível(VScode);
+- Baixem o Flutter em alguma plataforma disponível(VScode);
 
--Instalar o Android Studio;
+- Instalar o Android Studio;
 
--Fazer o pull do arquivo base no repositório no GIT;
+- Fazer o pull do arquivo base no repositório no GIT;
 
 ## 2. Tamanho da _Sprint_
 
@@ -19,6 +19,10 @@
 ## 3. Sprint Backlog
 
 [Milestone](https://github.com/fga-eps-mds/MDS-2020-2-G9/milestone/4?closed=1) da _Sprint_
+
+## 4. Débitos Acumulados
+
+- Encontramos problemas na instalação do Android Studio;
 
 
 

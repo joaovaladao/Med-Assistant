@@ -24,7 +24,7 @@ Data|Versão|Descrição|Autor
 
 |**Nome**|**Email**|
 |:-|:-|
-|Christian Fleury|email|
+|Christian Fleury|chfleurysiq@gmail.com|
 |Gabriel Avelino|blackzinh8@gmail.com|
 |Ítalo Serra|italoserra99@gmail.com|
 |João Victor Valadão|joaovaladao161274@gmail.com|

@@ -1,24 +1,25 @@
-## Documentação Metodologias
+# Documentação Metodologias
 
 Data|Descrição|Autor
 -|-|-
 04/03|Abertura do Documento de Metodologia|João Victor Valadão|
 08/03|Descrição da metodologia Scrum|Ítalo Serra|
 05/03|Descrição da metodologia XP|Gabriel Avelino|
+09/03|Alteração na sintaxe da página| Vinicius Roriz|
 
 
 
-## 1 <a name="1">Introdução</a>
+## 1. Introdução
 
  <p align = "justify"> &emsp;&emsp; Este documento tem como objetivo evidenciar a comunicação interna da equipe e as metodologias utilizadas para criação de conteúdo. As metodologias escolhidas tem principal função de facilitar a comunicação e aumentar a produtividade da nossa equipe. </p>
 
 
-## 2 <a name="2">Metodologias utilizadas</a>
+## 2. Metodologias utilizadas
 
-### 2.1 <a name="2.1">Scrum</a>
+### 2.1 Scrum
 A metodologia Scrum Agile propõe que um projeto seja dividido em diversos (pequenos) ciclos de atividades, com reuniões frequentes para que a equipe possa alinhar o que vem fazendo e pensar formas de melhorar o processo com agilidade. 
 
-#### 2.1.1 <a name="2.1.1">Papéis do Scrum:</a>
+#### 2.1.1 Papéis do Scrum:
 * <b>ScrumMaster:</b> 
     O Scrum Master age como um líder, não como um gerente, e tem o papel de facilitador no desenvolvimento de projetos com Scrum. Ele deve ajudar a equipe a resolver problemas e fazer melhorias no uso do Scrum, sendo o responsável por proteger a equipe contra interferências externas e assumindo um papel de liderança na remoção de impedimentos que possam atrapalhar a produtividade.
 
@@ -28,7 +29,7 @@ A metodologia Scrum Agile propõe que um projeto seja dividido em diversos (pequ
 * <b>Scrum Team:</b> 
     Na metodologia Scrum é definido o papel do Time de Scrum, que é simplesmente a junção de todas essas pessoas em uma equipe multidisciplinar e são responsáveis pela concepção, construção e testes do produto final do projeto.
 
-#### 2.1.2 <a name="2.1.2">Cerimônias e artefatos:</a>
+#### 2.1.2 Cerimônias e artefatos:
 
 * <b>Sprints:</b> 
     é o nome dado para os ciclos de cada projeto. Em geral são ciclos mensais e são determinados para que as tarefas sejam realizadas.
@@ -43,17 +44,17 @@ A metodologia Scrum Agile propõe que um projeto seja dividido em diversos (pequ
 * <b>Sprint Review Meeting:</b>
     essa é a reunião que acontece ao final de cada sprint para que a equipe apresente o que foi realizado e os resultados do trabalho daquele ciclo. A ideia é que depois dessa etapa, todos sigam para o próximo ciclo.    
 
-#### 2.1.3 <a name="2.1.3">Ferramentas:</a>
+#### 2.1.3 Ferramentas:
 Em geral, as empresas perdem muito tempo de seus funcionários em reuniões com apontamentos sobre o que está sendo feito, o que foi concluído e o que está parado. Uma forma simples de resolver isso é criar um registro visual para demonstrar o andamento das tarefas. Para isso, o quadro Kanban Scrum é a ferramenta ideal. Basta criar um enorme painel com todas as atividades (e o status de cada uma) e colocá-lo onde todos possam ver. Assim, não é preciso perder tempo falando, as pessoas já saberão sobre o status do projeto apenas observando. Crie o seu quadro Kanban Scrum em uma ferramenta de produtividade como o Trello.
 
 
-### 2.2 <a name="2.2">XP - Extreme Programming</a>
+### 2.2 XP - Extreme Programming
 <p align = "justify"> &emsp;&emsp; <b>Extreme Programming (XP)</b> é uma metodologia de desenvolvimento ágil para pequenas e médias equipes que desenvolvem software baseado em requisitos vagos e que se modificam rapidamente. O <b>XP (Extreme Programming ou Programação Extrema)</b> é focada no desenvolvimento de software que possui valores e princípios, onde são fundamentados por um conjunto de práticas. Além disso, o <b>XP</b> também possui funções bem definidas para seus membros.</p>
 
 
 <p align = "justify"> &emsp;&emsp; O XP tem <b>cinco</b> valores muito importantes que fazem a base de um desenvolvimento de projeto ágil. </p>
 
-#### 2.2.1 <a name="2.2.1">Valores do XP</a>
+#### 2.2.1 Valores do XP
 * <b>Comunicação:</b> A má comunicação é motivo de insucesso em todo tipo de projeto, inclusive nos projetos de software. Além de atrapalhar o engajamento dos membros no trabalho, aumenta a chance de erros no programa e na junção com as outras partes de outros membros. Por isso uma boa comunicação é fundamental.
  <br/>
 
@@ -69,7 +70,7 @@ Em geral, as empresas perdem muito tempo de seus funcionários em reuniões com 
 * <b>Respeito:</b> Ultimo mas não menos importante, é ter respeito com a comunidade ao seu redor, com os membros do seu grupo e meio social, para manter um ambiente agradável para todos trabalharem.
  <br>
 
-#### 2.2.2 <a name="2.2.2">Práticas do XP</a>
+#### 2.2.2 Práticas do XP
 <p align = "justify"> &emsp;&emsp;O XP além desses valores listados acima, ele possui um conjunto de princípios que devem ser seguidos para que tenha uma boa prática de desenvolvimento no projeto. Abaixo foi listado algumas práticas escolhidas pelo nosso grupo para serem utilizadas.  </p>
 
 * <b>Design simples: </b>  Essa metodolia tenta manter o código o mais simples possível, apenas seguindo o que o usuário esta pedindo, assim, ele fica mais simples e fácil de ser alterado. Com essa metodologia você consegue alterar o código quando precisar, sem comprometer a qualidade.

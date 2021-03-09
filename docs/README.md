@@ -1,5 +1,9 @@
 # MED Assistant
 
+<p align = "center"> &emsp;&emsp; <img src="./assets/MED-logo.png" width="819" height="379"/> </p>
+
+## Descrição
+
 <p align="justify">O MED ASSISTANT é um aplicativo gratuito disponível na plataforma de vendas da Play store. O objetivo do aplicativo é ser utilizado como um assistente com o controle das suas medicações, dando a hora exata que o usuário deve tomar suas medicações.</p>
 Com esse aplicativo esperamos atingir tanto jovens como também pessoas mais velhas que tomam seus remédios de maneira irregular. Com uma interface divertida e simples de se usar, esse aplicativo atinge a todas as faixas etárias que precisam de ajuda para se monitorar.
 

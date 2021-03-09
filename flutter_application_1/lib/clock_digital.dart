@@ -3,13 +3,10 @@ import 'package:flutter_application_1/clock_view.dart';
 
 class DigitalClock extends StatefulWidget {
   @override
-
-=======
   _DigitalClock createState() => _DigitalClock();
 }
 
 class _DigitalClock extends State<DigitalClock> {
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -37,6 +34,4 @@ class _DigitalClock extends State<DigitalClock> {
       ),
     );
   }
-
 }
-

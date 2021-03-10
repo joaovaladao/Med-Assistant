@@ -1,6 +1,7 @@
 # MED Assistant
 
-<p align = "center"> &emsp;&emsp; <img src="./assets/MED-logo.png" width="819" height="379"/> </p>
+<p align = "center"> &emsp;&emsp; <img src="./assets/MED-logo.png" class="responsive"/> </p>
+
 
 ## Descrição
 

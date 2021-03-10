@@ -9,4 +9,8 @@
         
 
 * Sprints
+    - [Sprint 0](./Sprints/Planejamento/Sprint_0.md)
+    - [Sprint 1](./Sprints/Planejamento/Sprint_1.md)
+    - [Sprint 2](./Sprints/Planejamento/Sprint_2.md)
+    - [Sprint 3](./Sprints/Planejamento/Sprint_3.md)
     - [Sprint 4](./Sprints/Planejamento/Sprint_4.md)

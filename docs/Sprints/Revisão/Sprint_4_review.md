@@ -24,7 +24,7 @@
 -  Definir um protótipo de alta fidelidade;
 
 ##### Progresso realizado: 
-<p align="justify">&emsp;&emsp; Cada um foi responsável por uma tarefa, dessa forma conseguimos acelerar o processo de criação de documentos, finalizando todos que estavam pendentes.</p>
+<p align="justify">&emsp;&emsp; Cada um foi responsável por uma tarefa, dessa forma conseguimos acelerar o processo de criação de documentos, e finalizar aqueles que estavam pendentes.</p>
 
 ------------
 ## 3. Conclusão da _Sprint_

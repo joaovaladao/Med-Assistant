@@ -19,9 +19,9 @@
 
 -  Criação do documento de comunicação;
 
--  Atualizar o Github pages.
+-  Atualizar o Github pages;
 
--  Definir um protótipo de alta fidelidade.
+-  Definir um protótipo de alta fidelidade;
 
 ##### Progresso realizado: 
 <p align="justify">&emsp;&emsp; Cada um foi responsável por uma tarefa, dessa forma conseguimos acelerar o processo de criação de documentos, finalizando todos que estavam pendentes.</p>

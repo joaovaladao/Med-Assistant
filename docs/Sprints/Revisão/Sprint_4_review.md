@@ -1,6 +1,6 @@
 ## 1. Relato da _Sprint_
 
-<p align="justify">&emsp;&emsp; Nessa Sprint o maior dos objetivos foi a criação de documentos e padronização daqueles já existentes. Além disso também iniciamos o desenvolvimento da parte estética da nossa aplicação.</p>
+<p align="justify">&emsp;&emsp; Nessa Sprint o maior dos objetivos foi a criação de documentos e padronização daqueles já existentes. Além disso também iniciamos o desenvolvimento da parte estética(protótipo) da nossa aplicação.</p>
 
 
 ------------

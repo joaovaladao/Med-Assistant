@@ -28,6 +28,6 @@
 
 ------------
 ## 3. Conclusão da _Sprint_
-<p align="justify">&emsp;&emsp; Nosso grupo melhorou muito após essa Sprint, por ser uma Sprint longa e quase inteiramente baseada na criação de documentação, nosso grupo conseguiu executar quase todas as tarefas que foram passadas. Porém não conseguimos finalizar o protótipo de alta fidelidade, o que terá q ser resolvido na próxima Sprint.</p>
+<p align="justify">&emsp;&emsp; Nosso grupo melhorou bastante após essa Sprint, por ser uma Sprint longa e quase inteiramente baseada na criação de documentação, nosso grupo conseguiu executar quase todas as tarefas que foram passadas. Porém não conseguimos finalizar o protótipo de alta fidelidade, o que terá q ser resolvido na próxima Sprint.</p>
 
 ------------

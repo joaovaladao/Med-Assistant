@@ -19,7 +19,7 @@
 
 -  Criação do documento de comunicação;
 
--  Atualizar o Github pages;
+-  Atualizar o Github pages.
 
 -  Definir um protótipo de alta fidelidade;
 

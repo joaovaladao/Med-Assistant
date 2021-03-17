@@ -37,8 +37,9 @@ Vídeo ajuda para instalar o ambiente de trabalho.
 ## 🎨 Layout (Home)
 
 <p align="center">
-![teste](prototipo/home.png)
+![teste](prototipo\home.png)
 ---
+
 
 ## Integrantes
 

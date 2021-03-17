@@ -3,6 +3,7 @@ Data|Versão|Descrição|Autor
 -|-|-|-
 04/03|0.1|Abertura do Documento de Visão| João Victor Valadão|
 17/03|0.2|Incrementação dos tópicos 1.1, 1.2, 1.4 e criação do tópico 1.3|João Victor Valadão|
+17/03|0.3|Incrementação dos tópicos 2.1, 2.2, 2.3, 3.0 e criação dos tópicos 3.1, 3.2, 3.3|João Victor Valadão|
 
 ## 1. <a name="1">Introdução</a>
 
@@ -46,7 +47,8 @@ ___
 
 ### 2.1 <a name="2_1">Oportunidade de Negócio</a>
 
-<p align="justify">&emsp;&emsp; Auxiliar as pessoas a tomarem seus medicamentos no horário correto de maneira mais simples possível, para fácil entendimento de pessoas de todas as idades.</p>
+<p align="justify">&emsp;&emsp; A adesão aos remédios é um problema especial para pessoas mais velhas. Eles tomam mais remédios do que os pacientes mais novos, não é incomum que tenham mais de sete receitas. Quando os pacientes não conseguem organizar sua rotina junto com os horários do medicamento, pode haver consequências ruins. Portanto, nossa equipe decidiu ajudar.</p>
+<p align="justify">&emsp;&emsp; O "Med Assistence" será um aplicativo para atender a todas as necessidades de saúde do usuário, de maneira mais simples possível para o entendimento das pessoas de todas as idades. Todos os seus remédios, vitaminas, suplementos ou pílula anticoncepcional podem ser cadastrados no aplicativos para que não esqueçam de nenhum. </p>
 
 ### 2.2 <a name="2_2">Descrição do problema</a>
 
@@ -54,19 +56,34 @@ ___
 |:-|:-|
 |**O Problema é**|Não tomar a medicação no horário adequado|
 |**Que afeta**|Todas as faixas etárias, principalmente os idosos. |
-|**Cujo impacto é**|Podendo causar problemas graves de saúde.|
-|**Uma boa solução seria**|Uma aplicativo capaz de informa-las quando chega o horário adequado.|
+|**Cujo impacto é**|Pode causar problemas graves de saúde ou impedir o usuário de atingir alguma meta.|
+|**Uma boa solução seria**|Um aplicativo capaz criar lembretes de horários para cada um dos remédios cadastrados|
 
 ### 2.3 <a name="2_3">Descrição da Posição do Produto</a>
 
-<p align="justify">&emsp;&emsp;O aplicativo ficará disponível no mercado por meio da PlayStore, que poderá ser baixado facilmente em celulares android. Desse modo qualquer pessoa interessada na aplicação poderá garanti-la gratuitamente sem dificuldades de instalação.</p>
+<p align="justify">&emsp;&emsp;O aplicativo ficará disponível no mercado por meio da PlayStore quando for concluído, assim poderá ser baixado facilmente em celulares android. Desse modo qualquer pessoa interessada na aplicação poderá garanti-la gratuitamente sem dificuldades de instalação.</p>
 
 ___
 
 ## 3. <a name="3">Descrição dos Envolvidos</a>
 
-<p align="justify">&emsp;&emsp; Acreditamos que o foco principal para o aplicativo seriam as pessoas idosas, de modo a ajuda-las com o excesso de medicação. Porém com o grande numéro de jovens e adultos consumindo diariamente algum tipo de medicamento, nosso produto se disponilizará a ajudá-los. 
+<p align="justify">&emsp;&emsp; Acreditamos que o foco principal para o aplicativo seriam as pessoas idosas, de modo a ajuda-las com o excesso de medicação. Porém com o grande numéro de jovens e adultos consumindo diariamente algum tipo de medicamento, nosso produto se disponilizará a ajudá-los. </p>
 
+### 3.1 <a name="2_3">Envolvidos</a>
+Nome|Descrição|Responsabilidades
+-|-|-
+Grupo 9 - Equipe de desenvolvedores|Estudantes da disciplina Métodos de Desenvolvimento de Software (MDS)|Desenvolvimento, documentação e implementação do software solicitado.
+Orientadores|Professora e monitores da disciplina Métodos de Desenvolvimento de Software (MDS)|Avaliar e orientar a equipe 
+
+### 3.2 <a name="2_3">Usuários</a>
+Usuário|Descrição
+-|-
+Idosos|Pessoas com grandes quantidades de medicação a serem ingeridas
+Adultos|Pessoas que tomam algum medicamento diariamente, anticoncepcional por exemplo
+Jovens/Adultos|Pessoas que tomam algum suplemento alimentar para práticas de atividades físicas
+
+### 3.3 <a name="2_3">Ambiente do usuário</a>
+Será um aplicativo mobile que ficará disponível no mercado por meio da PlayStore.
 ___
 
 ## 4. <a name="4">Visão Geral</a>

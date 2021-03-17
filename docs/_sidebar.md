@@ -1,12 +1,13 @@
 - [Home](/)
 
 * Documentação
-    - [Documento de Visão](./wiki/documento_de_visao.md)
-    - [Termo de Abertura](./wiki/termo_de_abertura.md)
-    - [Metodologias](./wiki/documentacao_metodologia.md)
+    - [Arquitetura](./wiki/arquitetura.md)
+    - [Backlog](./wiki/backlog.md)
     - [Comunicação](./wiki/documento_comunicacao.md)
+    - [Documento de Visão](./wiki/documento_de_visao.md)
+    - [Metodologias](./wiki/documentacao_metodologia.md)
     - [Roadmap](./wiki/roadmap.md)
-        
+    - [Termo de Abertura](./wiki/termo_de_abertura.md)
 
 * Sprints
     - [Sprint 0](./Sprints/Planejamento/Sprint_0.md)

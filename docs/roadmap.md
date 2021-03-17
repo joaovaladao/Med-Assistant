@@ -18,3 +18,15 @@
 | ID | Issue |
 |:--:| ------- | 
 | #3 |[Semana 2!](https://github.com/fga-eps-mds/MDS-2020-2-G9/issues/3)
+
+### Sprint 3
+| ID | Issue |
+|:--:| ------- | 
+| #5 |[Oganização do repositório](https://github.com/fga-eps-mds/MDS-2020-2-G9/issues/5)
+| #6 |[organizacao do repositorio](https://github.com/fga-eps-mds/MDS-2020-2-G9/pull/6)
+| #7 |[Criando Templates e funções básicas](https://github.com/fga-eps-mds/MDS-2020-2-G9/issues/7)
+| #9 |[Estudo da metodologia Scrum](https://github.com/fga-eps-mds/MDS-2020-2-G9/issues/9)
+| #10 |[Planejamento e Revisão de Sprint](https://github.com/fga-eps-mds/MDS-2020-2-G9/issues/10)
+| #11 |[adicionado templates de planejamento/revisao](https://github.com/fga-eps-mds/MDS-2020-2-G9/pull/11)
+| #20 |[criando do documento Roadamap e documentando a Sprint 1 e 2 ](https://github.com/fga-eps-mds/MDS-2020-2-G9/issues/20)
+| #30 |[Review da Sprint 3](https://github.com/fga-eps-mds/MDS-2020-2-G9/pull/30)

@@ -2,7 +2,7 @@
 
 ![teste](docs/assets/MED-logo.png)
 
-## Prévia
+## 🛠 Prévia
 
 <b>MED ASSISTANT</b> é um aplicativo gratuito disponível na 
 plataforma de vendas da Play store. O objetivo do aplicativo é 
@@ -10,7 +10,10 @@ ser utilizado como um assistente com o controle das suas
 medicações, dando a hora exata que o usuário deve tomar suas 
 medicações.
 
-## Dados
+---
+
+## 💻 Dados
+
 
 Nossa aplicação vai ser construida em dart usando como principal ferramenta o flutter.
 
@@ -19,6 +22,23 @@ Nossa aplicação vai ser construida em dart usando como principal ferramenta o 
 Vídeo ajuda para instalar o ambiente de trabalho.
 
 <b>Vídeo flutter:</b> https://www.youtube.com/watch?v=9m3PvcQ18Hk&t=73s
+
+---
+
+## ⚙️ Funcionalidades
+
+- Os usuários com acesso ao aplicativo móvel, poderão:
+  - cadastrar um medicamento respectivamente junto ao horário à ser tomada a medicação.
+  - navegar entre os dias em que a medicação foi tomada no horário adequado, ou se não foi tomada a medicação aquele dia;
+  - deletar ou alterar qualquer informação sobre o medicamento ou seu horário;
+
+---
+
+## 🎨 Layout (Home)
+
+<p align="center">
+![teste](prototipo/home.png)
+---
 
 ## Integrantes
 

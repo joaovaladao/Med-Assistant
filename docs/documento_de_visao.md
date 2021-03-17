@@ -4,8 +4,9 @@ Data|Versão|Descrição|Autor
 04/03|0.1|Abertura do Documento de Visão| João Victor Valadão|
 17/03|0.2|Incrementação dos tópicos 1.1, 1.2, 1.4 e criação do tópico 1.3|João Victor Valadão|
 17/03|0.3|Incrementação dos tópicos 2.1, 2.2, 2.3, 3.0 e criação dos tópicos 3.1, 3.2, 3.3|João Victor Valadão|
+18/03|0.3|Incrementação dos tópicos 4.0, 5.0 e criação dos tópicos 4.1 até o 6.3|João Victor Valadão|
 
-## 1. <a name="1">Introdução</a>
+## 1 <a name="1">Introdução</a>
 
 ### 1.1 <a name ="1_1">Objetivo</a>
 <p align="justify"> &emsp;&emsp; O objetivo do aplicativo é proporcionar um assistente para o controle de medicações. O software grátis envia alertas sonoros para o usuário ingerir a medicação no horário pré-progamado, a fim de criar uma rotina saudável.</p>
@@ -43,7 +44,7 @@ Data|Versão|Descrição|Autor
 
 ___
 
-## 2. <a name="2">Posicionamento</a>
+## 2 <a name="2">Posicionamento</a>
 
 ### 2.1 <a name="2_1">Oportunidade de Negócio</a>
 
@@ -65,7 +66,7 @@ ___
 
 ___
 
-## 3. <a name="3">Descrição dos Envolvidos</a>
+## 3 <a name="3">Descrição dos Envolvidos</a>
 
 <p align="justify">&emsp;&emsp; Acreditamos que o foco principal para o aplicativo seriam as pessoas idosas, de modo a ajuda-las com o excesso de medicação. Porém com o grande numéro de jovens e adultos consumindo diariamente algum tipo de medicamento, nosso produto se disponilizará a ajudá-los. </p>
 
@@ -86,17 +87,52 @@ Jovens/Adultos|Pessoas que tomam algum suplemento alimentar para práticas de at
 Será um aplicativo mobile que ficará disponível no mercado por meio da PlayStore.
 ___
 
-## 4. <a name="4">Visão Geral</a>
-<p align="justify"> &emsp;&emsp; Nossa missão é fornecer às pessoas todas as ferramentas, o suporte e as informações necessárias para que elas tomem seus medicamentos corretamente.
+## 4 <a name="4">Visão Geral</a>
+
+### 4.1 <a name="4">Perspectiva do Produto</a>
+<p align="justify"> &emsp;&emsp; o "Med Assistence" tem como seu principal objetivo fornecer às pessoas todas as ferramentas, o suporte e as informações necessárias para que elas tomem seus medicamentos corretamente.
 </p>
+
+### 4.2 <a name="4">Resumo das Capacidades</a>
+| **Benefícios do Cliente**| **Recursos de suporte**|
+-|-
+Ajudar as pessoas com a sua medicação|App simples e prático, onde podem cadastrar suas medicações
+Capacidade de oferecer informações para o mapeamento de saúde|Quando for informado pelo usuário diariamente
+
+### 4.3 <a name="4">Suposições e Dependências</a>
+- O usuário deverá possuir um celular Android com espaço disponível para o download da aplicação.
+- O aplicativo poderá ser apresentado ao médico em consultas, informando o total de dias que certo medicamento foi usado pelo paciente.
 
 ___
 
 ## 5. <a name="5">Recursos</a>
+
+## 5.1 <a name="5">Recursos do usuário</a>
+O usuário dispõem das seguintes funcionalidades:<br />
+
+* Registrar os medicamentos e seus respectivos horários.
+* Acessar e alterar os horários e medicamentos.
+* Acessar o histórico de relatos.
+* Informar quando um medicamento for ingerido.
+
+</p>
+
+## 5.2 <a name="5">Recursos do sistema</a>
 O sistema dispõem das seguintes funcionalidades:<br />
 
-* Registrar os medicamentos e os horários.
-* Acessar e alterar os horários e medicamentos.
-* Disparar um alarme nos horários programados.
+* Disparar um alerta sonoro nos horários programados.
 * Enviar uma mensagem no display do dispositivo.</p>
+
+## 6 <a name="5">Restrições</a>
+### 6.1 <a name="5">Restrições de Design</a>
+<p align = "justify">&emsp;&emsp; O aplicativo deve ser desenvolvido de maneira mais simples possível, para o fácil comprendimento de usuário mais velhos.</p>
+
+### 6.2 <a name="5">Restrições de implementação</a>
+<p align = "justify">&emsp;&emsp; O sistema será desenvolvido a partir do Flutter, que será integrado remotamente.</p>
+
+### 6.3 <a name="5">Restrições de Uso</a>
+<p align = "justify">&emsp;&emsp; É necessário um  dispositivo Android.</p>
+
+### 6.4 <a name="5">Restrições Externas</a>
+<p align = "justify">&emsp;&emsp; Primeira vez que os membros da equipe trabalham juntos, e falta de conhecimento e experiência em relação ao Flutter.</p>
 

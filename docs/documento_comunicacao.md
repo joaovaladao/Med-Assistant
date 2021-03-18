@@ -41,16 +41,16 @@ Data|Versão|Descrição|Autor
 
 <p align = "justify"> &emsp;&emsp; O Jitsi Meet  é mais uma opção para quem procura fazer videoconferências. Destaca-se pela segurança de suas chamadas: em um sistema parecido com o WhatsApp, é usada a criptografia de ponta-a-ponta, na qual apenas as pessoas presentes tem acesso aos conteúdos.
 
-<p align = "justify"> &emsp;&emsp; Utilizamos o Jitsi para contato com a professora para assistência, também é o canal onde é explicado as metodológias agéis que podemos utilizar ao longo da realização do projeto.
+<p align = "justify"> &emsp;&emsp; Utilizamos o Jitsi para contato com a professora para assistência, também é o canal onde é explicado as metodologias ágeis que podemos utilizar ao longo da realização do projeto.
 
-<p align = "justify"> &emsp;&emsp; Também é o canal que usamos para reunir os membros do gruppo e delegar as funçãos de cada integrante, assim como as missões que cada um deve cumprir ao longo da semana.</p>
+<p align = "justify"> &emsp;&emsp; Também é o canal que usamos para reunir os membros do grupo e delegar as funções de cada integrante, assim como as missões que cada um deve cumprir ao longo da semana.</p>
 
 
 
 ## 3 <a name="1_1">Comunicação Interna</a>
 
 
-<p align = "justify"> &emsp;&emsp; A comunicação interna entre os integrantes ocorrerá semanalmente depois dos horários de aulas (por meio do Jitsi Meet), podendo ser criadas novas reuniões para resolver emergências ou para fechamento de conteúdo no prazo estipulado. Assim como o Telgram e o GitHub proporcionam a comunicação diaria com os integrantes, como descrito acima.</p>
+<p align = "justify"> &emsp;&emsp; A comunicação interna entre os integrantes ocorrerá semanalmente depois dos horários de aulas (por meio do Jitsi Meet), podendo ser criadas novas reuniões para resolver emergências ou para fechamento de conteúdo no prazo estipulado. Assim como o Telegram e o GitHub proporcionam a comunicação diária com os integrantes, como descrito acima.</p>
 
 ## 4 <a name="1_1">Comunicação Externa</a>
 

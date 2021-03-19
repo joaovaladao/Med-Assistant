@@ -38,7 +38,14 @@ Vídeo ajuda para instalar o ambiente de trabalho.
 
 <p align="center">
   <img alt="" title="" src="prototipo/home.png" width="200px">
+  <img alt="" title="" src="prototipo/medicacoes.png" width="200px">
 </p>
+
+<p align="center">
+  <img alt="" title="" src="prototipo/histórico.jpeg" width="200px">
+  <img alt="" title="" src="docs/assets/Primeira-animação-do-protótipo.gif" width="200px">
+</p>
+
 ---
 
 

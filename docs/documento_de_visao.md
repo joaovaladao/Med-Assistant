@@ -10,7 +10,7 @@ Data|Versão|Descrição|Autor
 
 ### 1.1 <a name ="1_1">Objetivo</a>
 <p align="justify"> &emsp;&emsp; O objetivo do aplicativo é proporcionar um assistente para o controle de medicações. O software grátis envia alertas sonoros para o usuário ingerir a medicação no horário pré-progamado, a fim de criar uma rotina saudável.</p>
-<p align="justify"> &emsp;&emsp; Se você está ocupado demais para se lembrar de ter tomado as suas pilulas, não se preocupe, o "Med assistant" está aqui para ajudá-lo a resolver esse problema. Os usuários precisam apenas informar o nome do medicamento, e a sua rotina de uso. Assim ele será capaz de rastrear o seu histórico de saúde e acompanhar seu progresso semanalmente.</p>
+<p align="justify"> &emsp;&emsp; Se você está ocupado demais para se lembrar de ter tomado as suas pílulas, não se preocupe, o "Med assistant" está aqui para ajudá-lo a resolver esse problema. Os usuários precisam apenas informar o nome do medicamento, e a sua rotina de uso. Assim ele será capaz de rastrear o seu histórico de saúde e acompanhar seu progresso semanalmente.</p>
 
 ### 1.2 <a name="1_2">Escopo</a>
 
@@ -68,7 +68,7 @@ ___
 
 ## 3 <a name="3">Descrição dos Envolvidos</a>
 
-<p align="justify">&emsp;&emsp; Acreditamos que o foco principal para o aplicativo seriam as pessoas idosas, de modo a ajuda-las com o excesso de medicação. Porém com o grande numéro de jovens e adultos consumindo diariamente algum tipo de medicamento, nosso produto se disponilizará a ajudá-los. </p>
+<p align="justify">&emsp;&emsp; Acreditamos que o foco principal para o aplicativo seriam as pessoas idosas, de modo a ajuda-las com o excesso de medicação. Porém com o grande número de jovens e adultos consumindo diariamente algum tipo de medicamento, nosso produto se disponilizará a ajudá-los. </p>
 
 ### 3.1 <a name="2_3">Envolvidos</a>
 Nome|Descrição|Responsabilidades
@@ -125,7 +125,7 @@ O sistema dispõem das seguintes funcionalidades:<br />
 
 ## 6 <a name="5">Restrições</a>
 ### 6.1 <a name="5">Restrições de Design</a>
-<p align = "justify">&emsp;&emsp; O aplicativo deve ser desenvolvido de maneira mais simples possível, para o fácil comprendimento de usuário mais velhos.</p>
+<p align = "justify">&emsp;&emsp; O aplicativo deve ser desenvolvido de maneira mais simples possível, para o fácil compreendimento de usuário mais velhos.</p>
 
 ### 6.2 <a name="5">Restrições de implementação</a>
 <p align = "justify">&emsp;&emsp; O sistema será desenvolvido a partir do Flutter, que será integrado remotamente.</p>

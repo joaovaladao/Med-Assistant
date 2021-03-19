@@ -27,12 +27,12 @@ Data|Versão|Descrição|Autor
 
 <p align = "justify"> &emsp;&emsp; Para o desenvolvimento da interface do nosso aplicativo, foi escolhido o framework <a href="https://flutter.dev/">Flutter</a>, que utiliza a linguagem de programação <a href="https://dart.dev/">Dart</a>.</p>
 
-<p align = "justify"> &emsp;&emsp; O <a href="https://flutter.dev/">Flutter</a> é um framework desenvolvido pelo Google, que possíbilita a criação de aplicativos compilados de forma nativa com grande simplicidade e eficiência. Um diferencial do Flutter é a possibilidade de criação de aplicações multiplataforma, ou seja, a produção de um código capaz de rodar tanto no sistema Android quanto no sistema IOS com poucos ajustes.</p>
+<p align = "justify"> &emsp;&emsp; O <a href="https://flutter.dev/">Flutter</a> é um framework desenvolvido pelo Google, que possibilita a criação de aplicativos compilados de forma nativa com grande simplicidade e eficiência. Um diferencial do Flutter é a possibilidade de criação de aplicações multiplataforma, ou seja, a produção de um código capaz de rodar tanto no sistema Android quanto no sistema IOS com poucos ajustes.</p>
 
-<p align = "justify"> &emsp;&emsp; Uma aplicação feita em <a href="https://flutter.dev/">Flutter</a>, é criada com base em um conjunto widgets que formam a interface do app. Cada widget possui uma funcionalidada, seja ela apenas visual ou interativa, os widgets são agrupados em uma estrutura de 'pai e filho', ou seja, um Widget pode conter dentro de si outros widgets, que desse modo, formam o layout desejado pelos desenvolvedores.</p>
+<p align = "justify"> &emsp;&emsp; Uma aplicação feita em <a href="https://flutter.dev/">Flutter</a>, é criada com base em um conjunto widgets que formam a interface do app. Cada widget possui uma funcionalidade, seja ela apenas visual ou interativa, os widgets são agrupados em uma estrutura de 'pai e filho', ou seja, um Widget pode conter dentro de si outros widgets, que desse modo, formam o layout desejado pelos desenvolvedores.</p>
 
 
 ## 3 <a name="3">Metas de Arquitetura</a>
 
 
-<p align = "justify">&emsp;&emsp; O aplicativo será desenvolvido para inicialmente para o sistema Android e suas funcionalidades básicas devem ser acessíveis de forma offline.</p>
+<p align = "justify">&emsp;&emsp; O aplicativo será desenvolvido para inicialmente para o sistema Android e suas funcionalidades básicas devem ser acessíveis de forma off-line.</p>

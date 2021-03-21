@@ -5,6 +5,8 @@ Data|Versão|Descrição|Autor
 09/03|0.2|Adição de tópico sobre Flutter|Thiago e Christian|
 09/03|0.3|Adição de tópico sobre Metas e Restrições de Arquitetura|Thiago e Christian|
 21/03|0.4|Adição de tópico sobre Visão dos Casos de Uso|Thiago|
+21/03|0.5|Adição de tópico sobre Visão Lógica|Thiago|
+
 
 ## 1 <a name="1">Introdução</a>
 ### 1.1 <a name="1_1">Finalidade</a>
@@ -15,9 +17,10 @@ Data|Versão|Descrição|Autor
 
 ### 1.3 <a name="1_3">Visão Geral</a>
 * Introdução: Apresentar uma visão geral sobre o conteúdo dessa documentação;
-* Tecnologias e arquitetura: Descreve as tecnologias e os padrões de arquitetura utilizados e informa as razões que motivaram tais escolhas;
+* Representação de Arquitetura: Descreve as tecnologias e os padrões de arquitetura utilizados e informa as razões que motivaram tais escolhas;
 * Metas e Restrições de Arquitetura: Fala sobre objetivos que buscam ser alcançados dentro da arquitetura escolhida;
 * Visão dos Casos de Uso: Descreve as funcionalidades que o usuario poderá utilizar
+* Visão Lógica: Descreve as interações entre as camadas e as tecnologias.
 
 ## 2 <a name="2">Representação de Arquitetura</a>
 ### 2.1 <a name="2_1">Flutter</a>
@@ -42,7 +45,6 @@ Data|Versão|Descrição|Autor
 <p align = "justify">&emsp;&emsp; Pessoa que fará o uso do aplicativo para organizar o seu uso de medicamentos.</p>
 
 ### 4.3 <a name="4_3">Descrição Significativa de Casos de Uso</a>
-
 #### 4.3.1 <a name="4_3_1">Cadastrar Medicamento</a>
 <p align = "justify">&emsp;&emsp; Esse caso de uso ocorre quando o usuário deseja cadastrar um novo medicamento, no cadastro serão salvas informaçoes como o nome do remédio, tipo do remédio (ex: comprimido, 10 ml), bem como informações de data como dia e horário em que o medicamento deve ser usado.</p>
 
@@ -55,6 +57,8 @@ Data|Versão|Descrição|Autor
 #### 4.3.4 <a name="4_3_4">Ver Cronograma de Medicamentos</a>
 <p align = "justify">&emsp;&emsp; Esse caso de uso ocorre quando o usuário deseja navegar pelo histórico de uso dos seus medicamentos cadastrados, através da interface semelhante a um calendário serão listados todos os dias do mês, com destaque visual contrastante entre os dias em que o medicamento foi tomado e os dias que o medicamento não foi tomado corretamente.</p>
 
+## 5 <a name="5">Visão Lógica</a>
+<p align = "justify">&emsp;&emsp; As principais funções do aplicativo vão atuar de forma offline, tendo informações persistidas localmente no dispositivo.</p>
 
 
 

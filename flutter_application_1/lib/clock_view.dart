@@ -61,26 +61,26 @@ class ClockPainter extends CustomPainter {
       ..color = Colors.pink[300]
       ..style = PaintingStyle.stroke
       ..strokeCap = StrokeCap.round
-      ..strokeWidth = 16;
+      ..strokeWidth = 10;
 
     var horPont = Paint()
       ..color = Colors.orange[300]
       ..style = PaintingStyle.stroke
       ..strokeCap = StrokeCap.round
-      ..strokeWidth = 16;
+      ..strokeWidth = 14;
 
     canvas.drawCircle(center, radius - 50, paint_circle1); //Círculo interno
     canvas.drawCircle(center, radius - 50, paint_circle2); //Círculo externo
+
+    var hourHandX = centerX + 60 * cos((dateTime.hour * 30 + dateTime.minute * 0.5) * pi / 180);
+    var hourHandY = centerX + 60 * sin((dateTime.hour * 30 + dateTime.minute * 0.5) * pi / 180);
+
+    canvas.drawLine(center, Offset(hourHandX, hourHandY), horPont); //Ponteiro horas
 
     var minHandX = centerX + 80 * cos(dateTime.minute * 6 * pi / 180);
     var minHandY = centerX + 80 * sin(dateTime.minute * 6 * pi / 180);
 
     canvas.drawLine(center, Offset(minHandX, minHandY), minPont); //Ponteiro minutos
-    
-    var hourHandX = centerX + 60 * cos(dateTime.hour * 30 * dateTime.minute * 0.5 * pi / 180);
-    var hourHandY = centerX + 60 * sin(dateTime.hour * 30 * dateTime.minute * 0.5 * pi / 180);
-
-    canvas.drawLine(center, Offset(hourHandX, hourHandY), horPont); //Ponteiro horas
 
     canvas.drawCircle(center, radius - 140,
         paint_circle3); //Círculo do centro, deve ficar por último

@@ -4,13 +4,21 @@
 
 - Organização do repositório;
 
-- Criação de documentação;
+- Criação e correção de documentação;
 
-- Melhorar a apresentação do README.md;
+- Melhorar a apresentação do README;
 
-- Criar protótipos de alta e baixa fidelidade;
+- Finalizar as páginas dos protótipos baixa fidelidade;
 
 - Atualização da GH pages;
+
+- Estudar e implementar o Zenhub, Burndown Chart;
+
+- Redefinir o documento de Visão, definir os envolvidos na aplicação e incrementar a oportunidade de negócios;
+
+- Atualizar o documento de arquitetura;
+
+
 
 ## 2. Tamanho da _Sprint_
 

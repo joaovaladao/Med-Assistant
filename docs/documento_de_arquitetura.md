@@ -6,6 +6,7 @@ Data|Versão|Descrição|Autor
 09/03|0.3|Adição de tópico sobre Metas e Restrições de Arquitetura|Thiago e Christian|
 21/03|0.4|Adição de tópico sobre Visão dos Casos de Uso|Thiago|
 21/03|0.5|Adição de tópico sobre Visão Lógica|Thiago|
+21/03|0.6|Adição de Referências|Thiago|
 
 
 ## 1 <a name="1">Introdução</a>
@@ -60,9 +61,11 @@ Data|Versão|Descrição|Autor
 ## 5 <a name="5">Visão Lógica</a>
 <p align = "justify">&emsp;&emsp; As principais funções do aplicativo vão atuar de forma offline, tendo informações persistidas localmente no dispositivo.</p>
 
+## 6 <a name="6">Referências</a>
+> Flutter Documentation. Disponível em: < [https://flutter.dev/docs](https://flutter.dev/docs) > Acesso em: 21 de Março de 2021
 
+> Dart Documentation. Disponível em: < [https://dart.dev/guides](https://dart.dev/guides) > Acesso em: 21 de Março de 2021
 
+> Template Documento de Arquitetura de Software. Disponível em: < [https://github.com/DroidFoundry/DroidMetronome/wiki/TEMPLATE-Documento-de-Arquitetura-de-Software](https://github.com/DroidFoundry/DroidMetronome/wiki/TEMPLATE-Documento-de-Arquitetura-de-Software) > Acesso em: 21 de Março de 2021
 
-
-
-
+> Explorando Widgets e Layouts. Disponível em: < [https://medium.com/flutter-comunidade-br/explorando-widgets-e-layouts-6fd34ecb82f](https://medium.com/flutter-comunidade-br/explorando-widgets-e-layouts-6fd34ecb82f) > Acesso em: 21 de Março de 2021

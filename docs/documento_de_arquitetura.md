@@ -22,6 +22,7 @@ Data|Versão|Descrição|Autor
 * Metas e Restrições de Arquitetura: Fala sobre objetivos que buscam ser alcançados dentro da arquitetura escolhida;
 * Visão dos Casos de Uso: Descreve as funcionalidades que o usuario poderá utilizar
 * Visão Lógica: Descreve as interações entre as camadas e as tecnologias.
+* Referências: Emprega as fontes utilizadas nas pesquisas para relacionar as publicações que foram consultadas e citadas.
 
 ## 2 <a name="2">Representação de Arquitetura</a>
 ### 2.1 <a name="2_1">Flutter</a>

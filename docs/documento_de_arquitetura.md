@@ -65,7 +65,9 @@ Data|Versão|Descrição|Autor
 <p align = "justify">&emsp;&emsp; Esse caso de uso ocorre quando o usuário deseja navegar pelo histórico de uso dos seus medicamentos cadastrados, através da interface semelhante a um calendário serão listados todos os dias do mês, com destaque visual contrastante entre os dias em que o medicamento foi tomado e os dias que o medicamento não foi tomado corretamente.</p>
 
 ## 5 <a name="5">Visão Lógica</a>
-<p align = "justify">&emsp;&emsp; As principais funções do aplicativo vão atuar de forma offline, tendo informações persistidas localmente no dispositivo.</p>
+<p align = "justify">&emsp;&emsp; Tanto a comunicação do usuário com a interface, quanto a lógica que processa as informações inseridas pelo usuário, será feita de forma offline no própio aplicativo desenvolvido em Flutter, sem a necessidade de um servidor externo.</p>
+
+<p align = "justify">&emsp;&emsp; Os dados cadastrados pelo usuário no aplicativo como nome de medicamento, tipo de medicamento, dosagem, dia de uso e horário de uso serão armazenadas localmente em um banco de dados no próprio dispositivo do usuário.</p>
 
 ## 6 <a name="6">Referências</a>
 > Flutter Documentation. Disponível em: < [https://flutter.dev/docs](https://flutter.dev/docs) > Acesso em: 21 de Março de 2021

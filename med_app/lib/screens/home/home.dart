@@ -1,7 +1,7 @@
+import 'package:med_app/screens/home/components/body.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:med_app/constants.dart';
-import 'package:med_app/screens/home/components/body.dart';
 
 class Home extends StatefulWidget {
   @override

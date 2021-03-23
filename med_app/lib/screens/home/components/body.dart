@@ -1,6 +1,6 @@
+import 'package:med_app/screens/home/components/clock_view.dart';
 import 'package:flutter/material.dart';
 import 'package:med_app/constants.dart';
-import 'package:med_app/screens/home/components/clock_circle.dart';
 
 class Body extends StatefulWidget {
   @override
@@ -13,7 +13,7 @@ class _BodyState extends State<Body> {
     Size size = MediaQuery.of(context).size;
     return Column(
       children: <Widget>[
-        // Arredondamento da barra de navegacao superior(só vai ser visível nas outras páginas)
+        // ------- Arredondamento da barra superior (visível nas outras páginas)
         Container(
             height: size.height * 0.02,
             child: Stack(
@@ -29,8 +29,13 @@ class _BodyState extends State<Body> {
                 )
               ],
             )),
-        // ----------------------------------------------------------- Relogio
-        Container(child: Column(children: <Widget>[ClockCircle()]))
+        // ------------------------------------------------------------- Relogio
+        Container(
+            child: Stack(children: <Widget>[
+          ClockCircle(),
+          Align(alignment: Alignment.center, child: DigitalClockWidget()),
+          Align(alignment: Alignment.center, child: DateWidget()),
+        ]))
       ],
     );
   }

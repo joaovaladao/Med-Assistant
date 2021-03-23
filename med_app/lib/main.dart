@@ -15,6 +15,7 @@ class MyApp extends StatelessWidget {
         scaffoldBackgroundColor: darkBackground,
         primarySwatch: Colors.blue,
         visualDensity: VisualDensity.adaptivePlatformDensity,
+        fontFamily: 'Roboto',
       ),
       debugShowCheckedModeBanner: false,
       home: Home(), // Chama a pagina home

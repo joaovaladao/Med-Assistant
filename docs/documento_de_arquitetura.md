@@ -32,7 +32,13 @@ Data|Versão|Descrição|Autor
 <p align = "justify"> &emsp;&emsp; Uma aplicação feita em <a href="https://flutter.dev/">Flutter</a>, é criada com base em um conjunto widgets que formam a interface do app. Cada widget possui uma funcionalidade, seja ela apenas visual ou interativa, os widgets são agrupados em uma estrutura de 'pai e filho', ou seja, um Widget pode conter dentro de si outros widgets, que desse modo, formam o layout desejado pelos desenvolvedores.</p>
 
 ## 3 <a name="3">Metas e Restrições de Arquitetura</a>
-<p align = "justify">&emsp;&emsp; O aplicativo será desenvolvido para inicialmente para o sistema Android e suas funcionalidades básicas devem ser acessíveis de forma off-line.</p>
+### 4.1 <a name="4_1">Metas</a>
+* As principais funcionalidades do app devem funcionar de forma offline
+* Interface simples e intuitiva
+* Funcionalidades adicionais que melhoram a experiência do usuário
+
+### 4.1 <a name="4_1">Restrições</a>
+* Aplicação devera funcionar no sistema Android.
 
 ## 4 <a name="4">Visão dos Casos de Uso</a>
 ### 4.1 <a name="4_1">Visão Geral</a>

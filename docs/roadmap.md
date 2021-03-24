@@ -61,3 +61,22 @@
 | #50 |[Atualizar o Roadmap](https://github.com/fga-eps-mds/MDS-2020-2-G9/issues/50)
 | #52 |[Docs/#51 sprint4 review ](https://github.com/fga-eps-mds/MDS-2020-2-G9/pull/52)
 | #51 |[Review Sprint04](https://github.com/fga-eps-mds/MDS-2020-2-G9/issues/51)
+
+### Sprint 5
+| ID | Issue |
+|:--:| ------- | 
+| #56 |[Sprint05](https://github.com/fga-eps-mds/MDS-2020-2-G9/issues/56)
+| #57 |[Sprint05](https://github.com/fga-eps-mds/MDS-2020-2-G9/issues/57)
+| #60 |[Ampliar o Readme](https://github.com/fga-eps-mds/MDS-2020-2-G9/issues/60)
+| #61 |[#61 Revisar texto da Wiki](https://github.com/fga-eps-mds/MDS-2020-2-G9/issues/61)
+| #62 |[#60 Atualiza os dados do README](https://github.com/fga-eps-mds/MDS-2020-2-G9/pull/62)
+| #65 |[Incrementar documento de Visão ](https://github.com/fga-eps-mds/MDS-2020-2-G9/issues/65)
+| #66 |[Atualizar GH pages](https://github.com/fga-eps-mds/MDS-2020-2-G9/issues/66)
+| #68 |[# 65 Incrementação da Introdução e adição das referências](https://github.com/fga-eps-mds/MDS-2020-2-G9/pull/68)
+| #69 |[Burndown Chart](https://github.com/fga-eps-mds/MDS-2020-2-G9/issues/69)
+| #70 |[adicionar a sprint 4 no roadmap](https://github.com/fga-eps-mds/MDS-2020-2-G9/issues/70)
+| #71 |[Criação do protótipo de baixa fidelidade](https://github.com/fga-eps-mds/MDS-2020-2-G9/issues/71)
+| #72 |[#71 Adiciona o protótipo de baixa fidelidade da página "Home"](https://github.com/fga-eps-mds/MDS-2020-2-G9/pull/72)
+| #73 |[#61 consertando os erros gramaticais do doc de comunicação.](https://github.com/fga-eps-mds/MDS-2020-2-G9/pull/73)
+| #77 |[#70 att o roadmap ](https://github.com/fga-eps-mds/MDS-2020-2-G9/pull/77)
+| #81 |[arrumando os erros de ortografia](https://github.com/fga-eps-mds/MDS-2020-2-G9/pull/81)

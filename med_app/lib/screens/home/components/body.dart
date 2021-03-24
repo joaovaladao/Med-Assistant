@@ -1,6 +1,7 @@
 import 'package:med_app/screens/home/components/clock_view.dart';
 import 'package:flutter/material.dart';
 import 'package:med_app/constants.dart';
+import 'package:med_app/screens/home/components/menu_bar.dart';
 
 class Body extends StatefulWidget {
   @override

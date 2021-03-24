@@ -8,32 +8,29 @@
 // and displays a corresponding message in the center of the [Scaffold].
 
 import 'package:flutter/material.dart';
-import 'package:med_app/screens/home/components/body.dart';
 import 'package:med_app/screens/home/home.dart';
 
 
 /// This is the stateful widget that the main application instantiates.
-class MyStatefulWidget extends StatefulWidget {
-  const MyStatefulWidget({Key key}) : super(key: key);
+class MenuBar extends StatefulWidget {
+  const MenuBar({Key key}) : super(key: key);
 
   @override
-  _MyStatefulWidgetState createState() => _MyStatefulWidgetState();
+  _MenuBarState createState() => _MenuBarState();
 }
 
 /// This is the private State class that goes with MyStatefulWidget.
-class _MyStatefulWidgetState extends State<MyStatefulWidget> {
-  int _selectedIndex = 0;
-  static const TextStyle optionStyle =
-      TextStyle(fontSize: 30, fontWeight: FontWeight.bold);
+class _MenuBarState extends State<MenuBar> {
+  int _selectedIndex = 0;//Index inicial é o 0, refere a página Home.
 
   final tabs = [
-    Center(child: Home(),),
-    Center(child: Text('Página não feita'),),
-    Center(child: Text('Página não feita'),),
+    Center(child: Home(),),//aqui é colocada a página Home
+    Center(child: Text('Página não feita', style: TextStyle(color: Colors.white, fontSize: 20)),),//aqui será colocada a página de Medicações
+    Center(child: Text('Página não feita', style: TextStyle(color: Colors.white, fontSize: 20)),),//aqui será colocada a página de Histórico
 
   ];
 
-  void _onItemTapped(int index) {
+  void _onItemTapped(int index) {//Função para obter o valor do index.
     setState(() {
       _selectedIndex = index;
     });
@@ -46,22 +43,23 @@ class _MyStatefulWidgetState extends State<MyStatefulWidget> {
         child: tabs.elementAt(_selectedIndex),
       ),
       bottomNavigationBar: BottomNavigationBar(
+        backgroundColor: Colors.white10,
         items: const <BottomNavigationBarItem>[
           BottomNavigationBarItem(
             icon: Icon(Icons.home),
             label: 'Home',
           ),
           BottomNavigationBarItem(
-            icon: Icon(Icons.business),
-            label: 'Business',
+            icon: Icon(Icons.access_time_rounded),
+            label: 'Histórico',
           ),
           BottomNavigationBarItem(
-            icon: Icon(Icons.school),
-            label: 'School',
+            icon: Icon(Icons.medical_services),
+            label: 'Medicações',
           ),
         ],
         currentIndex: _selectedIndex,
-        selectedItemColor: Colors.amber[800],
+        selectedItemColor: Colors.greenAccent,
         onTap: _onItemTapped,
       ),
     );

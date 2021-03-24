@@ -2,7 +2,8 @@
 
 Data|Versão|Descrição|Autor
 -|-|-|-
-09/03|0.0.1|Criação do Documento| João Victor Valadão de Brito|
+09/03|0.1|Criação do Documento| João Victor Valadão de Brito|
+18/03|0.2|Inserção de novas ferramentas| João Victor Valadão de Brito|
 
 ## 1. Objetivo
 
@@ -13,7 +14,6 @@ Data|Versão|Descrição|Autor
 - Mostrar a comunicação Interna entre os membros do grupo;
 
 - Mostrar a comunicação Externa entre os membros do grupo;
-
 
 
 ## 2. Ferramentas
@@ -45,6 +45,21 @@ Data|Versão|Descrição|Autor
 
 <p align = "justify"> &emsp;&emsp; Também é o canal que usamos para reunir os membros do gruppo e delegar as funçãos de cada integrante, assim como as missões que cada um deve cumprir ao longo da semana.</p>
 
+### 2.4. Miro Whiteboard
+
+<p align = "center"> &emsp;&emsp; <img src="https://pbs.twimg.com/profile_images/1103546465014624256/Kz8dyO1m.png" width="200" height="200"/> </p>  
+
+ <p align = "justify"> &emsp;&emsp; O Miro é uma plataforma online que ajuda na construção de mapas mentais, diagramas e quadros com notas. O Miro já oferece templates como base para transformar ideias de uma forma visualmente mais clara e objetiva.</p>
+
+ <p align = "justify"> &emsp;&emsp; Devido a diversidades de templates e icones presentes na plataforma, à escolhemos para criarmos os protótipos de baixa fidelidade. Por ser uma plataforma colaborativa, todos os membros do grupo tinham acesso ao repositório para criar ou modificar qualquer arquivo de maneira prática.</p>
+
+ ### 2.5. Adobe XD
+
+<p align = "center"> &emsp;&emsp; <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/Adobe_XD_CC_icon.svg/1200px-Adobe_XD_CC_icon.svg.png" width="200" height="200"/> </p>  
+
+<p align = "justify"> &emsp;&emsp; Adobe XD é um aplicativo da Adobe Systems que ajuda aos profissionais de design a organizar o fluxo de trabalho para criação de aplicativos móveis e desktop, englobando os passos desde a concepção do projeto até visualização de protótipos e compartilhamento.</p>
+
+<p align = "justify"> &emsp;&emsp; Nossa equipe optou por fazer a inteface do projeto em Flutter(Dart), e o Adobe XD nós permite a possibilidade de criar telas no editor e exportarem em código Dart para ser adicionado na aplicação. Até o momento estamos usando apenas para criar os protótipos de alta fidelidade, mas já o escolhemos para auxiliar nosso trabalho futuramente.</p>
 
 
 ## 3. Comunicação Interna

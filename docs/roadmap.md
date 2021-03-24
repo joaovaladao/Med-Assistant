@@ -5,8 +5,8 @@
 | 04/03/2021 |   0.1  | Criação do Roadmap e documentação das sprints 1 e 2 | Ítalo|
 | 09/03/2021 | 0.2 | Adiciona ID das issues | Vinícius |
 | 11/03/2021 | 0.3 | Adicionando sprint 3 |Ítalo |
-| 11/03/2021 | 0.4 | Adicionando sprint 4 |Ítalo |
-| 11/03/2021 | 0.5 | Adicionando sprint 5 |Ítalo |
+| 18/03/2021 | 0.4 | Adicionando sprint 4 |Ítalo |
+| 24/03/2021 | 0.5 | Adicionando sprint 5 |Ítalo |
 
 
 ## Release 1

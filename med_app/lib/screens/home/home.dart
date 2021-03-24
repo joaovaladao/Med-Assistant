@@ -13,8 +13,7 @@ class _HomeState extends State<Home> {
   Widget build(BuildContext context) {
     return Scaffold(
         appBar: buildAppBar(),
-        body: Body()
-        ); // Corpo do app definido no body.dart
+        body: Body()); // Corpo do app definido no body.dart
   }
 }
 

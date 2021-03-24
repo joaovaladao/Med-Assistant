@@ -40,10 +40,10 @@
 
 
 ## 2. Reuniões da _Sprint_ 
-##### Data:
+### Data:
 - 19/03/2021
 
-##### _Temas Debatidos:_
+### _Temas Debatidos:_
 
 -  Criação do protótipo de baixa fidelidade;
 
@@ -58,7 +58,7 @@
 -  Arrumar os erros ortograficos dos documentos.
 
 
-##### Progresso realizado: 
+### Progresso realizado: 
 <p align="justify">&emsp;&emsp; Todos tiveram uma participação, de modo que continuamos o progresso das sprints anteriores, atualizando e melhorando os documentos já criados</p>
 
 

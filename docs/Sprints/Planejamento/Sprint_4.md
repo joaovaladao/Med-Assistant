@@ -29,10 +29,10 @@
 
 
 ## 2. Reuniões da _Sprint_ 
-##### Data:
+### Data:
 - 05/2/2021
 
-##### _Temas Debatidos:_
+### _Temas Debatidos:_
 -  A criação de uma logomarca para o app;
 
 -  Criação do documento de visão;
@@ -47,7 +47,7 @@
 
 -  Definir um protótipo de alta fidelidade.
 
-##### Progresso realizado: 
+### Progresso realizado: 
 <p align="justify">&emsp;&emsp; Cada um foi responsável por uma tarefa, dessa forma conseguimos acelerar o processo de criação de documentos, e finalizar aqueles que estavam pendentes.</p>
 
 

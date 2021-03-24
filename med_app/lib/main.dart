@@ -18,7 +18,8 @@ class MyApp extends StatelessWidget {
         fontFamily: 'Roboto',
       ),
       debugShowCheckedModeBanner: false,
-      home: MenuBar(),// Chama a classe Menu para decidir qual página será acessada.
+      home:
+          MenuBar(), // Chama a classe Menu para decidir qual página será acessada.
       //bottonNavigationBar: MyStatefulWidget(),
     );
   }

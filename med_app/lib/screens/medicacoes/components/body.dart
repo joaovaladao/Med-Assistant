@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:med_app/constants.dart';
+import 'alarm_info.dart';
 
 class Body extends StatefulWidget {
   @override
@@ -28,6 +29,23 @@ class _BodyState extends State<Body> {
         //         )
         //       ],
         //     )),
+        Expanded(
+          child: ListView(
+            children: alarms.map((alarm) {
+              return Container(
+                height: 120,
+                decoration: BoxDecoration(
+                  gradient: LinearGradient(
+                    colors: [Colors.red, Colors.purple],
+                    begin: Alignment.centerLeft,
+                    end: Alignment.centerRight,
+                  ),
+                  borderRadius: BorderRadius.all(Radius.circular(40)),
+                ),
+              );
+            }).toList(),
+          )
+        )
       ],
     );
   }

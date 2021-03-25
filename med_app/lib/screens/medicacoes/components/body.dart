@@ -33,6 +33,7 @@ class _BodyState extends State<Body> {
           child: ListView(
             children: alarms.map((alarm) {
               return Container(
+                margin: const EdgeInsets.all(20),
                 padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 25),
                 decoration: BoxDecoration(
                   gradient: LinearGradient(
@@ -54,7 +55,7 @@ class _BodyState extends State<Body> {
                           Text('1 Pilula', style: TextStyle(color: Colors.white),),
                           ],
                         ),
-                        Switch(value: true, onChanged: (bool value) {}),
+                        Switch(value: true, activeColor: Colors.white, onChanged: (bool value) {}),
                       ]
                     )
                   ],

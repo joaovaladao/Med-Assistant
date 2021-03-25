@@ -37,7 +37,7 @@ class _BodyState extends State<Body> {
                 padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 25),
                 decoration: BoxDecoration(
                   gradient: LinearGradient(
-                    colors: [Colors.red, Colors.purple],
+                    colors: alarm.gradientColors,
                     begin: Alignment.centerLeft,
                     end: Alignment.centerRight,
                   ),

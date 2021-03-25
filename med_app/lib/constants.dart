@@ -7,14 +7,17 @@ import 'package:flutter/material.dart';
 // Cores de fundo
 const darkBackground = Color(0xFF283339);
 const neutralBackground = Color(0xFF2c3941);
-const lightBackground = Color(0xFF303e47);
+const darkerBackground = Color(0xFF1C272B);
 // Verdes
 const darkGreen = Color(0xFF2a9160);
 const neutralGreen = Color(0xFF2abe78);
 const lightGreen = Color(0xFF1fe688);
 // Azuis
-const neutralBLue = Color(0xFF3caaf0);
+const neutralBlue = Color(0xFF3caaf0);
 const lightBlue = Color(0xFF7dd7e9);
+// Cianos
+const darkCyan = Color(0xFF149696);
+const neutralCyan = Color(0xFF13B5B5);
 // Laranja
 const neutralOrange = Color(0xFFe6961f);
 // Cinzas

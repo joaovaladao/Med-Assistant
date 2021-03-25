@@ -1,13 +1,13 @@
-import 'package:med_app/screens/home/components/body.dart';
 import 'package:flutter/material.dart';
 import 'package:med_app/constants.dart';
+import 'package:med_app/screens/configs/components/body.dart';
 
-class Home extends StatefulWidget {
+class Configs extends StatefulWidget {
   @override
-  _HomeState createState() => _HomeState();
+  _ConfigsState createState() => _ConfigsState();
 }
 
-class _HomeState extends State<Home> {
+class _ConfigsState extends State<Configs> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -27,7 +27,7 @@ AppBar buildAppBar() {
     ),
     title: Text('Med Assistant'),
     centerTitle: true,
-    backgroundColor: darkBackground,
+    backgroundColor: darkCyan,
     elevation: 0,
   );
 }

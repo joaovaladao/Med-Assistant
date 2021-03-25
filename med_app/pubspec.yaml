@@ -27,6 +27,8 @@ dependencies:
   flutter_svg: ^0.18.0
   cupertino_icons: ^1.0.0
   intl : ^0.16.1
+  salomon_bottom_bar: ^2.0.1
+
 
 dev_dependencies:
   flutter_test:

@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:med_app/constants.dart';
-import 'package:med_app/screens/home/components/menu_bar.dart';
+import 'package:med_app/navBar.dart';
 
 void main() {
   runApp(MyApp());
@@ -18,9 +18,7 @@ class MyApp extends StatelessWidget {
         fontFamily: 'Roboto',
       ),
       debugShowCheckedModeBanner: false,
-      home:
-          MenuBar(), // Chama a classe Menu para decidir qual página será acessada.
-      //bottonNavigationBar: MyStatefulWidget(),
+      home: NavBar(),
     );
   }
 }

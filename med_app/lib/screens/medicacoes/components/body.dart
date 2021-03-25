@@ -33,7 +33,7 @@ class _BodyState extends State<Body> {
           child: ListView(
             children: alarms.map((alarm) {
               return Container(
-                height: 120,
+                padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 25),
                 decoration: BoxDecoration(
                   gradient: LinearGradient(
                     colors: [Colors.red, Colors.purple],
@@ -42,6 +42,23 @@ class _BodyState extends State<Body> {
                   ),
                   borderRadius: BorderRadius.all(Radius.circular(40)),
                 ),
+                child: Column(
+                  children: <Widget>[
+                    Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                      children: <Widget>[
+                        Row(
+                          children: <Widget>[
+                          Icon(Icons.label, color: Colors.white, size: 24,),
+                          SizedBox(width: 8),
+                          Text('1 Pilula', style: TextStyle(color: Colors.white),),
+                          ],
+                        ),
+                        Switch(value: true, onChanged: (bool value) {}),
+                      ]
+                    )
+                  ],
+                  ),
               );
             }).toList(),
           )

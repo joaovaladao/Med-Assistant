@@ -27,9 +27,12 @@ const darkGray = Color(0xFF595f67);
 const neutralGray = Color(0xFF969ca0);
 const lightGray = Color(0xFFb9b9b9);
 // Accent dos cards
-const testes1 = Color(0xFF28E194);
-const testes2 = Color(0xFFFFBB5E);
-const testes3 = Color(0xFFFF815E);
+const testes1 = Color(0xFF7159FF);
+const testes2 = Color(0xFF61A3FE);
+const testes3 = Color(0xFF13B5B5);
+const testes4 = Color(0xFFF39E38);
+const testes5 = Color(0xFFC46197);
+const testes6 = Color(0xFFFF815E);
 
 class GradientColors {
   final List<Color> colors;

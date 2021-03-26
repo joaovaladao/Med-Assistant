@@ -27,8 +27,8 @@ class _BodyState extends State<Body> {
                 //   begin: Alignment.centerLeft,
                 //   end: Alignment.centerRight,
                 // ),
-                color: lightBackground,
-                borderRadius: BorderRadius.all(Radius.circular(25)),
+                color: alarm.color,
+                borderRadius: BorderRadius.all(Radius.circular(18)),
               ),
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
@@ -38,23 +38,30 @@ class _BodyState extends State<Body> {
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: <Widget>[
                         Row(
-                          //------------- Row para organizar os dados que vão aparecer primeiro na box
                           children: <Widget>[
                             //------------- Nome do alarme
                             Text(
                               alarm.name,
                               style: TextStyle(
-                                  color: Colors.white,
-                                  fontFamily: 'OpenSans',
-                                  fontWeight: FontWeight.w600,
-                                  fontSize: 21),
+                                color: Colors.white,
+                                fontFamily: 'OpenSans',
+                                fontWeight: FontWeight.w600,
+                                fontSize: 21,
+                                shadows: [
+                                  Shadow(
+                                    blurRadius: 6.0,
+                                    color: darkerBackground.withAlpha(80),
+                                    offset: Offset(1.0, 1.0),
+                                  ),
+                                ],
+                              ),
                             ),
                             SizedBox(width: 8),
                           ],
                         ),
                         Switch(
                             value: true,
-                            activeColor: alarm.color,
+                            activeColor: Colors.white,
                             onChanged: (bool value) {}),
                       ]),
                   //----------------Row para organizar os dados que vão aparecer por ultimo na box
@@ -65,15 +72,23 @@ class _BodyState extends State<Body> {
                         Text(
                           weekdayDate(alarm.days),
                           style: TextStyle(
-                              color: lightBlue,
-                              fontWeight: FontWeight.w700,
-                              fontSize: 16),
+                            color: Colors.white,
+                            fontWeight: FontWeight.w700,
+                            fontSize: 16,
+                            shadows: [
+                              Shadow(
+                                blurRadius: 6.0,
+                                color: darkerBackground.withAlpha(80),
+                                offset: Offset(1.0, 1.0),
+                              ),
+                            ],
+                          ),
                         ),
                         Spacer(flex: 1),
                         //------------- Bolinha
                         Icon(
                           Icons.fiber_manual_record,
-                          color: lightBlue,
+                          color: Colors.white,
                           size: 6,
                         ),
                         Spacer(flex: 1),
@@ -81,9 +96,17 @@ class _BodyState extends State<Body> {
                         Text(
                           DateFormat.Hm().format(alarm.alarmDateTime),
                           style: TextStyle(
-                              color: alarm.color,
-                              fontWeight: FontWeight.w700,
-                              fontSize: 16),
+                            color: Colors.white,
+                            fontWeight: FontWeight.w700,
+                            fontSize: 16,
+                            shadows: [
+                              Shadow(
+                                blurRadius: 6.0,
+                                color: darkerBackground.withAlpha(80),
+                                offset: Offset(1.0, 1.0),
+                              ),
+                            ],
+                          ),
                         ),
                         Spacer(flex: 20),
                         //------------- Seta pra baixo

@@ -61,8 +61,10 @@ class _BodyState extends State<Body> {
                     ),
                     Text(alarm.description, style: TextStyle(color: Colors.white),),
                     Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: <Widget>[ 
                       Text('7:00 AM', style: TextStyle(color: Colors.white, fontWeight: FontWeight.w700, fontSize: 22),),
+                      Icon(Icons.keyboard_arrow_down, color: Colors.white, size: 28,),
                       ]
                     )
                   ],

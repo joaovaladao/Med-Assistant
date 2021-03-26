@@ -5,9 +5,11 @@ import 'package:flutter/material.dart';
 // ----------------- Paleta de cores do app -----------------
 
 // Cores de fundo
+const darkerBackground = Color(0xFF1C272B);
 const darkBackground = Color(0xFF283339);
 const neutralBackground = Color(0xFF2c3941);
-const darkerBackground = Color(0xFF1C272B);
+const lightBackground = Color(0xFF303E47);
+
 // Verdes
 const darkGreen = Color(0xFF2a9160);
 const neutralGreen = Color(0xFF2abe78);
@@ -24,6 +26,10 @@ const neutralOrange = Color(0xFFe6961f);
 const darkGray = Color(0xFF595f67);
 const neutralGray = Color(0xFF969ca0);
 const lightGray = Color(0xFFb9b9b9);
+// Accent dos cards
+const testes1 = Color(0xFF28E194);
+const testes2 = Color(0xFFFFBB5E);
+const testes3 = Color(0xFFFF815E);
 
 class GradientColors {
   final List<Color> colors;

@@ -56,6 +56,15 @@ flutter:
           weight: 500
         - asset: assets/fonts/Roboto-Bold.ttf
           weight: 700
+    
+    - family: OpenSans
+      fonts:
+        - asset: assets/fonts/OpenSans-Regular.ttf
+          weight: 400
+        - asset: assets/fonts/OpenSans-SemiBold.ttf
+          weight: 600
+        - asset: assets/fonts/OpenSans-Bold.ttf
+          weight: 800
   # To add assets to your application, add an assets section, like this:
   # assets:
   #   - images/a_dot_burr.jpeg

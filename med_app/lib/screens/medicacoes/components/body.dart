@@ -44,6 +44,7 @@ class _BodyState extends State<Body> {
                   borderRadius: BorderRadius.all(Radius.circular(40)),
                 ),
                 child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
                   children: <Widget>[
                     Row(
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -53,10 +54,15 @@ class _BodyState extends State<Body> {
                           Icon(Icons.label, color: Colors.white, size: 24,),
                           Text(alarm.name, style: TextStyle(color: Colors.white, fontSize: 20),),
                           SizedBox(width: 8),
-                          Text(alarm.description, style: TextStyle(color: Colors.white),),
                           ],
                         ),
                         Switch(value: true, activeColor: Colors.white, onChanged: (bool value) {}),
+                      ]
+                    ),
+                    Text(alarm.description, style: TextStyle(color: Colors.white),),
+                    Row(
+                      children: <Widget>[ 
+                      Text('7:00 AM', style: TextStyle(color: Colors.white, fontWeight: FontWeight.w700, fontSize: 22),),
                       ]
                     )
                   ],

@@ -51,8 +51,9 @@ class _BodyState extends State<Body> {
                         Row(
                           children: <Widget>[
                           Icon(Icons.label, color: Colors.white, size: 24,),
+                          Text(alarm.name, style: TextStyle(color: Colors.white, fontSize: 20),),
                           SizedBox(width: 8),
-                          Text('1 Pilula', style: TextStyle(color: Colors.white),),
+                          Text(alarm.description, style: TextStyle(color: Colors.white),),
                           ],
                         ),
                         Switch(value: true, activeColor: Colors.white, onChanged: (bool value) {}),

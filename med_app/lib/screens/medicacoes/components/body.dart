@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:intl/intl.dart';
 import 'package:med_app/constants.dart';
 import 'alarm_info.dart';
 
@@ -63,7 +64,7 @@ class _BodyState extends State<Body> {
                     Row(
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: <Widget>[ 
-                      Text('7:00 AM', style: TextStyle(color: Colors.white, fontWeight: FontWeight.w700, fontSize: 22),),
+                      Text(DateFormat.jm().format(alarm.alarmDateTime), style: TextStyle(color: Colors.white, fontWeight: FontWeight.w700, fontSize: 22),),
                       Icon(Icons.keyboard_arrow_down, color: Colors.white, size: 28,),
                       ]
                     )

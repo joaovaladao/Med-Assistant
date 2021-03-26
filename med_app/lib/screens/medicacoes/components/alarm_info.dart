@@ -12,7 +12,7 @@ class AlarmInfo{
 }
 
 List<AlarmInfo> alarms = [
-  AlarmInfo(DateTime.now().add(Duration(hours: 1)),'Domperidona','1 comprimido', GradientColors.sea),
-  AlarmInfo(DateTime.now().add(Duration(hours: 2)),'Nimesulina', '20ml', GradientColors.mango),
-  AlarmInfo(DateTime.now().add(Duration(hours: 3)),'Amoxicilina', '2 comprimidos', GradientColors.sky),
+  AlarmInfo(DateTime.now().add(Duration(hours: 0, minutes: 42)),'Domperidona','1 comprimido', GradientColors.sea),
+  AlarmInfo(DateTime.now().add(Duration(hours: 4, minutes: 42)),'Nimesulina', '20ml', GradientColors.mango),
+  AlarmInfo(DateTime.now().add(Duration(hours: 8, minutes: 42)),'Amoxicilina', '2 comprimidos', GradientColors.sky),
 ];

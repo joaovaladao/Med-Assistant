@@ -24,9 +24,9 @@ Vídeo ajuda para instalar o ambiente de trabalho.
 <b>Vídeo flutter:</b> https://www.youtube.com/watch?v=9m3PvcQ18Hk&t=73s
 
 <b>Scrum Master do projeto:</b>
-|Scrum Master|Autor
--|-
-|180103431|João Victor Valadão|
+|Líder|
+-
+|João Victor Valadão|
 ---
 
 ## ⚙️ Funcionalidades

@@ -46,6 +46,16 @@ A metodologia Scrum Agile propõe que um projeto seja dividido em diversos (pequ
 #### 2.1.3 <a name="2.1.3">Ferramentas:</a>
 Em geral, as empresas perdem muito tempo de seus funcionários em reuniões com apontamentos sobre o que está sendo feito, o que foi concluído e o que está parado. Uma forma simples de resolver isso é criar um registro visual para demonstrar o andamento das tarefas. Para isso, o quadro Kanban Scrum é a ferramenta ideal. Basta criar um enorme painel com todas as atividades (e o status de cada uma) e colocá-lo onde todos possam ver. Assim, não é preciso perder tempo falando, as pessoas já saberão sobre o status do projeto apenas observando. Crie o seu quadro Kanban Scrum em uma ferramenta de produtividade como o Trello.
 
+<b>DEFININDO O SCRUM MASTER</b>
+
+    Para o nosso projeto escolhemos como Scrum master:
+
+|Scrum master| Líder
+-|-
+180103431|João Victor Valadão|
+
+
+
 
 ### 2.2 <a name="2.2">XP - Extreme Programming</a>
 <p align = "justify"> &emsp;&emsp; <b>Extreme Programming (XP)</b> é uma metodologia de desenvolvimento ágil para pequenas e médias equipes que desenvolvem software baseado em requisitos vagos e que se modificam rapidamente. O <b>XP (Extreme Programming ou Programação Extrema)</b> é focada no desenvolvimento de software que possui valores e princípios, onde são fundamentados por um conjunto de práticas. Além disso, o <b>XP</b> também possui funções bem definidas para seus membros.</p>

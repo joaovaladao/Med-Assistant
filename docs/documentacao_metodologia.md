@@ -50,9 +50,9 @@ Em geral, as empresas perdem muito tempo de seus funcionários em reuniões com 
 
     Para o nosso projeto escolhemos como Scrum master:
 
-| Líder
--
-|João Victor Valadão|
+|Scrum master| Líder
+-|-
+180103431|João Victor Valadão|
 
 
 

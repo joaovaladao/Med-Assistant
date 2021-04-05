@@ -41,6 +41,13 @@
 </p>
 
 -----------
-## 6. Conclusões (Scrum Master)
+
+## 6. Velocity tracking
+<p align = "center"> &emsp;&emsp; <img src="https://raw.githubusercontent.com/fga-eps-mds/MDS-2020-2-G9/d1761f1187b0db03aa99d9b6c5311922ee4b53d6/docs/Sprints/Gr%C3%A1ficos/Velocity%20tracking%20(1).jpeg">
+</p>
+
+
+-----------
+## 7. Conclusões (Scrum Master)
 
 <p align="justify">&emsp;&emsp; Espaço destinado ao Scrum Master para dar informações adicionais á respeito da Sprint.</p>

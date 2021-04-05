@@ -15,16 +15,39 @@
 <p align="justify">&emsp;&emsp; breve lista do que foi atingido através da reunião</p>
 
 ------------
-## 3. Conclusão da _Sprint_
-<p align="justify">&emsp;&emsp; O que foi observado ao final da sprint e o que foi decidido para a sprint seguinte.</p>
 
-## 4. Burndown Chart
+## 3. Pontos Positivos:
 
-<p align = "center"> &emsp;&emsp; <img src="https://raw.githubusercontent.com/fga-eps-mds/MDS-2020-2-G9/356d6b5943346d0525f1d66f63806c2c7547856c/docs/Sprints/Gr%C3%A1ficos/Burn%20Down%20(2).jpeg">
-</p>
-<p align="justify">&emsp;&emsp; Colocar o Burndown da Sprint.</p>
+* Primeiro ponto...;
+
+* Segundo ponto...;
+
+* Terceiro ponto...;
 
 -----------
-## 5. Observações
 
-<p align="justify">&emsp;&emsp; Informações adicionais sobre a Sprint, se algo não foi concluído a tempo, mudanças de decisões e possíveis erros encontrados.</p>
+## 4. Pontos Negativos:
+
+* Primeiro ponto...;
+
+* Segundo ponto...;
+
+* Terceiro ponto...;
+
+-----------
+
+## 5. Burndown Chart
+<p align = "center"> &emsp;&emsp; <img src="https://raw.githubusercontent.com/fga-eps-mds/MDS-2020-2-G9/c883ff3c88d544b2f520449f50ea17ec578ac9c6/docs/Sprints/Gr%C3%A1ficos/Burn%20Down%20(3).jpeg.jpeg">
+</p>
+
+-----------
+
+## 6. Velocity tracking
+<p align = "center"> &emsp;&emsp; <img src="https://raw.githubusercontent.com/fga-eps-mds/MDS-2020-2-G9/d1761f1187b0db03aa99d9b6c5311922ee4b53d6/docs/Sprints/Gr%C3%A1ficos/Velocity%20tracking%20(1).jpeg">
+</p>
+
+
+-----------
+## 7. Conclusões (Scrum Master)
+
+<p align="justify">&emsp;&emsp; Espaço destinado ao Scrum Master para dar informações adicionais á respeito da Sprint.</p>

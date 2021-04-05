@@ -25,8 +25,9 @@ Vídeo ajuda para instalar o ambiente de trabalho.
 
 <b>Scrum Master do projeto:</b>
 |Líder|
--
+-|
 |João Victor Valadão|
+
 ---
 
 ## ⚙️ Funcionalidades

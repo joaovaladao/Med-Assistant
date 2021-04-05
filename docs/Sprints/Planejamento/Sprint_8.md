@@ -7,7 +7,7 @@
 |Vinícius Roriz|Desenvolvedor
 
 
-## 1. Objetivo da _Sprint 7_
+## 1. Objetivo da _Sprint 8_
 
 <p align="justify">Esta <i>Sprint</i> tem como objetivo:</p>
 

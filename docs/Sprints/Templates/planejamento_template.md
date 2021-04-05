@@ -1,3 +1,12 @@
+## Papéis da Equipe
+| Nome do Integrante | Papel |
+|--|--|
+|Gabriel Avelino|Product Owner
+|Ítalo Serra|Desenvolvedor
+|João Victor Valadão|Scrum Master
+|Vinícius Roriz|Desenvolvedor
+
+
 ## 1. Objetivo da _Sprint "NUMERO"_
 
 <p align="justify">Esta <i>Sprint</i> tem como objetivo:</p>

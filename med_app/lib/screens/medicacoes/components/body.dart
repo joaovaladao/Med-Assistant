@@ -121,7 +121,8 @@ class _BodyState extends State<Body> {
               ),
             );
           }).toList(), //----------função para retornar uma lista, e assim acessarmos todos os itens
-        ))
+        )),
+        Container(padding: EdgeInsets.only(bottom: 8)),
       ],
     );
   }

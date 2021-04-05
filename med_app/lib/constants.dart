@@ -32,7 +32,7 @@ const testes2 = Color(0xFF61A3FE);
 const testes3 = Color(0xFF13B5B5);
 const testes4 = Color(0xFFF39E38);
 const testes5 = Color(0xFFC46197);
-const testes6 = Color(0xFFFF815E);
+const testes6 = Color(0xFF62AB0F);
 
 class GradientColors {
   final List<Color> colors;

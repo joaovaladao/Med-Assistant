@@ -23,4 +23,10 @@ List<AlarmInfo> alarms = [
       '20ml', testes2, new List.from([2, 4, 6])),
   AlarmInfo(DateTime.now().add(Duration(hours: 8, minutes: 42)), 'Amoxilina',
       '2 comprimidos', testes6, new List.from([1, 2, 3, 4, 5, 6, 7])),
+  AlarmInfo(DateTime.now().add(Duration(hours: 0, minutes: 42)), 'Domperidona',
+      '1 comprimido', testes3, new List.from([4, 6])),
+  AlarmInfo(DateTime.now().add(Duration(hours: 4, minutes: 42)), 'Nimesulida',
+      '20ml', testes5, new List.from([2, 4, 6])),
+  AlarmInfo(DateTime.now().add(Duration(hours: 8, minutes: 42)), 'Amoxilina',
+      '2 comprimidos', testes4, new List.from([1, 2, 3, 4, 5, 6, 7])),
 ];

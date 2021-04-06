@@ -21,28 +21,12 @@ class _MedicacoesState extends State<Medicacoes> {
         },
         splashColor: lightGreen,
         backgroundColor: neutralGreen,
-        // child: Container(
-        //   decoration: BoxDecoration(
-        //     color: Colors.transparent,
-        //     borderRadius: BorderRadius.all(
-        //       Radius.circular(100),
-        //     ),
-        //     boxShadow: [
-        //       BoxShadow(
-        //         color: Colors.black.withOpacity(0.),
-        //         spreadRadius: 7,
-        //         blurRadius: 7,
-        //         offset: Offset(3, 5),
-        //       ),
-        //     ],
-        //   ),
-        // ),
         child: Icon(
           Icons.add,
           size: 35,
         ),
       ),
-      floatingActionButtonLocation: FloatingActionButtonLocation.centerDocked,
+      //floatingActionButtonLocation: FloatingActionButtonLocation.centerFloat,
     );
   }
 }
@@ -61,3 +45,20 @@ AppBar buildAppBar() {
     elevation: 0,
   );
 }
+
+// child: Container(
+//   decoration: BoxDecoration(
+//     color: Colors.transparent,
+//     borderRadius: BorderRadius.all(
+//       Radius.circular(100),
+//     ),
+//     boxShadow: [
+//       BoxShadow(
+//         color: Colors.black.withOpacity(0.),
+//         spreadRadius: 7,
+//         blurRadius: 7,
+//         offset: Offset(3, 5),
+//       ),
+//     ],
+//   ),
+// ),

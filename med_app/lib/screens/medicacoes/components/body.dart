@@ -22,11 +22,6 @@ class _BodyState extends State<Body> {
               margin: const EdgeInsets.symmetric(horizontal: 10, vertical: 5),
               padding: const EdgeInsets.symmetric(horizontal: 22, vertical: 15),
               decoration: BoxDecoration(
-                // gradient: LinearGradient(
-                //   colors: alarm.gradientColors,
-                //   begin: Alignment.centerLeft,
-                //   end: Alignment.centerRight,
-                // ),
                 color: alarm.color,
                 borderRadius: BorderRadius.all(Radius.circular(18)),
               ),
@@ -60,9 +55,13 @@ class _BodyState extends State<Body> {
                           ],
                         ),
                         Switch(
-                            value: true,
+                            value: alarm.isActive,
                             activeColor: Colors.white,
-                            onChanged: (bool value) {}),
+                            onChanged: (value) {
+                              setState(() {
+                                alarm.setActive(value);
+                              });
+                            }),
                       ]),
                   //----------------Row para organizar os dados que vão aparecer por ultimo na box
                   Row(
@@ -120,9 +119,10 @@ class _BodyState extends State<Body> {
                 ],
               ),
             );
-          }).followedBy([ //-----------função que adiciona um fundo falso ao descer a aplicação
+          }).followedBy([
+            //-----------função que adiciona um fundo falso ao descer a aplicação
             Container(
-              height: 100,
+              height: 80,
             )
           ]).toList(), //----------função para retornar uma lista, e assim acessarmos todos os itens
         )),

@@ -7,6 +7,8 @@
 | 11/03/2021 | 0.3 | Adicionando sprint 3 |Ítalo |
 | 18/03/2021 | 0.4 | Adicionando sprint 4 |Ítalo |
 | 24/03/2021 | 0.5 | Adicionando sprint 5 |Ítalo |
+| 30/03/2021 | 0.6 | Adicionando sprint 6 |Ítalo |
+| 6/04/2021 | 0.7 | Adicionando sprint 7 |Ítalo |
 
 
 ## Release 1
@@ -113,3 +115,15 @@
 | #103 |[Atualizar Github Pages](https://github.com/fga-eps-mds/MDS-2020-2-G9/issues/103)
 | #104 |[#93 Criação do menu inferior, já funcional para mudanças de páginas](https://github.com/fga-eps-mds/MDS-2020-2-G9/pull/104)
 | #106 |[Docs/#100 att roadmap sprint 5](https://github.com/fga-eps-mds/MDS-2020-2-G9/pull/106)
+
+### Sprint 7
+| ID | Issue |
+|:--:| ------- | 
+| #102 |[Apresentação para a Release01](https://github.com/fga-eps-mds/MDS-2020-2-G9/issues/102)
+| #105 |[Review das Sprints](https://github.com/fga-eps-mds/MDS-2020-2-G9/issues/105)
+| #107 |[#105 Review Sprints](https://github.com/fga-eps-mds/MDS-2020-2-G9/pull/107)
+| #109 |[Atualiza a aplicação](https://github.com/fga-eps-mds/MDS-2020-2-G9/pull/109)
+| #110 |[Página "Medication" ](https://github.com/fga-eps-mds/MDS-2020-2-G9/issues/110)
+| #111 |[Code/#110 medication page](https://github.com/fga-eps-mds/MDS-2020-2-G9/pull/111)
+| #112 |[atualizar Roadmap com Sprint 6](https://github.com/fga-eps-mds/MDS-2020-2-G9/issues/112)
+| #113 |[atualizando roadmap](https://github.com/fga-eps-mds/MDS-2020-2-G9/pull/113)

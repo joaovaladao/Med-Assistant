@@ -2,6 +2,7 @@
 import 'package:flutter/material.dart';
 import 'package:med_app/constants.dart';
 import 'package:med_app/screens/medicacoes/components/body.dart';
+import 'components/cadastro.dart';
 
 class Medicacoes extends StatefulWidget {
   @override
@@ -17,7 +18,9 @@ class _MedicacoesState extends State<Medicacoes> {
       body: Body(),
       floatingActionButton: FloatingActionButton(
         onPressed: () {
-          // Add your onPressed code here!
+          Navigator.push(
+              context,
+              MaterialPageRoute(builder: (context) => Cadastro()));
         },
         splashColor: lightGreen,
         backgroundColor: neutralGreen,

@@ -120,7 +120,11 @@ class _BodyState extends State<Body> {
                 ],
               ),
             );
-          }).toList(), //----------função para retornar uma lista, e assim acessarmos todos os itens
+          }).followedBy([ //-----------função que adiciona um fundo falso ao descer a aplicação
+            Container(
+              height: 100,
+            )
+          ]).toList(), //----------função para retornar uma lista, e assim acessarmos todos os itens
         )),
         Container(padding: EdgeInsets.only(bottom: 8)),
       ],

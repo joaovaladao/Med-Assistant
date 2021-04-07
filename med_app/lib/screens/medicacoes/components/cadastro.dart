@@ -11,20 +11,7 @@ class Cadastro extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: Text("Cadastro"),
-        backgroundColor: neutralBlue,
-        actions: <Widget>[
-          IconButton(
-           icon: Icon(Icons.save),
-           onPressed: () {  //-------Botão de salvar, quando selecionado printa os dados no terminal
-             _form.currentState.save();
-             print(_formData);
-             Navigator.of(context).pop();   //--------Função que fecha a página
-           }
-          )
-        ],
-      ),
+      resizeToAvoidBottomPadding: false,
       body: Container(
           padding: EdgeInsets.all(20),
           child: Form(
@@ -32,42 +19,103 @@ class Cadastro extends StatelessWidget {
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: <Widget>[
+
+                 SizedBox(
+                  height: 40,
+                ),
+
+                Container(
+                  alignment: Alignment.center,
+                  child: Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    children: <Widget> [
+                      Text(
+                        "Novo Medicamento",
+                        style: TextStyle(color: Colors.white, fontWeight: FontWeight.w400, fontSize: 27),
+                      ),
+                      IconButton(
+                        icon: Icon(Icons.close),
+                        color: Colors.white,
+                        onPressed: () {  //-------Botão de salvar, quando selecionado printa os dados no terminal
+                          Navigator.of(context).pop();   //--------Função que fecha a página
+                        }
+                      ),
+                    ],
+                  ),
+                ),
+
                 SizedBox(
                   height: 20,
                 ),
-                TextFormField(  //--------Funções para inserir os dados
-                  keyboardType: TextInputType.name,
-                  decoration: InputDecoration(
-                    labelText: "Medicamento",
-                    labelStyle: TextStyle(color: Colors.white, fontWeight: FontWeight.w400, fontSize: 20)
+
+                Container(
+                  margin: const EdgeInsets.symmetric(horizontal: 2, vertical: 5),
+                  padding: const EdgeInsets.symmetric(horizontal: 22, vertical: 10),
+                  decoration: BoxDecoration(
+                    gradient: LinearGradient(
+                      colors: GradientColors.cleanSky,
                     ),
-                  style: TextStyle(color: Colors.white),
-                  onSaved: (value) => _formData['medicamento'] = value,    //------Salva o nome
+                    borderRadius: BorderRadius.all(Radius.circular(18)),
+                    ),
+                  child: TextFormField(  //--------Funções para inserir os dados
+                    keyboardType: TextInputType.name,
+                    decoration: InputDecoration(
+                      labelText: "Medicamento",
+                      labelStyle: TextStyle(color: Colors.white, fontWeight: FontWeight.w400, fontSize: 20)
+                      ),
+                    style: TextStyle(color: Colors.white),
+                    onSaved: (value) => _formData['medicamento'] = value,    //------Salva o nome
+                  ),
                 ),
+
+                SizedBox(
+                  height: 20,                
+                ),
+
+                Container(
+                  margin: const EdgeInsets.symmetric(horizontal: 2, vertical: 5),
+                  padding: const EdgeInsets.symmetric(horizontal: 22, vertical: 10),
+                  decoration: BoxDecoration(
+                    gradient: LinearGradient(
+                      colors: GradientColors.cleanSky,
+                    ),
+                    borderRadius: BorderRadius.all(Radius.circular(18)),
+                    ),
+                  child: TextFormField(  //--------Funções para inserir os dados
+                    keyboardType: TextInputType.name,
+                    decoration: InputDecoration(
+                      labelText: "Quantidade",
+                      labelStyle: TextStyle(color: Colors.white, fontWeight: FontWeight.w400, fontSize: 20)
+                      ),
+                    style: TextStyle(color: Colors.white),
+                    onSaved: (value) => _formData['quantidade'] = value,    //------Salva o nome
+                  ),
+                ),
+
                 SizedBox(
                   height: 20,
                 ),
-                 TextFormField(  //--------Funções para inserir os dados
-                  keyboardType: TextInputType.name,
-                  decoration: InputDecoration(
-                    labelText: "Quantidade",
-                    labelStyle: TextStyle(color: Colors.white, fontWeight: FontWeight.w400, fontSize: 20)
+
+                Container(
+                  margin: const EdgeInsets.symmetric(horizontal: 2, vertical: 5),
+                  padding: const EdgeInsets.symmetric(horizontal: 22, vertical: 10),
+                  decoration: BoxDecoration(
+                    gradient: LinearGradient(
+                      colors: GradientColors.cleanSky,
                     ),
-                  style: TextStyle(color: Colors.white),
-                  onSaved: (value) => _formData['quantidade'] = value,    //------Salva o nome
-                ),
-                SizedBox(
-                  height: 20,
-                ),
-                TextFormField(  //--------Funções para inserir os dados
-                  keyboardType: TextInputType.name,
-                  decoration: InputDecoration(
-                    labelText: "Duração",
-                    labelStyle: TextStyle(color: Colors.white, fontWeight: FontWeight.w400, fontSize: 20)
+                    borderRadius: BorderRadius.all(Radius.circular(18)),
                     ),
-                  style: TextStyle(color: Colors.white),                    
-                  onSaved: (value) => _formData['duração'] = value,    //------Salva o nome
+                  child: TextFormField(  //--------Funções para inserir os dados
+                    keyboardType: TextInputType.name,
+                    decoration: InputDecoration(
+                      labelText: "Duração",
+                      labelStyle: TextStyle(color: Colors.white, fontWeight: FontWeight.w400, fontSize: 20)
+                      ),
+                    style: TextStyle(color: Colors.white),                    
+                    onSaved: (value) => _formData['duração'] = value,    //------Salva o nome
+                  ),
                 ),
+
                 Container(          //-----------Cria botão de cancelar
                   height: 40,
                   alignment: Alignment.centerRight,
@@ -117,6 +165,9 @@ class Cadastro extends StatelessWidget {
                           ],
                         ),
                       onPressed: (){
+                         _form.currentState.save();
+                          print(_formData);
+                          Navigator.of(context).pop();
                       },
                     ),
                   ),

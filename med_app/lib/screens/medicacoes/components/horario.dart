@@ -9,7 +9,8 @@ class Horario extends StatefulWidget {
 }
 
 class _HorarioState extends State<Horario> {
-  int selectedValue = 0;
+  static const values = <String>['Segunda-Feira','Terça-Feira','Quarta-Feira','Quinta-Feira','Sexta-Feira','Sábado','Domingo'];
+  String selectedValue = values.first;
 
   @override
   Widget build(BuildContext context) {
@@ -25,31 +26,22 @@ class _HorarioState extends State<Horario> {
                   padding: const EdgeInsets.symmetric(horizontal: 22, vertical: 10),
                   decoration: BoxDecoration(
                     gradient: LinearGradient(
-                      colors: GradientColors.valads,
+                      colors: GradientColors.semcor,
                     ),
                     borderRadius: BorderRadius.all(Radius.circular(18)),
                     ),
             child: Column(
               children: <Widget>[
                 Text(
-                 "Definir Horário",
+                 "Definir os dias",
                  style: TextStyle(
                  fontWeight: FontWeight.bold,
-                 color: Colors.white,
+                 color: Colors.black,
                  fontSize: 20,
                   ),
                 textAlign: TextAlign.left,
                 ),
-
-                RadioListTile<int>(
-                  value: 1,
-                  groupValue: selectedValue,
-                  title: Text(
-                  "Segunda",
-                   style: TextStyle(color: Colors.white, fontSize: 20, fontWeight: FontWeight.w400),
-                   ),
-                   onChanged: (value) => setState(() => selectedValue = 1),
-                  )
+                buildRadius(),
               ],
             ),
           ),
@@ -57,4 +49,17 @@ class _HorarioState extends State<Horario> {
       ),
     );
   }
+
+ Widget buildRadius() => Column(
+   children: values.map(
+     (value){
+       return RadioListTile<String>(
+                  value: value,
+                  groupValue: selectedValue,
+                  title: Text(value),
+                  onChanged: (value) => setState(()=> this.selectedValue = value),
+                  );
+     },
+   ).toList(),
+  );
 }

@@ -46,4 +46,5 @@ class GradientColors {
   static List<Color> cleanSky = [Colors.blue, Colors.white];
   static List<Color> avela = [Colors.green, Colors.white];
   static List<Color> valads = [Colors.purple, Colors.lightBlue];
+  static List<Color> semcor = [Colors.white, Colors.white];
 }

@@ -38,50 +38,89 @@ class Cadastro extends StatelessWidget {
                 TextFormField(  //--------Funções para inserir os dados
                   keyboardType: TextInputType.name,
                   decoration: InputDecoration(
-                    labelText: "Nome",
+                    labelText: "Medicamento",
                     labelStyle: TextStyle(color: Colors.white, fontWeight: FontWeight.w400, fontSize: 20)
                     ),
-                  onSaved: (value) => _formData['name'] = value,    //------Salva o nome
+                  style: TextStyle(color: Colors.white),
+                  onSaved: (value) => _formData['medicamento'] = value,    //------Salva o nome
                 ),
                 SizedBox(
                   height: 20,
                 ),
-                TextFormField(
+                 TextFormField(  //--------Funções para inserir os dados
                   keyboardType: TextInputType.name,
-                  style: TextStyle(color: Colors.white, fontSize: 20),
                   decoration: InputDecoration(
-                    hintStyle: TextStyle(color: Colors.white),
-                    hintText: "Quantidade"
+                    labelText: "Quantidade",
+                    labelStyle: TextStyle(color: Colors.white, fontWeight: FontWeight.w400, fontSize: 20)
                     ),
-                  onSaved: (value) => _formData['quantidade'] = value,    //-------Salva a quantidade
+                  style: TextStyle(color: Colors.white),
+                  onSaved: (value) => _formData['quantidade'] = value,    //------Salva o nome
                 ),
                 SizedBox(
                   height: 20,
                 ),
-                TextFormField(
+                TextFormField(  //--------Funções para inserir os dados
                   keyboardType: TextInputType.name,
-                  style: TextStyle(color: Colors.white, fontSize: 20),
                   decoration: InputDecoration(
-                    hintStyle: TextStyle(color: Colors.white),
-                    hintText: "Dias",
-                    labelStyle: TextStyle(color: Colors.white),
+                    labelText: "Duração",
+                    labelStyle: TextStyle(color: Colors.white, fontWeight: FontWeight.w400, fontSize: 20)
                     ),
-                  onSaved: (value) => _formData['dias'] = value,    //---------Salva os dias
+                  style: TextStyle(color: Colors.white),                    
+                  onSaved: (value) => _formData['duração'] = value,    //------Salva o nome
                 ),
-                Container(          //-----------Criar os botões
+                Container(          //-----------Cria botão de cancelar
                   height: 40,
                   alignment: Alignment.centerRight,
                   child: FlatButton(
                     child: Text(
                       "Remover dados",
-                      textAlign: TextAlign.right,
                       style: TextStyle(color: Colors.white, fontSize: 15),
                       ),
                     onPressed: () {
-
+                  
                     },
                   ),
                 ),
+                SizedBox(
+                  height: 50,
+                ),
+                Container(          //-----------Cria botão de agendar o horário
+                  height: 65,
+                  alignment: Alignment.center,
+                  decoration: BoxDecoration(
+                    gradient: LinearGradient(
+                      colors: GradientColors.sky,
+                    ),
+                    borderRadius: BorderRadius.all(Radius.circular(10)), 
+                  ),
+                  child: SizedBox.expand(
+                    child: FlatButton(
+                      child: Row(
+                        mainAxisAlignment: MainAxisAlignment.spaceBetween,      //---------Espaço entre os textos
+                        children: <Widget>[
+                          Text(
+                            "Definir Horário",
+                            style: TextStyle(
+                              fontWeight: FontWeight.bold,
+                              color: Colors.white,
+                              fontSize: 20,
+                            ),
+                            textAlign: TextAlign.left,
+                          ),
+                          Container(
+                            child: Icon(
+                              Icons.alarm,
+                              color: Colors.black,
+                              size: 30,
+                            ),
+                          ),
+                          ],
+                        ),
+                      onPressed: (){
+                      },
+                    ),
+                  ),
+                )
               ],
             ),
           ),

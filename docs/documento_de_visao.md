@@ -5,6 +5,7 @@ Data|Versão|Descrição|Autor
 17/03|0.2|Incrementação dos tópicos 1.1, 1.2, 1.4 e criação do tópico 1.3|João Victor Valadão|
 17/03|0.3|Incrementação dos tópicos 2.1, 2.2, 2.3, 3.0 e criação dos tópicos 3.1, 3.2, 3.3|João Victor Valadão|
 18/03|0.3|Incrementação dos tópicos 4.0, 5.0 e criação dos tópicos 4.1 até o 6.3|João Victor Valadão|
+07/04|0.4|Incrementação dos tópicos 7.0|Ítalo Serra|
 
 ## 1 <a name="1">Introdução</a>
 
@@ -136,3 +137,12 @@ O sistema dispõem das seguintes funcionalidades:<br />
 ### 6.4 <a name="5">Restrições Externas</a>
 <p align = "justify">&emsp;&emsp; Primeira vez que os membros da equipe trabalham juntos, e falta de conhecimento e experiência em relação ao Flutter.</p>
 
+## 7. <a name="7">Requisitos do Produto</a>
+
+### 7.1 <a name="7.1">Categorias dos requisitos do produto:</a>
+
+|**Prioridade**|**Descrição**|
+|:-|:-|
+| Alta| Requisito fundamental para o produto final|
+| Média| Requisito importante, mas a sua falta não afeta o funcionamento do produto final|
+| Baixa| Requisito não muito importante para o escopo produto, é algo auxiliar|

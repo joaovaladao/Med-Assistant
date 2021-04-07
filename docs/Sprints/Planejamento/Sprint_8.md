@@ -1,11 +1,22 @@
 ## Papéis da Equipe
-| Nome do Integrante | Papel |
-|--|--|
-|Gabriel Avelino|Product Owner
-|Ítalo Serra|Desenvolvedor
-|João Victor Valadão|Scrum Master
-|Vinícius Roriz|Desenvolvedor
 
+<table>
+    <tr>
+     <!-- Gabriel   -->
+        <td align="center"><img style="border-radius: 50%;" src="https://i.pinimg.com/564x/3c/be/47/3cbe47cabeed08d2e09c014ed3a2d320.jpg" width="100px;" alt=""/><br /><sub><b>Gabriel Avelino</b><br><b>Product Owner</b></sub></a><br /></td>
+     <!-- João Victor -->
+        <td align="center">
+        <img style="border-radius: 50%;" src="https://i.pinimg.com/564x/6a/2e/1e/6a2e1e382a30c26cf66d277b274d7828.jpg"width="100px;" alt=""/>
+        <br /><sub><b>João Victor Valadão</b><br><b>Scrum Master/ Desenvolvedor</b></sub></a><br /></td>
+    <!-- Ítalo -->
+        <td align="center">
+        <img style="border-radius: 50%;" src="https://i.pinimg.com/236x/00/07/82/000782ab6b71ad9dfaedba5179ef232c.jpg"width="100px;" alt=""/>
+        <br /><sub><b>Ítalo Serra</b><br><b>Desenvolvedor</b></sub></a><br /></td>
+     <!-- Vinícius -->
+        <td align="center">
+        <img style="border-radius: 50%;" src="https://i.pinimg.com/236x/42/bb/06/42bb06d88590d339a60bece036f40cd6.jpg"width="100px;" alt=""/>
+        <br /><sub><b>Vinícius Roriz</b><br><b>Desenvolvedor</b></sub></a><br /></td>
+    </table>
 
 ## 1. Objetivo da _Sprint 8_
 
@@ -17,6 +28,8 @@
 - Implementar as animações de mudança de página;
 - Atualizar o documento de Visão e Arquitetura do projeto;
 - Escolher e começar a implementar um banco de dados para o aplicativo;
+- Criar um documento apontando os possíveis riscos da aplicação;
+- Iniciar a página para cadastro de medicações;
 
 
 

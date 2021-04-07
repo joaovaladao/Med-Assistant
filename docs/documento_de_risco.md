@@ -23,7 +23,7 @@ Data|Descrição|Autor
 |:----:|:-----:|:-----:|:-----:|:-----:|
 |**01**|Dificuldades da equipe com as novas tecnologias a serem utilizadas|Issues direcionadas para o aprendizado necessário|Solicitar ajuda de membros com maior conhecimento|Estudo|
 |**02**|Improdutividade dos membros da equipe|Reuniões constantes para deixar os membros integrados|Conversas específicas com o membro desmotivado para contornar o problema|Gerência|
-|**03**|Choque de taferas com outras diciplinas|Definir plano de estudos e entregas|Distribuir bem as tarefas entre os membros|Externo|
+|**03**|Choque de taferas com outras disciplinas|Definir plano de estudos e entregas|Distribuir bem as tarefas entre os membros|Externo|
 |**04**|Ausência de membros nas reuniões|Conseguir adequar um horário em que todos estejam disponível|Conversar com o membro para ver o que pode ser feito|Gerência|
 |**05**|Trancamento do aluno na disciplina|Redistribuir as funções para os membros restantes|Melhor distruibuição das tarefas para que ninguém seja sobrecarregado|Gerência|
 |**06**|Falta de uma boa gestão|O líder e membros devem colaborar juntos para o sucesso do projeto|Pesquisar métodos de gerência e consultar pessoas com experiência|Gerência|

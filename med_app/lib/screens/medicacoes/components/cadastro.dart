@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 //import 'package:intl/intl.dart';
 import 'package:med_app/constants.dart';
+import 'package:med_app/screens/medicacoes/components/horario.dart';
 //import 'alarm_info.dart';
 
 
@@ -167,7 +168,10 @@ class Cadastro extends StatelessWidget {
                       onPressed: (){
                          _form.currentState.save();
                           print(_formData);
-                          Navigator.of(context).pop();
+                           Navigator.push(
+                            context,
+                            MaterialPageRoute(builder: (context) => Horario()),
+                            );
                       },
                     ),
                   ),

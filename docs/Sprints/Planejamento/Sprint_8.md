@@ -1,11 +1,4 @@
 ## Papéis da Equipe
-| Nome do Integrante | Papel |
-|--|--|
-|Gabriel Avelino|Product Owner
-|Ítalo Serra|Desenvolvedor
-|João Victor Valadão|Scrum Master
-|Vinícius Roriz|Desenvolvedor
-
 
 <table>
     <tr>
@@ -35,6 +28,8 @@
 - Implementar as animações de mudança de página;
 - Atualizar o documento de Visão e Arquitetura do projeto;
 - Escolher e começar a implementar um banco de dados para o aplicativo;
+- Criar um documento apontando os possíveis riscos da aplicação;
+- Iniciar a página para cadastro de medicações;
 
 
 

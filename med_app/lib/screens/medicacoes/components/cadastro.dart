@@ -25,41 +25,67 @@ class Cadastro extends StatelessWidget {
           )
         ],
       ),
-      body: Padding(
-        padding: EdgeInsets.all(20),
-        child: Form(
-          key: _form,
-          child: Column(
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children: <Widget>[
-              TextFormField(  //--------Funções para inserir os dados
-                style: TextStyle(color: Colors.white),
-                decoration: InputDecoration(
-                  hintStyle: TextStyle(color: Colors.white),
-                  hintText: "Nome"
+      body: Container(
+          padding: EdgeInsets.all(20),
+          child: Form(
+            key: _form,
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: <Widget>[
+                SizedBox(
+                  height: 20,
+                ),
+                TextFormField(  //--------Funções para inserir os dados
+                  keyboardType: TextInputType.name,
+                  decoration: InputDecoration(
+                    labelText: "Nome",
+                    labelStyle: TextStyle(color: Colors.white, fontWeight: FontWeight.w400, fontSize: 20)
+                    ),
+                  onSaved: (value) => _formData['name'] = value,    //------Salva o nome
+                ),
+                SizedBox(
+                  height: 20,
+                ),
+                TextFormField(
+                  keyboardType: TextInputType.name,
+                  style: TextStyle(color: Colors.white, fontSize: 20),
+                  decoration: InputDecoration(
+                    hintStyle: TextStyle(color: Colors.white),
+                    hintText: "Quantidade"
+                    ),
+                  onSaved: (value) => _formData['quantidade'] = value,    //-------Salva a quantidade
+                ),
+                SizedBox(
+                  height: 20,
+                ),
+                TextFormField(
+                  keyboardType: TextInputType.name,
+                  style: TextStyle(color: Colors.white, fontSize: 20),
+                  decoration: InputDecoration(
+                    hintStyle: TextStyle(color: Colors.white),
+                    hintText: "Dias",
+                    labelStyle: TextStyle(color: Colors.white),
+                    ),
+                  onSaved: (value) => _formData['dias'] = value,    //---------Salva os dias
+                ),
+                Container(          //-----------Criar os botões
+                  height: 40,
+                  alignment: Alignment.centerRight,
+                  child: FlatButton(
+                    child: Text(
+                      "Remover dados",
+                      textAlign: TextAlign.right,
+                      style: TextStyle(color: Colors.white, fontSize: 15),
+                      ),
+                    onPressed: () {
+
+                    },
                   ),
-                onSaved: (value) => _formData['name'] = value,    //------Salva o nome
-              ),
-              TextFormField(
-               style: TextStyle(color: Colors.white),
-                decoration: InputDecoration(
-                  hintStyle: TextStyle(color: Colors.white),
-                  hintText: "Quantidade"
-                  ),
-                onSaved: (value) => _formData['quantidade'] = value,    //-------Salva a quantidade
-              ),
-              TextFormField(
-               style: TextStyle(color: Colors.white),
-                decoration: InputDecoration(
-                  hintStyle: TextStyle(color: Colors.white),
-                  hintText: "Dias"
-                  ),
-                onSaved: (value) => _formData['dias'] = value,    //---------Salva os dias
-              ),
-            ],
+                ),
+              ],
+            ),
           ),
         ),
-      ),
     );
   }
 }

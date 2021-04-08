@@ -146,3 +146,14 @@ O sistema dispõem das seguintes funcionalidades:<br />
 | Alta| Requisito fundamental para o produto final|
 | Média| Requisito importante, mas a sua falta não afeta o funcionamento do produto final|
 | Baixa| Requisito não muito importante para o escopo produto, é algo auxiliar|
+
+### 7.2 <a name="7.2">Lista de Requisitos:</a>
+
+|**Requisito**|**Prioridade**|
+|:-|:-|
+| Permitir o usuário criar, editar e apagar sua conta| XXX|
+| Permitir o usuário adicionar, editar e excluir suas medicações| XXX|
+| Permitir o usuário visualizar o Hitórico| XXX| 
+| Destacar no Histórico os dias que o usuário tomou a medicação| XXX| 
+| Permitir o usuário ativar ou desativar a medicação| XXX| 
+| Mostrar no Home as medicações ativadas| XXX| 

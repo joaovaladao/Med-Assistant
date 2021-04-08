@@ -9,6 +9,7 @@ const darkerBackground = Color(0xFF1C272B);
 const darkBackground = Color(0xFF283339);
 const neutralBackground = Color(0xFF2c3941);
 const lightBackground = Color(0xFF303E47);
+const lighterBackground = Color(0xFF35454D);
 
 // Verdes
 const darkGreen = Color(0xFF2a9160);

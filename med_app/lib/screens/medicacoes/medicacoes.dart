@@ -2,6 +2,7 @@
 import 'package:flutter/material.dart';
 import 'package:med_app/constants.dart';
 import 'package:med_app/screens/medicacoes/components/body.dart';
+import 'components/cadastro.dart';
 
 class Medicacoes extends StatefulWidget {
   @override
@@ -12,9 +13,24 @@ class _MedicacoesState extends State<Medicacoes> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        appBar: PreferredSize(
-            child: buildAppBar(), preferredSize: Size.fromHeight(65.0)),
-        body: Body());
+      appBar: PreferredSize(
+          child: buildAppBar(), preferredSize: Size.fromHeight(65.0)),
+      body: Body(),
+      floatingActionButton: FloatingActionButton(
+        onPressed: () {
+          Navigator.push(
+              context,
+              MaterialPageRoute(builder: (context) => Cadastro()));
+        },
+        splashColor: lightGreen,
+        backgroundColor: neutralGreen,
+        child: Icon(
+          Icons.add,
+          size: 35,
+        ),
+      ),
+      //floatingActionButtonLocation: FloatingActionButtonLocation.centerFloat,
+    );
   }
 }
 
@@ -32,3 +48,20 @@ AppBar buildAppBar() {
     elevation: 0,
   );
 }
+
+// child: Container(
+//   decoration: BoxDecoration(
+//     color: Colors.transparent,
+//     borderRadius: BorderRadius.all(
+//       Radius.circular(100),
+//     ),
+//     boxShadow: [
+//       BoxShadow(
+//         color: Colors.black.withOpacity(0.),
+//         spreadRadius: 7,
+//         blurRadius: 7,
+//         offset: Offset(3, 5),
+//       ),
+//     ],
+//   ),
+// ),

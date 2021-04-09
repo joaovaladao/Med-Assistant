@@ -9,6 +9,7 @@ const darkerBackground = Color(0xFF1C272B);
 const darkBackground = Color(0xFF283339);
 const neutralBackground = Color(0xFF2c3941);
 const lightBackground = Color(0xFF303E47);
+const lighterBackground = Color(0xFF35454D);
 
 // Verdes
 const darkGreen = Color(0xFF2a9160);
@@ -32,7 +33,7 @@ const testes2 = Color(0xFF61A3FE);
 const testes3 = Color(0xFF13B5B5);
 const testes4 = Color(0xFFF39E38);
 const testes5 = Color(0xFFC46197);
-const testes6 = Color(0xFFFF815E);
+const testes6 = Color(0xFF62AB0F);
 
 class GradientColors {
   final List<Color> colors;
@@ -43,4 +44,8 @@ class GradientColors {
   static List<Color> sea = [Color(0xFF61A3FE), Color(0xFF63FFD5)];
   static List<Color> mango = [Color(0xFFFFA738), Color(0xFFFFE130)];
   static List<Color> fire = [Color(0xFFFF5DCD), Color(0xFFFF8484)];
+  static List<Color> cleanSky = [Colors.blue, Colors.white];
+  static List<Color> avela = [Colors.green, Colors.white];
+  static List<Color> valads = [Colors.purple, Colors.lightBlue];
+  static List<Color> semcor = [Colors.white, Colors.white];
 }

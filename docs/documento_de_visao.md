@@ -5,6 +5,7 @@ Data|Versão|Descrição|Autor
 17/03|0.2|Incrementação dos tópicos 1.1, 1.2, 1.4 e criação do tópico 1.3|João Victor Valadão|
 17/03|0.3|Incrementação dos tópicos 2.1, 2.2, 2.3, 3.0 e criação dos tópicos 3.1, 3.2, 3.3|João Victor Valadão|
 18/03|0.3|Incrementação dos tópicos 4.0, 5.0 e criação dos tópicos 4.1 até o 6.3|João Victor Valadão|
+07/04|0.4|Incrementação dos tópicos 7.0|Ítalo Serra|
 
 ## 1 <a name="1">Introdução</a>
 
@@ -85,6 +86,15 @@ Jovens/Adultos|Pessoas que tomam algum suplemento alimentar para práticas de at
 
 ### 3.3 <a name="2_3">Ambiente do usuário</a>
 Será um aplicativo mobile que ficará disponível no mercado por meio da PlayStore.
+
+### 3.4 <a name="2_3">Alternativas e Concorrência</a>
+Medisafe: lembrete de remédios
+
+Esse aplicativo, além de oferecer a opção de lembretes dos medicamentos que você precisa tomar, com os horários, facilita o monitoramento de consultas, medidas e até receitas. Ainda apresenta um calendário do seu progresso, para que acompanhe se tomou ou não o remédio naquela semana.
+
+Hora do medicamento
+
+Esse é um aplicativo que, literalmente, te ajuda a lembrar a hora certa de tomar o medicamento. Para começar a usar, basta inserir o nome do remédio, o intervalo entre as doses e a hora da primeira. 
 ___
 
 ## 4 <a name="4">Visão Geral</a>
@@ -136,3 +146,23 @@ O sistema dispõem das seguintes funcionalidades:<br />
 ### 6.4 <a name="5">Restrições Externas</a>
 <p align = "justify">&emsp;&emsp; Primeira vez que os membros da equipe trabalham juntos, e falta de conhecimento e experiência em relação ao Flutter.</p>
 
+## 7. <a name="7">Requisitos do Produto</a>
+
+### 7.1 <a name="7.1">Categorias dos requisitos do produto:</a>
+
+|**Prioridade**|**Descrição**|
+|:-|:-|
+| Alta| Requisito fundamental para o produto final|
+| Média| Requisito importante, mas a sua falta não afeta o funcionamento do produto final|
+| Baixa| Requisito não muito importante para o escopo produto, é algo auxiliar|
+
+### 7.2 <a name="7.2">Lista de Requisitos:</a>
+
+|**Requisito**|**Prioridade**|
+|:-|:-|
+| Permitir o usuário criar, editar e apagar sua conta| alta|
+| Permitir o usuário adicionar, editar e excluir suas medicações| alta|
+| Permitir o usuário visualizar o Hitórico| media| 
+| Destacar no Histórico os dias que o usuário tomou a medicação| baixa| 
+| Permitir o usuário ativar ou desativar a medicação| media| 
+| Mostrar no Home as medicações ativadas| alta| 

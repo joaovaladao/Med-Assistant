@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 //import 'package:med_app/constants.dart';
+import 'package:table_calendar/table_calendar.dart';
 
 class Body extends StatefulWidget {
   @override
@@ -7,8 +8,21 @@ class Body extends StatefulWidget {
 }
 
 class _BodyState extends State<Body> {
+  CalendarController calendarController;
+
+  void initState(){
+    super.initState();
+    calendarController = CalendarController();
+  }
   @override
   Widget build(BuildContext context) {
-    return Column(children: <Widget>[]);
+    return SingleChildScrollView(
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: <Widget>[
+          TableCalendar(calendarController: calendarController),
+        ],
+      )
+    );
   }
 }

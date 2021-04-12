@@ -86,6 +86,15 @@ Jovens/Adultos|Pessoas que tomam algum suplemento alimentar para práticas de at
 
 ### 3.3 <a name="2_3">Ambiente do usuário</a>
 Será um aplicativo mobile que ficará disponível no mercado por meio da PlayStore.
+
+### 3.4 <a name="2_3">Alternativas e Concorrência</a>
+Medisafe: lembrete de remédios
+
+Esse aplicativo, além de oferecer a opção de lembretes dos medicamentos que você precisa tomar, com os horários, facilita o monitoramento de consultas, medidas e até receitas. Ainda apresenta um calendário do seu progresso, para que acompanhe se tomou ou não o remédio naquela semana.
+
+Hora do medicamento
+
+Esse é um aplicativo que, literalmente, te ajuda a lembrar a hora certa de tomar o medicamento. Para começar a usar, basta inserir o nome do remédio, o intervalo entre as doses e a hora da primeira. 
 ___
 
 ## 4 <a name="4">Visão Geral</a>
@@ -151,9 +160,9 @@ O sistema dispõem das seguintes funcionalidades:<br />
 
 |**Requisito**|**Prioridade**|
 |:-|:-|
-| Permitir o usuário criar, editar e apagar sua conta| XXX|
-| Permitir o usuário adicionar, editar e excluir suas medicações| XXX|
-| Permitir o usuário visualizar o Hitórico| XXX| 
-| Destacar no Histórico os dias que o usuário tomou a medicação| XXX| 
-| Permitir o usuário ativar ou desativar a medicação| XXX| 
-| Mostrar no Home as medicações ativadas| XXX| 
+| Permitir o usuário criar, editar e apagar sua conta| alta|
+| Permitir o usuário adicionar, editar e excluir suas medicações| alta|
+| Permitir o usuário visualizar o Hitórico| media| 
+| Destacar no Histórico os dias que o usuário tomou a medicação| baixa| 
+| Permitir o usuário ativar ou desativar a medicação| media| 
+| Mostrar no Home as medicações ativadas| alta| 

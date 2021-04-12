@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-//import 'package:med_app/constants.dart';
 import 'package:table_calendar/table_calendar.dart';
+import 'package:med_app/constants.dart';
 
 class Body extends StatefulWidget {
   @override
@@ -16,11 +16,16 @@ class _BodyState extends State<Body> {
   }
   @override
   Widget build(BuildContext context) {
-    return SingleChildScrollView(
-      child: Column(
-        crossAxisAlignment: CrossAxisAlignment.start,
-        children: <Widget>[
-          TableCalendar(
+    return Container(
+      margin: const EdgeInsets.fromLTRB(10, 30, 10, 10),
+              padding: const EdgeInsets.symmetric(horizontal: 22, vertical: 15),
+              decoration: BoxDecoration(
+                borderRadius: BorderRadius.all(Radius.circular(18)),
+                gradient: LinearGradient(
+                     colors: GradientColors.semcor
+                   ),
+              ),
+      child: TableCalendar(
             calendarStyle: CalendarStyle(
               markersColor: Colors.white,
               weekdayStyle: TextStyle(color: Colors.white),
@@ -40,14 +45,12 @@ class _BodyState extends State<Body> {
               rightChevronIcon: Icon(Icons.arrow_forward_ios, size: 15, color: Colors.white,),
               titleTextStyle: TextStyle(color: Colors.white, fontSize: 25),
               formatButtonDecoration: BoxDecoration(
-                color: Colors.blueAccent,
+                color: Colors.white,
                 borderRadius: BorderRadius.circular(20),
               ),
             ),
             calendarController: calendarController
             ),
-        ],
-      )
     );
   }
 }

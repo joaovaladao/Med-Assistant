@@ -1,8 +1,6 @@
 // Dedicado à pagina de medicacoes
 import 'package:flutter/material.dart';
-import 'package:flutter_local_notifications/flutter_local_notifications.dart';
 import 'package:med_app/constants.dart';
-import 'package:med_app/main.dart';
 import 'package:med_app/screens/medicacoes/components/body.dart';
 import 'components/cadastro.dart';
 
@@ -13,21 +11,6 @@ class Medicacoes extends StatefulWidget {
 
 class _MedicacoesState extends State<Medicacoes> {
 
-    /*FlutterLocalNotificationsPlugin localnotification;
-
-  @override
-  void initState(){
-    super.initState();
-    var androidInitiliaze = new AndroidInitializationSettings('ic_launcher');
-    var initicializationSettings = new InitializationSettings(android: androidInitiliaze);
-    localnotification = new FlutterLocalNotificationsPlugin();
-    localnotification.initialize(initicializationSettings);
-  }*/
-  /*Future showNotification() async{
-    var androidDetails = new AndroidNotificationDetails("channelId", "channelName", "channelDescription");
-    var generalNotification = new NotificationDetails(android: androidDetails);
-    await localnotification.show(0, "texto", "body", generalNotification);
-  }*/
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -67,19 +50,3 @@ AppBar buildAppBar() {
   );
 }
 
-// child: Container(
-//   decoration: BoxDecoration(
-//     color: Colors.transparent,
-//     borderRadius: BorderRadius.all(
-//       Radius.circular(100),
-//     ),
-//     boxShadow: [
-//       BoxShadow(
-//         color: Colors.black.withOpacity(0.),
-//         spreadRadius: 7,
-//         blurRadius: 7,
-//         offset: Offset(3, 5),
-//       ),
-//     ],
-//   ),
-// ),

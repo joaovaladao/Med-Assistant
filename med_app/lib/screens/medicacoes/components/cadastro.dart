@@ -1,6 +1,4 @@
 import 'package:flutter/material.dart';
-//import 'package:intl/intl.dart';
-import 'package:med_app/screens/medicacoes/medicacoes.dart';
 import 'package:med_app/constants.dart';
 import 'package:med_app/screens/medicacoes/components/horario.dart';
 import 'alarm_info.dart';
@@ -11,7 +9,8 @@ class Cadastro extends StatelessWidget {
   final _form = GlobalKey<FormState>();
   final Map<String, String> _formData =
       {}; //----------Variável que armazena todos os dados do cadastro
-  Future showNotification() async{
+
+  Future showNotification() async{  //Função que aciona Notificação ao dispositivo
     var androidDetails = new AndroidNotificationDetails("channelId", "channelName", "channelDescription");
     var iosDetails = new IOSNotificationDetails();
     var generalNotification = new NotificationDetails(androidDetails, iosDetails);

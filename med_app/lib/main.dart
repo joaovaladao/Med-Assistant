@@ -4,16 +4,11 @@ import 'package:med_app/constants.dart';
 import 'package:med_app/navBar.dart';
   
 final  FlutterLocalNotificationsPlugin flutterLocalNotificationsPlugin = 
-  FlutterLocalNotificationsPlugin();
+  FlutterLocalNotificationsPlugin();  //-----Iniciando o pacote de notificação;
 void main() async{
   WidgetsFlutterBinding.ensureInitialized();
     var androidInitiliaze = new AndroidInitializationSettings('ic_launcher');
-    var iosInitialize = new IOSInitializationSettings( 
-      requestAlertPermission: true,
-      requestBadgePermission: true,
-      requestSoundPermission: true,
-      onDidReceiveLocalNotification:
-          (int id, String title, String body, String payload) async {});
+    var iosInitialize = new IOSInitializationSettings();
     var initializationSettings = new InitializationSettings(androidInitiliaze, iosInitialize);
     await flutterLocalNotificationsPlugin.initialize(initializationSettings,
       onSelectNotification: (String payload) async {
@@ -25,12 +20,6 @@ void main() async{
 }
 
 class MyApp extends StatelessWidget {
-
-  /*Future showNotification() async{
-    var androidDetails = new AndroidNotificationDetails("channelId", "channelName", "channelDescription");
-    var generalNotification = new NotificationDetails(android: androidDetails);
-    await localnotification.show();
-  }*/
 
   @override
   Widget build(BuildContext context) {

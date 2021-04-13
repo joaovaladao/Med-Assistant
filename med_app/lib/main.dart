@@ -4,11 +4,15 @@ import 'package:med_app/constants.dart';
 import 'package:med_app/navBar.dart';
   
 void main() {
+  FlutterLocalNotificationsPlugin localnotification;
+    var androidInitiliaze = new AndroidInitializationSettings('ic_launcher');
+    var initicializationSettings = new InitializationSettings(android: androidInitiliaze);
+    localnotification = new FlutterLocalNotificationsPlugin();
+    localnotification.initialize(initicializationSettings);
   runApp(MyApp());
 }
 
 class MyApp extends StatelessWidget {
-
 
   @override
   Widget build(BuildContext context) {

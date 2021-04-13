@@ -11,10 +11,14 @@ class Cadastro extends StatelessWidget {
       {}; //----------Variável que armazena todos os dados do cadastro
 
   Future showNotification() async{  //Função que aciona Notificação ao dispositivo
-    var androidDetails = new AndroidNotificationDetails("channelId", "channelName", "channelDescription");
-    var iosDetails = new IOSNotificationDetails();
+    var androidDetails = new AndroidNotificationDetails("channelId", "channelName", "channelDescription",
+     sound: RawResourceAndroidNotificationSound('drama_total'),
+     priority: Priority.High,
+     importance: Importance.Max,
+     );
+    var iosDetails = new IOSNotificationDetails(sound: 'android_music.wav');
     var generalNotification = new NotificationDetails(androidDetails, iosDetails);
-    await flutterLocalNotificationsPlugin.show(0, alarms[0].name, alarms[0].description, generalNotification);
+    await flutterLocalNotificationsPlugin.show(0, alarms[0].name, alarms[0].description, generalNotification,);
   }
 
   @override

@@ -12,6 +12,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Med Assistant',
       theme: ThemeData(
+        unselectedWidgetColor: Colors.white60,
         scaffoldBackgroundColor: darkBackground,
         primarySwatch: Colors.blue,
         visualDensity: VisualDensity.adaptivePlatformDensity,

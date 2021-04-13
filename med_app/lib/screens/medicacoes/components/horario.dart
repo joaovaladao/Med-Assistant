@@ -9,70 +9,78 @@ class Horario extends StatefulWidget {
 }
 
 class _HorarioState extends State<Horario> {
-  static const values = <String>[
-    'Segunda-Feira',
-    'Terça-Feira',
-    'Quarta-Feira',
-    'Quinta-Feira',
-    'Sexta-Feira',
-    'Sábado',
-    'Domingo'
-  ];
-  String selectedValue = values.first;
-
+  List<CheckBoxListTileModel> checkBoxListTileModel =
+      CheckBoxListTileModel.getDias();
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Horários'),
-        backgroundColor: darkGreen,
+        title: Text('Dias da semana'),
+        backgroundColor: neutralBlue,
       ),
-      body: ListView(
-        padding: EdgeInsets.symmetric(vertical: 16),
-        children: <Widget>[
-          Container(
-            margin: const EdgeInsets.symmetric(horizontal: 2, vertical: 5),
-            padding: const EdgeInsets.symmetric(horizontal: 22, vertical: 10),
-            decoration: BoxDecoration(
-              // gradient: LinearGradient(
-              //   colors: GradientColors.semcor,
-              // ),
-              color: lighterBackground,
-              borderRadius: BorderRadius.all(Radius.circular(18)),
-            ),
-            child: Column(
-              children: <Widget>[
-                Text(
-                  "Definir os dias",
-                  style: TextStyle(
-                    fontWeight: FontWeight.bold,
-                    color: Colors.white,
-                    fontSize: 20,
+      body: new ListView.builder(
+          itemCount: checkBoxListTileModel.length,
+          itemBuilder: (BuildContext context, int index) {
+            return Container(
+              margin: EdgeInsets.symmetric(horizontal: 20),
+              child: Column(
+                children: <Widget>[
+                  SizedBox(
+                    height: 10,
                   ),
-                  textAlign: TextAlign.left,
-                ),
-                buildRadius(),
-              ],
-            ),
-          ),
-        ],
+                  new CheckboxListTile(
+                      activeColor: neutralBlue,
+                      dense: true,
+                      title: new Text(
+                        checkBoxListTileModel[index].title,
+                        style: TextStyle(
+                          color: Colors.white,
+                          fontSize: 18,
+                          // fontWeight: FontWeight.w600,
+                        ),
+                      ),
+                      value: checkBoxListTileModel[index].isCheck,
+                      onChanged: (bool val) {
+                        itemChange(val, index);
+                      }),
+                ],
+              ),
+            );
+          }),
+      floatingActionButton: FloatingActionButton.extended(
+        onPressed: () {},
+        backgroundColor: neutralCyan,
+        label: Text('Continuar'),
+        icon: const Icon(Icons.arrow_forward),
+        shape: RoundedRectangleBorder(
+            borderRadius: BorderRadius.all(Radius.circular(10.0))),
       ),
     );
   }
 
-  Widget buildRadius() => Column(
-        children: values.map(
-          (value) {
-            return RadioListTile<String>(
-              value: value,
-              groupValue: selectedValue,
-              title: Text(
-                value,
-                style: TextStyle(color: Colors.white),
-              ),
-              onChanged: (value) => setState(() => this.selectedValue = value),
-            );
-          },
-        ).toList(),
-      );
+  void itemChange(bool val, int index) {
+    setState(() {
+      checkBoxListTileModel[index].isCheck = val;
+    });
+  }
+}
+
+class CheckBoxListTileModel {
+  int dia;
+  String title;
+  bool isCheck;
+
+  CheckBoxListTileModel({this.dia, this.title, this.isCheck});
+
+  static List<CheckBoxListTileModel> getDias() {
+    return <CheckBoxListTileModel>[
+      CheckBoxListTileModel(dia: 2, title: 'Segunda-Feira', isCheck: false),
+      CheckBoxListTileModel(dia: 3, title: 'Terça-Feira', isCheck: false),
+      CheckBoxListTileModel(dia: 4, title: 'Quarta-Feira', isCheck: false),
+      CheckBoxListTileModel(dia: 5, title: 'Quinta-Feira', isCheck: false),
+      CheckBoxListTileModel(dia: 6, title: 'Sexta-Feira', isCheck: false),
+      CheckBoxListTileModel(dia: 7, title: 'Sábado', isCheck: false),
+      CheckBoxListTileModel(dia: 1, title: 'Domingo', isCheck: false),
+    ];
+  }
 }

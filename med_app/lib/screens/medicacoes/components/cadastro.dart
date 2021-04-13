@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:med_app/screens/medicacoes/medicacoes.dart';
 import 'package:med_app/constants.dart';
 import 'package:med_app/screens/medicacoes/components/horario.dart';
-//import 'alarm_info.dart';
+import 'alarm_info.dart';
 import 'package:med_app/main.dart';
 import 'package:flutter_local_notifications/flutter_local_notifications.dart';
 
@@ -15,7 +15,7 @@ class Cadastro extends StatelessWidget {
     var androidDetails = new AndroidNotificationDetails("channelId", "channelName", "channelDescription");
     var iosDetails = new IOSNotificationDetails();
     var generalNotification = new NotificationDetails(androidDetails, iosDetails);
-    await flutterLocalNotificationsPlugin.show(0, "texto", "body", generalNotification);
+    await flutterLocalNotificationsPlugin.show(0, alarms[0].name, alarms[0].description, generalNotification);
   }
 
   @override

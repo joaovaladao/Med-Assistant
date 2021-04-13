@@ -2,6 +2,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_local_notifications/flutter_local_notifications.dart';
 import 'package:med_app/constants.dart';
+import 'package:med_app/main.dart';
 import 'package:med_app/screens/medicacoes/components/body.dart';
 import 'components/cadastro.dart';
 
@@ -11,6 +12,7 @@ class Medicacoes extends StatefulWidget {
 }
 
 class _MedicacoesState extends State<Medicacoes> {
+
     /*FlutterLocalNotificationsPlugin localnotification;
 
   @override
@@ -20,11 +22,13 @@ class _MedicacoesState extends State<Medicacoes> {
     var initicializationSettings = new InitializationSettings(android: androidInitiliaze);
     localnotification = new FlutterLocalNotificationsPlugin();
     localnotification.initialize(initicializationSettings);
-  }
-  void showNotification(){
-
-  }
-  @override*/
+  }*/
+  /*Future showNotification() async{
+    var androidDetails = new AndroidNotificationDetails("channelId", "channelName", "channelDescription");
+    var generalNotification = new NotificationDetails(android: androidDetails);
+    await localnotification.show(0, "texto", "body", generalNotification);
+  }*/
+  @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: PreferredSize(

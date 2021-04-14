@@ -12,6 +12,15 @@ class Cadastro extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: AppBar(
+        title: Text('Novo Medicamento'),
+        backgroundColor: darkGreen,
+        leading: GestureDetector(
+            onTap: () {
+              Navigator.of(context).pop();
+            },
+            child: Icon(Icons.close)),
+      ),
       resizeToAvoidBottomPadding: false,
       body: Container(
         padding: EdgeInsets.all(20),
@@ -21,42 +30,13 @@ class Cadastro extends StatelessWidget {
             crossAxisAlignment: CrossAxisAlignment.start,
             children: <Widget>[
               SizedBox(
-                height: 40,
-              ),
-              Container(
-                alignment: Alignment.center,
-                child: Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                  children: <Widget>[
-                    Text(
-                      "Novo medicamento",
-                      style: TextStyle(
-                          color: Colors.white,
-                          fontWeight: FontWeight.w400,
-                          fontSize: 24),
-                    ),
-                    IconButton(
-                        icon: Icon(Icons.close),
-                        color: Colors.white,
-                        onPressed: () {
-                          //-------Botão de salvar, quando selecionado printa os dados no terminal
-                          Navigator.of(context)
-                              .pop(); //--------Função que fecha a página
-                        }),
-                  ],
-                ),
-              ),
-              SizedBox(
-                height: 20,
+                height: 10,
               ),
               Container(
                 margin: const EdgeInsets.symmetric(horizontal: 2, vertical: 2),
                 padding:
                     const EdgeInsets.symmetric(horizontal: 22, vertical: 5),
                 decoration: BoxDecoration(
-                  // gradient: LinearGradient(
-                  //   colors: GradientColors.cleanSky,
-                  // ),
                   color: lighterBackground,
                   borderRadius: BorderRadius.all(Radius.circular(15)),
                 ),
@@ -83,9 +63,6 @@ class Cadastro extends StatelessWidget {
                 padding:
                     const EdgeInsets.symmetric(horizontal: 22, vertical: 5),
                 decoration: BoxDecoration(
-                  // gradient: LinearGradient(
-                  //   colors: GradientColors.cleanSky,
-                  // ),
                   color: lighterBackground,
                   borderRadius: BorderRadius.all(Radius.circular(15)),
                 ),
@@ -112,9 +89,6 @@ class Cadastro extends StatelessWidget {
                 padding:
                     const EdgeInsets.symmetric(horizontal: 22, vertical: 5),
                 decoration: BoxDecoration(
-                  // gradient: LinearGradient(
-                  //   colors: GradientColors.cleanSky,
-                  // ),
                   color: lighterBackground,
                   borderRadius: BorderRadius.all(Radius.circular(15)),
                 ),
@@ -153,9 +127,10 @@ class Cadastro extends StatelessWidget {
                 height: 65,
                 margin: EdgeInsets.symmetric(horizontal: 10),
                 decoration: BoxDecoration(
-                  gradient:LinearGradient(
-                    colors: GradientColors.valads,
-                  ),
+                   gradient: LinearGradient(
+                     colors: GradientColors.valads,
+                   ),
+                  //color: neutralBlue,
                   borderRadius: BorderRadius.all(Radius.circular(10)),
                 ),
                 child: SizedBox.expand(

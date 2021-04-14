@@ -1,13 +1,25 @@
 import 'package:flutter/material.dart';
-//import 'package:intl/intl.dart';
 import 'package:med_app/constants.dart';
 import 'package:med_app/screens/medicacoes/components/horario.dart';
-//import 'alarm_info.dart';
+import 'alarm_info.dart';
+import 'package:med_app/main.dart';
+import 'package:flutter_local_notifications/flutter_local_notifications.dart';
 
 class Cadastro extends StatelessWidget {
   final _form = GlobalKey<FormState>();
   final Map<String, String> _formData =
       {}; //----------Variável que armazena todos os dados do cadastro
+
+  Future showNotification() async{  //Função que aciona Notificação ao dispositivo
+    var androidDetails = new AndroidNotificationDetails("channelId", "channelName", "channelDescription",
+     sound: RawResourceAndroidNotificationSound('drama_total'),
+     priority: Priority.High,
+     importance: Importance.Max,
+     );
+    var iosDetails = new IOSNotificationDetails(sound: 'android_music.wav');
+    var generalNotification = new NotificationDetails(androidDetails, iosDetails);
+    await flutterLocalNotificationsPlugin.show(0, alarms[0].name, alarms[0].description, generalNotification,);
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -159,6 +171,7 @@ class Cadastro extends StatelessWidget {
                     ),
                     onPressed: () {
                       _form.currentState.save();
+                      showNotification();
                       print(_formData);
                       Navigator.push(
                         context,

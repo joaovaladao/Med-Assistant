@@ -10,6 +10,7 @@ class Medicacoes extends StatefulWidget {
 }
 
 class _MedicacoesState extends State<Medicacoes> {
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -49,19 +50,3 @@ AppBar buildAppBar() {
   );
 }
 
-// child: Container(
-//   decoration: BoxDecoration(
-//     color: Colors.transparent,
-//     borderRadius: BorderRadius.all(
-//       Radius.circular(100),
-//     ),
-//     boxShadow: [
-//       BoxShadow(
-//         color: Colors.black.withOpacity(0.),
-//         spreadRadius: 7,
-//         blurRadius: 7,
-//         offset: Offset(3, 5),
-//       ),
-//     ],
-//   ),
-// ),

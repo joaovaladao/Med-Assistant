@@ -1,6 +1,7 @@
 // Dedicado à pagina de medicacoes
 import 'package:flutter/material.dart';
 import 'package:med_app/constants.dart';
+import 'package:med_app/dataInit.dart';
 import 'package:med_app/screens/medicacoes/components/body.dart';
 import 'components/cadastro.dart';
 
@@ -10,6 +11,15 @@ class Medicacoes extends StatefulWidget {
 }
 
 class _MedicacoesState extends State<Medicacoes> {
+  DataInit _dataInit = DataInit();    //------Variável do banco de dados
+
+  @override
+  void initState(){
+    _dataInit.initializeDatabase().then((value) {
+      print("--------------Banco de Dados foi Iniciado--------------");
+    });
+    super.initState();
+  }
 
   @override
   Widget build(BuildContext context) {

@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:med_app/constants.dart';
+import 'package:med_app/dataInit.dart';
 import 'package:med_app/screens/medicacoes/components/horario.dart';
 import 'alarm_info.dart';
 import 'package:med_app/main.dart';

@@ -127,10 +127,10 @@ class Cadastro extends StatelessWidget {
                 height: 65,
                 margin: EdgeInsets.symmetric(horizontal: 10),
                 decoration: BoxDecoration(
-                  // gradient: LinearGradient(
-                  //   colors: GradientColors.valads,
-                  // ),
-                  color: neutralBlue,
+                   gradient: LinearGradient(
+                     colors: GradientColors.valads,
+                   ),
+                  //color: neutralBlue,
                   borderRadius: BorderRadius.all(Radius.circular(10)),
                 ),
                 child: SizedBox.expand(

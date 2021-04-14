@@ -18,7 +18,12 @@ class Cadastro extends StatelessWidget {
      );
     var iosDetails = new IOSNotificationDetails(sound: 'android_music.wav');
     var generalNotification = new NotificationDetails(androidDetails, iosDetails);
-    await flutterLocalNotificationsPlugin.show(0, alarms[0].name, alarms[0].description, generalNotification,);
+    await flutterLocalNotificationsPlugin.show(
+      0,
+      alarms[0].name,
+      alarms[0].description,
+      generalNotification,
+      );
   }
 
   @override

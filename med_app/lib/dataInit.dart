@@ -1,5 +1,6 @@
 import 'package:sqflite/sqflite.dart';
 import 'package:sqflite/sqlite_api.dart';
+import 'package:med_app/screens/medicacoes/components/alarm_info.dart';
 
 final String tableAlarm = 'alarm';
 final String columnId = 'id';
@@ -18,6 +19,13 @@ class DataInit {
       _dataInit = DataInit._createInstance();
     }
     return _dataInit;
+  }
+
+    Future<Database> get database async {
+    if (_database == null) {
+      _database = await initializeDatabase();
+    }
+    return _database;
   }
 
   Future<Database> initializeDatabase() async {
@@ -39,6 +47,12 @@ class DataInit {
       },
     );
     return database;
+  }
+
+  void insertAlarm(AlarmInfo alarmInfo) async {
+    var db = await this.database;
+    var result = await db.insert(tableAlarm, alarmInfo.toJson());
+    print('result : $result');
   }
 
 }

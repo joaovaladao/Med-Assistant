@@ -1,17 +1,38 @@
 import 'package:flutter/material.dart';
-//import 'package:intl/intl.dart';
 import 'package:med_app/constants.dart';
 import 'package:med_app/screens/medicacoes/components/horario.dart';
-//import 'alarm_info.dart';
+import 'alarm_info.dart';
+import 'package:med_app/main.dart';
+import 'package:flutter_local_notifications/flutter_local_notifications.dart';
 
 class Cadastro extends StatelessWidget {
   final _form = GlobalKey<FormState>();
   final Map<String, String> _formData =
       {}; //----------Variável que armazena todos os dados do cadastro
 
+  Future showNotification() async{  //Função que aciona Notificação ao dispositivo
+    var androidDetails = new AndroidNotificationDetails("channelId", "channelName", "channelDescription",
+     sound: RawResourceAndroidNotificationSound('drama_total'),
+     priority: Priority.High,
+     importance: Importance.Max,
+     );
+    var iosDetails = new IOSNotificationDetails(sound: 'android_music.wav');
+    var generalNotification = new NotificationDetails(androidDetails, iosDetails);
+    await flutterLocalNotificationsPlugin.show(0, alarms[0].name, alarms[0].description, generalNotification,);
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: AppBar(
+        title: Text('Novo Medicamento'),
+        backgroundColor: darkGreen,
+        leading: GestureDetector(
+            onTap: () {
+              Navigator.of(context).pop();
+            },
+            child: Icon(Icons.close)),
+      ),
       resizeToAvoidBottomPadding: false,
       body: Container(
         padding: EdgeInsets.all(20),
@@ -21,42 +42,13 @@ class Cadastro extends StatelessWidget {
             crossAxisAlignment: CrossAxisAlignment.start,
             children: <Widget>[
               SizedBox(
-                height: 40,
-              ),
-              Container(
-                alignment: Alignment.center,
-                child: Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                  children: <Widget>[
-                    Text(
-                      "Novo medicamento",
-                      style: TextStyle(
-                          color: Colors.white,
-                          fontWeight: FontWeight.w400,
-                          fontSize: 24),
-                    ),
-                    IconButton(
-                        icon: Icon(Icons.close),
-                        color: Colors.white,
-                        onPressed: () {
-                          //-------Botão de salvar, quando selecionado printa os dados no terminal
-                          Navigator.of(context)
-                              .pop(); //--------Função que fecha a página
-                        }),
-                  ],
-                ),
-              ),
-              SizedBox(
-                height: 20,
+                height: 10,
               ),
               Container(
                 margin: const EdgeInsets.symmetric(horizontal: 2, vertical: 2),
                 padding:
                     const EdgeInsets.symmetric(horizontal: 22, vertical: 5),
                 decoration: BoxDecoration(
-                  // gradient: LinearGradient(
-                  //   colors: GradientColors.cleanSky,
-                  // ),
                   color: lighterBackground,
                   borderRadius: BorderRadius.all(Radius.circular(15)),
                 ),
@@ -83,9 +75,6 @@ class Cadastro extends StatelessWidget {
                 padding:
                     const EdgeInsets.symmetric(horizontal: 22, vertical: 5),
                 decoration: BoxDecoration(
-                  // gradient: LinearGradient(
-                  //   colors: GradientColors.cleanSky,
-                  // ),
                   color: lighterBackground,
                   borderRadius: BorderRadius.all(Radius.circular(15)),
                 ),
@@ -112,9 +101,6 @@ class Cadastro extends StatelessWidget {
                 padding:
                     const EdgeInsets.symmetric(horizontal: 22, vertical: 5),
                 decoration: BoxDecoration(
-                  // gradient: LinearGradient(
-                  //   colors: GradientColors.cleanSky,
-                  // ),
                   color: lighterBackground,
                   borderRadius: BorderRadius.all(Radius.circular(15)),
                 ),
@@ -153,9 +139,10 @@ class Cadastro extends StatelessWidget {
                 height: 65,
                 margin: EdgeInsets.symmetric(horizontal: 10),
                 decoration: BoxDecoration(
-                  gradient:LinearGradient(
-                    colors: GradientColors.semcor,
-                  ),
+                   gradient: LinearGradient(
+                     colors: GradientColors.valads,
+                   ),
+                  //color: neutralBlue,
                   borderRadius: BorderRadius.all(Radius.circular(10)),
                 ),
                 child: SizedBox.expand(
@@ -184,6 +171,7 @@ class Cadastro extends StatelessWidget {
                     ),
                     onPressed: () {
                       _form.currentState.save();
+                      showNotification();
                       print(_formData);
                       Navigator.push(
                         context,

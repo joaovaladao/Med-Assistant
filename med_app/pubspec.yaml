@@ -29,6 +29,7 @@ dependencies:
   intl : ^0.16.1
   salomon_bottom_bar: ^2.0.1
   table_calendar: ^2.3.3
+  flutter_local_notifications: ^1.4.4+2
 
 
 dev_dependencies:

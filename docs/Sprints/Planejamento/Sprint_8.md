@@ -35,15 +35,15 @@
 
 ## 2. Tamanho da _Sprint_
 
-| Data de Início | 12/04/2021 |
+| Data de Início | 05/04/2021 |
 |:--|:--:|
-| **Data de Término** | **01/04/2021** |
+| **Data de Término** | **12/04/2021** |
 | **Duração** | **7 dias** |
 
 
 ## 3. Sprint Backlog
 
-[Milestone](https://github.com/fga-eps-mds/MDS-2020-2-G9/milestone/7) da _Sprint_
+[Milestone](https://github.com/fga-eps-mds/MDS-2020-2-G9/milestone/8?closed=1) da _Sprint_
 
 
 ## 4. Débitos Acumulados

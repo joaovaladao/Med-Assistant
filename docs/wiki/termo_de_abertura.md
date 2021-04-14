@@ -5,6 +5,7 @@ Data|Versão|Descrição|Autor
 04/03|0.1|Criação do Termo de Abertura e adição dos itens 1, 2 e 3| Vinícius Roriz|
 08/03|0.2|Adição do email dos participantes|Vinícius Roriz|
 09/03|0.3|Alteração na sintaxe da página| Vinicius Roriz|
+14/04|0.4|Remoção dos emails dos participantes que saíram|Vinícius Roriz|
 
 
 ## 1. Descrição do Projeto
@@ -26,10 +27,8 @@ Data|Versão|Descrição|Autor
 
 |**Nome**|**Email**|
 |:-|:-|
-|Christian Fleury|chfleurysiq@gmail.com|
 |Gabriel Avelino|blackzinh8@gmail.com|
 |Ítalo Serra|italoserra99@gmail.com|
 |João Victor Valadão|joaovaladao161274@gmail.com|
-|Thiago Gomes|thiagosiqgomes@gmail.com|
 |Vinícius Roriz|viniciusroriz21@gmail.com|
 

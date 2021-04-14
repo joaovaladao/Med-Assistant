@@ -5,8 +5,9 @@ Data|Versão|Descrição|Autor
 17/03|0.2|Incrementação dos tópicos 1.1, 1.2, 1.4 e criação do tópico 1.3|João Victor Valadão|
 17/03|0.3|Incrementação dos tópicos 2.1, 2.2, 2.3, 3.0 e criação dos tópicos 3.1, 3.2, 3.3|João Victor Valadão|
 18/03|0.3|Incrementação dos tópicos 4.0, 5.0 e criação dos tópicos 4.1 até o 6.3|João Victor Valadão|
+07/04|0.4|Incrementação dos tópicos 7.0|Ítalo Serra|
 
-## 1. Introdução
+## 1 Introdução
 
 ### 1.1 Objetivo
 <p align="justify"> &emsp;&emsp; O objetivo do aplicativo é proporcionar um assistente para o controle de medicações. O software grátis envia alertas sonoros para o usuário ingerir a medicação no horário pré-progamado, a fim de criar uma rotina saudável.</p>
@@ -31,6 +32,7 @@ Data|Versão|Descrição|Autor
 > RBNE - Consumo de suplementos nutricionais por praticantes de musculação da cidade de São Carlos-SP  [http://www.rbne.com.br/index.php/rbne/article/view/735](https://github.com/fga-eps-mds/MDS-2020-2-G9/blob/develop/docs/documento_de_visao.md) 
 
 
+
 ### 1.4 Visão geral
 <p align="justify"> &emsp;&emsp; Este documento é dividido em 5 tópicos descrevendo os detalhes das características do software proposto.</p>
 
@@ -39,9 +41,11 @@ Data|Versão|Descrição|Autor
 * **Descrição dos envolvidos:** esta seção descreve o perfil das partes interessadas no projeto;
 * **Visão Geral:** Esta seção fornece uma visualização de alto nível das capacidades do produto, interfaces para outros aplicativos e configurações dos sistemas;
 * **Recursos:** breve descrição dos recursos do produto;
+
+
 ___
 
-## 2. Posicionamento
+## 2 Posicionamento
 
 ### 2.1 Oportunidade de Negócio
 
@@ -61,8 +65,9 @@ ___
 
 <p align="justify">&emsp;&emsp;O aplicativo ficará disponível no mercado por meio da PlayStore quando for concluído, assim poderá ser baixado facilmente em celulares android. Desse modo qualquer pessoa interessada na aplicação poderá garanti-la gratuitamente sem dificuldades de instalação.</p>
 
+___
 
-## 3. Descrição dos Envolvidos
+## 3 Descrição dos Envolvidos
 
 <p align="justify">&emsp;&emsp; Acreditamos que o foco principal para o aplicativo seriam as pessoas idosas, de modo a ajuda-las com o excesso de medicação. Porém com o grande número de jovens e adultos consumindo diariamente algum tipo de medicamento, nosso produto se disponilizará a ajudá-los. </p>
 
@@ -82,7 +87,17 @@ Jovens/Adultos|Pessoas que tomam algum suplemento alimentar para práticas de at
 ### 3.3 Ambiente do usuário
 Será um aplicativo mobile que ficará disponível no mercado por meio da PlayStore.
 
-## 4. Visão Geral
+### 3.4 Alternativas e Concorrência
+Medisafe: lembrete de remédios
+
+Esse aplicativo, além de oferecer a opção de lembretes dos medicamentos que você precisa tomar, com os horários, facilita o monitoramento de consultas, medidas e até receitas. Ainda apresenta um calendário do seu progresso, para que acompanhe se tomou ou não o remédio naquela semana.
+
+Hora do medicamento
+
+Esse é um aplicativo que, literalmente, te ajuda a lembrar a hora certa de tomar o medicamento. Para começar a usar, basta inserir o nome do remédio, o intervalo entre as doses e a hora da primeira. 
+___
+
+## 4 Visão Geral
 
 ### 4.1 Perspectiva do Produto
 <p align="justify"> &emsp;&emsp; o "Med Assistence" tem como seu principal objetivo fornecer às pessoas todas as ferramentas, o suporte e as informações necessárias para que elas tomem seus medicamentos corretamente.
@@ -97,6 +112,8 @@ Capacidade de oferecer informações para o mapeamento de saúde|Quando for info
 ### 4.3 Suposições e Dependências
 - O usuário deverá possuir um celular Android com espaço disponível para o download da aplicação.
 - O aplicativo poderá ser apresentado ao médico em consultas, informando o total de dias que certo medicamento foi usado pelo paciente.
+
+___
 
 ## 5. Recursos
 
@@ -116,7 +133,7 @@ O sistema dispõem das seguintes funcionalidades:<br />
 * Disparar um alerta sonoro nos horários programados.
 * Enviar uma mensagem no display do dispositivo.</p>
 
-## 6. Restrições
+## 6 Restrições
 ### 6.1 Restrições de Design
 <p align = "justify">&emsp;&emsp; O aplicativo deve ser desenvolvido de maneira mais simples possível, para o fácil compreendimento de usuário mais velhos.</p>
 
@@ -128,4 +145,25 @@ O sistema dispõem das seguintes funcionalidades:<br />
 
 ### 6.4 Restrições Externas
 <p align = "justify">&emsp;&emsp; Primeira vez que os membros da equipe trabalham juntos, e falta de conhecimento e experiência em relação ao Flutter.</p>
+
+## 7. Requisitos do Produto
+
+### 7.1 Categorias dos requisitos do produto:
+
+|**Prioridade**|**Descrição**|
+|:-|:-|
+| Alta| Requisito fundamental para o produto final|
+| Média| Requisito importante, mas a sua falta não afeta o funcionamento do produto final|
+| Baixa| Requisito não muito importante para o escopo produto, é algo auxiliar|
+
+### 7.2 Lista de Requisitos:
+
+|**Requisito**|**Prioridade**|
+|:-|:-|
+| Permitir o usuário criar, editar e apagar sua conta| alta|
+| Permitir o usuário adicionar, editar e excluir suas medicações| alta|
+| Permitir o usuário visualizar o Hitórico| media| 
+| Destacar no Histórico os dias que o usuário tomou a medicação| baixa| 
+| Permitir o usuário ativar ou desativar a medicação| media| 
+| Mostrar no Home as medicações ativadas| alta| 
 

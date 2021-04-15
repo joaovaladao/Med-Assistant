@@ -66,6 +66,7 @@ Para calcular o gráfico de riscos em burndown chart usaremos esses três tôpic
 Exposição final: 30,25
 
 ## 2.3 <a name="4.1">*Gráfico burndown de riscos*</a>
+![teste](Sprints/Gráficos/burndownchartRISCO.png)
 
 
 

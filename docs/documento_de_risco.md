@@ -36,6 +36,40 @@ Data|Descrição|Autor
 |**13**|Bugs e erro do aplicativo|A equipe se organizar para consertar o mais rápido possível|Página de feedback dos usuários|Software|
 -----------------------------------------------------------------
 
+## 2.2 <a name="4.1">*Tabela probabilidade*</a>
+Para calcular o gráfico de riscos em burndown chart usaremos esses três tôpicos:
+    
+   <b>Probabilidade do Risco:</b> Qual a probabilidade do risco acontecer? 30%, 20%? Forneça uma estimativa do quão provável o risco é de acontecer.
+
+   <b>Tamanho da Perda:</b> O impacto no cronograma se o risco acontecer. Quantos dias serão perdidos?
+
+   <b>Exposição ao Risco:</b> Por quanto tempo (dias) o projeto ficará exposto ao risco? Aqui você deve fazer um calculo: Exposição ao Risco = Tamanho da Perda * Probabilidade do Risco. 
+    
+   <b>Exemplo:</b> Exposição ao Risco = 15 * 20% = 3. Ou seja, 3 dias de exposição ao risco.
+
+|Riscos| Probabilidade do risco|	Tamanho da perda (dias)| Exposição ao risco (dias)| 
+|:----:|:-----:|:-----:|:-----:|
+|**01**|10%|10|1
+|**02**|30%|7|2,1
+|**03**|80%|7|5,6
+|**04**|10%|2|0,2
+|**05**|40%|15|6
+|**06**|20%|5|1
+|**07**|10%|20|2
+|**08**|20%|7|1,4
+|**09**|30%|15|4,5
+|**10**|10%|10|1
+|**11**|30%|0|0
+|**12**|35%|7|2,45
+|**13**|30%|10|3
+----------------------------
+Exposição final: 30,25
+
+## 2.3 <a name="4.1">*Gráfico burndown de riscos*</a>
+
+
+
+
 ## 3 <a name="4">Referências</a>
 - https://glicfas.com.br/plano-de-gerenciamento-de-riscos/
 

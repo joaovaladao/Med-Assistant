@@ -8,6 +8,7 @@ final  FlutterLocalNotificationsPlugin flutterLocalNotificationsPlugin =
   FlutterLocalNotificationsPlugin();    
   //------------------------------------------------
   
+  //--------------------Main;
 void main() async{
   WidgetsFlutterBinding.ensureInitialized();
     var androidInitiliaze = new AndroidInitializationSettings('ic_launcher');
@@ -40,3 +41,4 @@ class MyApp extends StatelessWidget {
     );
   }
 }
+  //------------------------------------------------

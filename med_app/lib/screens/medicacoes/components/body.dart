@@ -17,24 +17,25 @@ class _BodyState extends State<Body> {
         Expanded(
             child: ListView(
           children: alarms.map((alarm) {
-            //-----------Função que mapeia todos os alarmes cadastrados;
+//-------------------------Função que mapeia todos os alarmes cadastrados;
             return Container(
               margin: const EdgeInsets.symmetric(horizontal: 10, vertical: 5),
               padding: const EdgeInsets.symmetric(horizontal: 22, vertical: 15),
               decoration: BoxDecoration(
                 color: ColorsTemplate.colorsTemplate[alarm.color%6],
+//-------------------------colorsTemplate é uma lista com 6 cores salvas no arquivo de constantes
                 borderRadius: BorderRadius.all(Radius.circular(18)),
               ),
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: <Widget>[
-                  //----------------Row para organizar os dados que vão aparecer primeiro na box
+//--------------------------Row para organizar os dados que vão aparecer primeiro na box
                   Row(
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: <Widget>[
                         Row(
                           children: <Widget>[
-                            //------------- Nome do alarme
+//-------------------------Nome do alarme
                             Text(
                               alarm.name,
                               style: TextStyle(
@@ -63,11 +64,11 @@ class _BodyState extends State<Body> {
                               });
                             }),
                       ]),
-                  //----------------Row para organizar os dados que vão aparecer por ultimo na box
+//-------------------------Row para organizar os dados que vão aparecer por ultimo na box
                   Row(
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: <Widget>[
-                        //------------- Dias da semana
+//-------------------------Dias da semana
                         Text(
                           weekdayDate(alarm.days),
                           style: TextStyle(
@@ -84,14 +85,14 @@ class _BodyState extends State<Body> {
                           ),
                         ),
                         Spacer(flex: 1),
-                        //------------- Bolinha
+//-------------------------Bolinha
                         Icon(
                           Icons.fiber_manual_record,
                           color: Colors.white,
                           size: 6,
                         ),
                         Spacer(flex: 1),
-                        //------------- Horario
+//-------------------------Horario
                         Text(
                           DateFormat.Hm().format(alarm.alarmDateTime),
                           style: TextStyle(
@@ -108,7 +109,7 @@ class _BodyState extends State<Body> {
                           ),
                         ),
                         Spacer(flex: 20),
-                        //------------- Seta pra baixo
+//-------------------------Seta pra baixo
                         Icon(
                           Icons.keyboard_arrow_down,
                           color: Colors.white,
@@ -120,18 +121,19 @@ class _BodyState extends State<Body> {
               ),
             );
           }).followedBy([
-            //-----------função que adiciona um fundo falso ao descer a aplicação
+//-------------------------função que adiciona um fundo falso ao descer a aplicação
             Container(
               height: 80,
             )
-          ]).toList(), //----------função para retornar uma lista, e assim acessarmos todos os itens
+          ]).toList(),
+//-------------------------função para retornar uma lista, e assim acessarmos todos os itens
         )),
         Container(padding: EdgeInsets.only(bottom: 8)),
       ],
     );
   }
 
-  //------------- Metodo para retornar a sequencia de dias da semana a partir de uma lista de ints
+//-------------------------Metodo para retornar a sequencia de dias da semana a partir de uma lista de ints
   String weekdayDate(List<int> days) {
     List<String> weekDays = new List();
 

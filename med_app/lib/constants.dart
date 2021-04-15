@@ -40,6 +40,8 @@ class ColorsApp {
   static Color app5 = Color(0xFFC46197);
   static Color app6 = Color(0xFF62AB0F);
 }
+
+//--------------------------------------------Função para retornar as cores de cada alarme
 class ColorsTemplate {
   static List<Color> colorsTemplate = [
     ColorsApp.app1,
@@ -71,3 +73,4 @@ class GradientColors {
   static List<Color> valads = [Colors.purple, Colors.lightBlue];
   static List<Color> semcor = [Colors.white10, Colors.white24];
 }
+//------------------------------------------------

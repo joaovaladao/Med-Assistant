@@ -17,6 +17,7 @@ class _MedicacoesState extends State<Medicacoes> {
   DateTime _alarmTime;
 
   @override
+  //---------------------Função para inicializar o banco de dados
   void initState(){
     _alarmTime = DateTime.now();
     _dataInit1.initializeDatabase().then((value) {
@@ -25,11 +26,14 @@ class _MedicacoesState extends State<Medicacoes> {
     });
     super.initState();
   }
+  //------------------------------------------------
 
+  //---------------------Função para atualizar a lista de alarmes
   void loadAlarms(){
     _alarms = _dataInit1.getAlarms();
     if(mounted) setState(() {});
   }
+  //------------------------------------------------
 
   @override
   Widget build(BuildContext context) {
@@ -56,7 +60,7 @@ class _MedicacoesState extends State<Medicacoes> {
 }
 
 AppBar buildAppBar() {
-  // Constroi a barra superior do app
+  //-------------------------------------Constroi a barra superior do app
   return AppBar(
     shape: RoundedRectangleBorder(
       borderRadius: BorderRadius.only(

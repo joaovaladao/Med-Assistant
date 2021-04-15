@@ -16,6 +16,7 @@ class _BodyState extends State<Body> {
   }
   @override
   Widget build(BuildContext context) {
+//----------------------------------------------Arquitetura
     return Container(
       margin: const EdgeInsets.fromLTRB(10, 30, 10, 10),
               padding: const EdgeInsets.symmetric(horizontal: 22, vertical: 15),
@@ -25,6 +26,7 @@ class _BodyState extends State<Body> {
                      colors: GradientColors.semcor
                    ),
               ),
+//----------------------------------------------Função que retorna calendário
       child: TableCalendar(
             calendarStyle: CalendarStyle(
               markersColor: Colors.white,
@@ -52,5 +54,6 @@ class _BodyState extends State<Body> {
             calendarController: calendarController
             ),
     );
+//--------------------------------------------------------
   }
 }

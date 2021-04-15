@@ -10,7 +10,8 @@ class Cadastro extends StatelessWidget {
   final _form = GlobalKey<FormState>();
   var _dataInit = DataInit();
   final Map<String, String> _formData =
-      {}; //----------Variável que armazena todos os dados do cadastro
+      {}; 
+ //--------------------------------------Variável que armazena todos os dados do cadastro
 
   Future showNotification() async{  //Função que aciona Notificação ao dispositivo
     var androidDetails = new AndroidNotificationDetails("channelId", "channelName", "channelDescription",
@@ -30,9 +31,6 @@ class Cadastro extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    /*_dataInit.initializeDatabase().then((value) {
-      print("--------------Banco de Dados 2 foi Iniciado--------------");
-    });*/
     return Scaffold(
       appBar: AppBar(
         title: Text('Novo Medicamento'),
@@ -63,7 +61,7 @@ class Cadastro extends StatelessWidget {
                   borderRadius: BorderRadius.all(Radius.circular(15)),
                 ),
                 child: TextFormField(
-                  //--------Funções para inserir os dados
+ //---------------------------------------------------Funções para inserir os dados
                   keyboardType: TextInputType.name,
                   decoration: InputDecoration(
                       border: InputBorder.none,
@@ -74,7 +72,8 @@ class Cadastro extends StatelessWidget {
                           fontSize: 18)),
                   style: TextStyle(color: Colors.white),
                   onSaved: (value) =>
-                      _formData['medicamento'] = value, //------Salva o nome
+                      _formData['medicamento'] = value, 
+ //-----------------------------------------------------Salva o nome
                 ),
               ),
               SizedBox(
@@ -89,7 +88,7 @@ class Cadastro extends StatelessWidget {
                   borderRadius: BorderRadius.all(Radius.circular(15)),
                 ),
                 child: TextFormField(
-                  //--------Funções para inserir os dados
+ //-----------------------------------------------------Funções para inserir os dados
                   keyboardType: TextInputType.name,
                   decoration: InputDecoration(
                       border: InputBorder.none,
@@ -100,7 +99,8 @@ class Cadastro extends StatelessWidget {
                           fontSize: 18)),
                   style: TextStyle(color: Colors.white),
                   onSaved: (value) =>
-                      _formData['quantidade'] = value, //------Salva o nome
+                      _formData['quantidade'] = value, 
+ //-----------------------------------------------------Salva a quantidade
                 ),
               ),
               SizedBox(
@@ -115,7 +115,7 @@ class Cadastro extends StatelessWidget {
                   borderRadius: BorderRadius.all(Radius.circular(15)),
                 ),
                 child: TextFormField(
-                  //--------Funções para inserir os dados
+ //-----------------------------------------------------Funções para inserir os dados
                   keyboardType: TextInputType.name,
                   decoration: InputDecoration(
                       border: InputBorder.none,
@@ -126,11 +126,12 @@ class Cadastro extends StatelessWidget {
                           fontSize: 18)),
                   style: TextStyle(color: Colors.white),
                   onSaved: (value) =>
-                      _formData['duração'] = value, //------Salva o nome
+                      _formData['duração'] = value, 
+ //-----------------------------------------------------Salva o nome
                 ),
               ),
               Container(
-                //-----------Cria botão de cancelar
+ //-----------------------------------------------------Cria botão de cancelar
                 height: 40,
                 alignment: Alignment.centerRight,
                 child: FlatButton(
@@ -145,7 +146,7 @@ class Cadastro extends StatelessWidget {
                 height: 30,
               ),
               Container(
-                //-----------Cria botão de agendar o horário
+ //-----------------------------------------------------Cria botão de agendar o horário
                 height: 65,
                 margin: EdgeInsets.symmetric(horizontal: 10),
                 decoration: BoxDecoration(
@@ -159,7 +160,8 @@ class Cadastro extends StatelessWidget {
                   child: FlatButton(
                     child: Row(
                       mainAxisAlignment: MainAxisAlignment
-                          .spaceBetween, //---------Espaço entre os textos
+                          .spaceBetween, 
+//-----------------------------------------------------Função determina distancia entre os textos
                       children: <Widget>[
                         Text(
                           "Definir Horário",
@@ -181,15 +183,21 @@ class Cadastro extends StatelessWidget {
                     ),
                     onPressed: () {
                       _form.currentState.save();
+ //------------------------------------------------Função responsável por alocar os valores digitados na DB
                       var alarmInfo = AlarmInfo(
                         alarmDateTime: DateTime.now().add(Duration(hours: 12)),
-                        description: 'description teste',
-                        name: 'alarme teste',
+                        description:  _formData['quantidade'],
+                        name: _formData['medicamento'],
                         days: new List.from([2, 3]),
                         color: alarms.length,                  
                       );
                       _dataInit.insertAlarm(alarmInfo);
+ //-----------------------------------------------------
+                      
+ //------------------------------------------------Função usada para vibrar quando o botão for pressionado
                       showNotification();
+ //-----------------------------------------------------
+                    
                       print(_formData);
                       Navigator.push(
                         context,

@@ -2,6 +2,8 @@ import 'package:sqflite/sqflite.dart';
 import 'package:sqflite/sqlite_api.dart';
 import 'package:med_app/screens/medicacoes/components/alarm_info.dart';
 
+//---------------------------------Página de Suporta ao banco de dados
+//
 final String tableAlarm = 'alarm';
 final String columnId = 'id';
 final String columnDateTime = 'alarmDateTime';
@@ -11,6 +13,7 @@ final String columnDays = 'days';
 final String columnIsActive = 'isActive';
 final String columnColor = 'color';
 
+//---------------------------------Funções para verificar se o anco de dados está ativado
 class DataInit {
   static Database _database;
   static DataInit _dataInit;
@@ -29,7 +32,10 @@ class DataInit {
     }
     return _database;
   }
-
+  //--------------------------------------------------
+  
+  
+  //---------------------------------Banco de dados traduzido em Jason
   Future<Database> initializeDatabase() async {
     var dir = await getDatabasesPath();
     var path = dir + "alarm.db";
@@ -53,13 +59,17 @@ class DataInit {
     );
     return database;
   }
-
+  //-----------------------------------------------------
+     
+  //---------------------------------Banco de dados traduzido em Jason
   void insertAlarm(AlarmInfo alarmInfo) async {
     var db = await this.database;
     var result = await db.insert(tableAlarm, alarmInfo.toMap());
     print('result : $result');
   }
+  //-----------------------------------------------------
 
+  //---------------------------------Função que atualiza a lista de alarmes
   Future<List<AlarmInfo>> getAlarms() async {
     List <AlarmInfo> _alarms = [];
 
@@ -71,5 +81,5 @@ class DataInit {
     });
     return _alarms;
   }
-
+ //-----------------------------------------------------
 }

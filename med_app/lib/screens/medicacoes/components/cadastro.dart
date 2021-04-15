@@ -182,7 +182,6 @@ class Cadastro extends StatelessWidget {
                     onPressed: () {
                       _form.currentState.save();
                       var alarmInfo = AlarmInfo(
-                        id: 1,
                         alarmDateTime: DateTime.now().add(Duration(hours: 12)),
                         description: 'description teste',
                         name: 'alarme teste',

@@ -2,6 +2,7 @@
 import 'package:flutter/material.dart';
 import 'package:med_app/constants.dart';
 import 'package:med_app/dataInit.dart';
+import 'package:med_app/screens/medicacoes/components/alarm_info.dart';
 import 'package:med_app/screens/medicacoes/components/body.dart';
 import 'components/cadastro.dart';
 
@@ -11,6 +12,7 @@ class Medicacoes extends StatefulWidget {
 }
 
 class _MedicacoesState extends State<Medicacoes> {
+   Future<List<AlarmInfo>> _alarms;
   DataInit _dataInit1 = DataInit();    //------Variável do banco de dados
   DateTime _alarmTime;
 
@@ -18,9 +20,15 @@ class _MedicacoesState extends State<Medicacoes> {
   void initState(){
     _alarmTime = DateTime.now();
     _dataInit1.initializeDatabase().then((value) {
-      print("--------------Banco de Dados 1 foi Iniciado--------------");
+      print("--------------Banco de Dados foi Iniciado--------------");
+      loadAlarms();
     });
     super.initState();
+  }
+
+  void loadAlarms(){
+    _alarms = _dataInit1.getAlarms();
+    if(mounted) setState(() {});
   }
 
   @override

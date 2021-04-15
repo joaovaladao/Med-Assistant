@@ -75,3 +75,5 @@ Exposição final: 30,25
 - https://glicfas.com.br/plano-de-gerenciamento-de-riscos/
 
 - https://www.devmedia.com.br/gerencia-de-riscos-em-desenvolvimento-de-software/28506
+
+- https://www.culturaagil.com.br/gerenciamento-de-riscos-em-projetos-ageis/

@@ -2,23 +2,27 @@ import 'package:flutter/material.dart';
 import 'package:med_app/constants.dart';
 
 class AlarmInfo {
+  int id;
   DateTime alarmDateTime; //-------Horário para ser disparado
   String description; //------Quantidade da medicação
   String name; //-------Nome do medicamento
   List<int> days;
   bool isActive; //booleano para ativar ou esativar, ainda não implementado
-  Color color;
+  int color;
 
-  AlarmInfo({this.alarmDateTime,
-            this.name,
+  AlarmInfo({
+            this.id,
+            this.alarmDateTime,
             this.description,
-            this.color,
+            this.name,
             this.days,
-            this.isActive
+            this.isActive,
+            this.color,
             }); //-----Construtor
 
-factory AlarmInfo.fromJson(Map<String, dynamic> json) => AlarmInfo(
-        alarmDateTime: DateTime.parse(json["DateTime"]),
+factory AlarmInfo.fromMap(Map<String, dynamic> json) => AlarmInfo(
+        id: json["id"],
+        alarmDateTime: DateTime.parse(json["alarmDateTime"]),
         description: json["description"],
         name: json["name"],
         days: List<int>.from(json["days"].map((x) => x)),
@@ -26,8 +30,9 @@ factory AlarmInfo.fromJson(Map<String, dynamic> json) => AlarmInfo(
         color: json["color"],
     );
 
-    Map<String, dynamic> toJson() => {
-        "DateTime": alarmDateTime.toIso8601String(),
+    Map<String, dynamic> toMap() => {
+        "id": id,
+        "alarmDateTime": alarmDateTime.toIso8601String(),
         "description": description,
         "name": name,
         "days": List<dynamic>.from(days.map((x) => x)),
@@ -48,7 +53,7 @@ List<AlarmInfo> alarms = [
     description: "1 comprimido",
     days: new List.from([4, 6]),
     isActive: true,
-    color: testes1
+    color: 0,
   ),
   AlarmInfo(
     alarmDateTime: DateTime.now().add(Duration(hours: 4, minutes: 42)),
@@ -56,7 +61,7 @@ List<AlarmInfo> alarms = [
     description: "20 ml",
     days: new List.from([4, 5, 6]),
     isActive: true,
-    color: testes2
+    color: 1,
   ),
    AlarmInfo(
     alarmDateTime: DateTime.now().add(Duration(hours: 4, minutes: 42)),
@@ -64,7 +69,7 @@ List<AlarmInfo> alarms = [
     description: "2 comprimidos",
     days: new List.from([1, 2, 3, 4, 5, 6, 7]),
     isActive: true,
-    color: testes3
+    color: 2,
   ),
   /*AlarmInfo(DateTime.now().add(Duration(hours: 4, minutes: 42)), 'Nimesulida',
       '20ml', testes2, new List.from([2, 4, 6]), true),

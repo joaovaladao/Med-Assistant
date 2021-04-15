@@ -8,6 +8,7 @@ import 'package:flutter_local_notifications/flutter_local_notifications.dart';
 
 class Cadastro extends StatelessWidget {
   final _form = GlobalKey<FormState>();
+  var _dataInit = DataInit();
   final Map<String, String> _formData =
       {}; //----------Variável que armazena todos os dados do cadastro
 
@@ -29,6 +30,9 @@ class Cadastro extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    /*_dataInit.initializeDatabase().then((value) {
+      print("--------------Banco de Dados 2 foi Iniciado--------------");
+    });*/
     return Scaffold(
       appBar: AppBar(
         title: Text('Novo Medicamento'),
@@ -177,6 +181,15 @@ class Cadastro extends StatelessWidget {
                     ),
                     onPressed: () {
                       _form.currentState.save();
+                      var alarmInfo = AlarmInfo(
+                        id: 1,
+                        alarmDateTime: DateTime.now().add(Duration(hours: 12)),
+                        description: 'description teste',
+                        name: 'alarme teste',
+                        days: new List.from([2, 3]),
+                        color: alarms.length,                  
+                      );
+                      _dataInit.insertAlarm(alarmInfo);
                       showNotification();
                       print(_formData);
                       Navigator.push(

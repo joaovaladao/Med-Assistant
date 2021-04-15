@@ -11,12 +11,14 @@ class Medicacoes extends StatefulWidget {
 }
 
 class _MedicacoesState extends State<Medicacoes> {
-  DataInit _dataInit = DataInit();    //------Variável do banco de dados
+  DataInit _dataInit1 = DataInit();    //------Variável do banco de dados
+  DateTime _alarmTime;
 
   @override
   void initState(){
-    _dataInit.initializeDatabase().then((value) {
-      print("--------------Banco de Dados foi Iniciado--------------");
+    _alarmTime = DateTime.now();
+    _dataInit1.initializeDatabase().then((value) {
+      print("--------------Banco de Dados 1 foi Iniciado--------------");
     });
     super.initState();
   }

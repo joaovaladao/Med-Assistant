@@ -4,10 +4,12 @@ import 'package:med_app/screens/medicacoes/components/alarm_info.dart';
 
 final String tableAlarm = 'alarm';
 final String columnId = 'id';
-final String columnTitle = 'title';
 final String columnDateTime = 'alarmDateTime';
-final String columnPending = 'isPending';
-final String columnColorIndex = 'gradientColorIndex';
+final String columnDescription = 'description';
+final String columnName = 'name';
+final String columnDays = 'days';
+final String columnIsActive = 'isActive';
+final String columnColor = 'color';
 
 class DataInit {
   static Database _database;
@@ -38,11 +40,14 @@ class DataInit {
       onCreate: (db, version) {
         db.execute('''
           create table $tableAlarm ( 
-          $columnId integer primary key autoincrement, 
-          $columnTitle text not null,
+          $columnId integer primary key autoincrement,
           $columnDateTime text not null,
-          $columnPending integer,
-          $columnColorIndex integer)
+          $columnDescription text not null,
+          $columnName text not null,
+          $columnDays integer,
+          $columnIsActive integer,
+          $columnColor integer
+          )
         ''');
       },
     );
@@ -51,8 +56,20 @@ class DataInit {
 
   void insertAlarm(AlarmInfo alarmInfo) async {
     var db = await this.database;
-    var result = await db.insert(tableAlarm, alarmInfo.toJson());
+    var result = await db.insert(tableAlarm, alarmInfo.toMap());
     print('result : $result');
+  }
+
+  Future<List<AlarmInfo>> getAlarms() async {
+    List <AlarmInfo> _alarms = [];
+
+    var db = await this.database;
+    var result = await db.query(tableAlarm);
+    result.forEach((element) { 
+      var alarmInfo = AlarmInfo.fromMap(element);
+      _alarms.add(alarmInfo);
+    });
+    return _alarms;
   }
 
 }

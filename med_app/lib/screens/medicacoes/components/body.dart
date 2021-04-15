@@ -22,7 +22,7 @@ class _BodyState extends State<Body> {
               margin: const EdgeInsets.symmetric(horizontal: 10, vertical: 5),
               padding: const EdgeInsets.symmetric(horizontal: 22, vertical: 15),
               decoration: BoxDecoration(
-                color: alarm.color,
+                color: ColorsTemplate.colorsTemplate[alarm.color%6],
                 borderRadius: BorderRadius.all(Radius.circular(18)),
               ),
               child: Column(

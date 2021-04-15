@@ -28,6 +28,28 @@ const darkGray = Color(0xFF595f67);
 const neutralGray = Color(0xFF969ca0);
 const lightGray = Color(0xFFb9b9b9);
 // Accent dos cards
+// 
+class ColorsApp {
+  final List<Color> colors;
+  ColorsApp(this.colors);
+
+  static Color app1 = Color(0xFF7159FF);
+  static Color app2 = Color(0xFF61A3FE);
+  static Color app3 = Color(0xFF13B5B5);
+  static Color app4 = Color(0xFFF39E38);
+  static Color app5 = Color(0xFFC46197);
+  static Color app6 = Color(0xFF62AB0F);
+}
+class ColorsTemplate {
+  static List<Color> colorsTemplate = [
+    ColorsApp.app1,
+    ColorsApp.app2,
+    ColorsApp.app3,
+    ColorsApp.app4,
+    ColorsApp.app5,
+    ColorsApp.app6,
+  ];
+}
 const testes1 = Color(0xFF7159FF);
 const testes2 = Color(0xFF61A3FE);
 const testes3 = Color(0xFF13B5B5);

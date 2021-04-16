@@ -12,11 +12,13 @@ class Medicacoes extends StatefulWidget {
 }
 
 class _MedicacoesState extends State<Medicacoes> {
-   Future<List<AlarmInfo>> _alarms;
+  Future<List<AlarmInfo>> _alarms;
   DataInit _dataInit1 = DataInit();    //------Variável do banco de dados
   DateTime _alarmTime;
 
   @override
+
+
   //---------------------Função para inicializar o banco de dados
   void initState(){
     _alarmTime = DateTime.now();
@@ -34,6 +36,10 @@ class _MedicacoesState extends State<Medicacoes> {
     if(mounted) setState(() {});
   }
   //------------------------------------------------
+  //
+    Future<List<AlarmInfo>> getLista(){
+    return _alarms;
+  }
 
   @override
   Widget build(BuildContext context) {

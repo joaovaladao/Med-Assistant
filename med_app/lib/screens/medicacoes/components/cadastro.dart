@@ -189,8 +189,7 @@ class Cadastro extends StatelessWidget {
                         description:  'description',//_formData['quantidade'],
                         name: 'name',//_formData['medicamento'],
                         days: new List.from([2, 3]),
-                        color: 1,//alarms.length,
-                        isActive: true,                  
+                        color: alarms.length,             
                       );
                       _dataInit.insertAlarm(alarmInfo);
  //-----------------------------------------------------

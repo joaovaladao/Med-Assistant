@@ -45,9 +45,8 @@ class _BodyState extends State<Body> {
           child:FutureBuilder(
             future: _dataInit2.getAlarms(),
             builder: (context, snapshot){
-              if (snapshot.hasData){
                 return ListView(
-                children: snapshot.data.map<Widget>((alarm) {
+                children: alarms.map<Widget>((alarm)  {   //snapshot.data.map<Widget>((alarm)
     //-------------------------Função que mapeia todos os alarmes cadastrados;
                 return Container(
                   margin: const EdgeInsets.symmetric(horizontal: 10, vertical: 5),
@@ -87,12 +86,12 @@ class _BodyState extends State<Body> {
                               ],
                             ),
                             Switch(
-                                value: true, //alarm.isActive,
+                                value: true,//alarm.isActive,
                                 activeColor: Colors.white,
-                                onChanged: (value) {
+                                onChanged: (value) {/*
                                   setState(() {
                                     alarm.setActive(value);
-                                  });
+                                  });*/
                                 }),
                           ]),
     //-------------------------Row para organizar os dados que vão aparecer por ultimo na box
@@ -158,8 +157,7 @@ class _BodyState extends State<Body> {
                 )
               ]).toList(),
 //-------------------------função para retornar uma lista, e assim acessarmos todos os itens
-        );}
-          return Text("Loading...");
+        );
         })),
         Container(padding: EdgeInsets.only(bottom: 8)),
       ],

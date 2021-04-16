@@ -47,7 +47,7 @@ class _BodyState extends State<Body> {
             builder: (context, snapshot){
               if (snapshot.hasData){
                 return ListView(
-                children: alarms.map<Widget>((alarm) {
+                children: snapshot.data.map<Widget>((alarm) {
     //-------------------------Função que mapeia todos os alarmes cadastrados;
                 return Container(
                   margin: const EdgeInsets.symmetric(horizontal: 10, vertical: 5),
@@ -87,7 +87,7 @@ class _BodyState extends State<Body> {
                               ],
                             ),
                             Switch(
-                                value: alarm.isActive,
+                                value: true, //alarm.isActive,
                                 activeColor: Colors.white,
                                 onChanged: (value) {
                                   setState(() {

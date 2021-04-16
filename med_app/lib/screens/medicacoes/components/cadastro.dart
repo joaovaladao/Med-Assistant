@@ -185,11 +185,12 @@ class Cadastro extends StatelessWidget {
                       _form.currentState.save();
  //------------------------------------------------Função responsável por alocar os valores digitados na DB
                       var alarmInfo = AlarmInfo(
-                        alarmDateTime: DateTime.now().add(Duration(hours: 12)),
-                        description:  _formData['quantidade'],
-                        name: _formData['medicamento'],
+                        alarmDateTime: DateTime.now().add(Duration(hours: 2)),
+                        description:  'description',//_formData['quantidade'],
+                        name: 'name',//_formData['medicamento'],
                         days: new List.from([2, 3]),
-                        color: alarms.length,                  
+                        color: 1,//alarms.length,
+                        isActive: true,                  
                       );
                       _dataInit.insertAlarm(alarmInfo);
  //-----------------------------------------------------

@@ -3,8 +3,12 @@ import 'package:flutter_local_notifications/flutter_local_notifications.dart';
 import 'package:med_app/constants.dart';
 import 'package:med_app/navBar.dart';
   
+  //--------------------Iniciando o pacote de notificação;
 final  FlutterLocalNotificationsPlugin flutterLocalNotificationsPlugin = 
-  FlutterLocalNotificationsPlugin();  //-----Iniciando o pacote de notificação;
+  FlutterLocalNotificationsPlugin();    
+  //------------------------------------------------
+  
+  //--------------------Main;
 void main() async{
   WidgetsFlutterBinding.ensureInitialized();
     var androidInitiliaze = new AndroidInitializationSettings('ic_launcher');
@@ -37,3 +41,4 @@ class MyApp extends StatelessWidget {
     );
   }
 }
+  //------------------------------------------------

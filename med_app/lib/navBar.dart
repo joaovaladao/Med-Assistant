@@ -15,12 +15,15 @@ class _NavBarState extends State<NavBar> {
   int _currentIndex = 0;
   final List<Widget> _children = [Home(), Medicacoes(), Historico(), Configs()];
 
+//-------------------------------------Função que direciona para a página selecionada
   void onTappedBar(int index) {
     setState(() {
       _currentIndex = index;
     });
   }
+//------------------------------------------------
 
+//-------------------------------------Arquitetura
   @override
   Widget build(BuildContext context) {
     Size size = MediaQuery.of(context).size;
@@ -35,9 +38,13 @@ class _NavBarState extends State<NavBar> {
                   borderRadius: BorderRadius.only(
                     topLeft: Radius.circular(25),
                     topRight: Radius.circular(25),
-                  )),
+                  ),
+                ),
             ),
           ),
+//------------------------------------------------
+
+//-------------------------------------Funções BottonNavigationBar
           Container(
               height: size.height * 0.1,
               child: SalomonBottomBar(
@@ -75,7 +82,9 @@ class _NavBarState extends State<NavBar> {
                       selectedColor: neutralCyan,
                       unselectedColor: neutralGray),
                 ],
-              ))
+              ),
+            ),
+//------------------------------------------------
         ]));
   }
 }

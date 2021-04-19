@@ -1,6 +1,8 @@
 // Dedicado à pagina de medicacoes
 import 'package:flutter/material.dart';
 import 'package:med_app/constants.dart';
+import 'package:med_app/dataInit.dart';
+import 'package:med_app/screens/medicacoes/components/alarm_info.dart';
 import 'package:med_app/screens/medicacoes/components/body.dart';
 import 'components/cadastro.dart';
 
@@ -10,6 +12,34 @@ class Medicacoes extends StatefulWidget {
 }
 
 class _MedicacoesState extends State<Medicacoes> {
+  Future<List<AlarmInfo>> _alarms;
+  DataInit _dataInit1 = DataInit();    //------Variável do banco de dados
+  DateTime _alarmTime;
+
+  @override
+
+
+  //---------------------Função para inicializar o banco de dados
+  void initState(){
+    _alarmTime = DateTime.now();
+    _dataInit1.initializeDatabase().then((value) {
+      print("--------------Banco de Dados foi Iniciado--------------");
+      loadAlarms();
+    });
+    super.initState();
+  }
+  //------------------------------------------------
+
+  //---------------------Função para atualizar a lista de alarmes
+  void loadAlarms(){
+    _alarms = _dataInit1.getAlarms();
+    if(mounted) setState(() {});
+  }
+  //------------------------------------------------
+  //
+    Future<List<AlarmInfo>> getLista(){
+    return _alarms;
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -36,7 +66,7 @@ class _MedicacoesState extends State<Medicacoes> {
 }
 
 AppBar buildAppBar() {
-  // Constroi a barra superior do app
+  //-------------------------------------Constroi a barra superior do app
   return AppBar(
     shape: RoundedRectangleBorder(
       borderRadius: BorderRadius.only(

@@ -7,6 +7,7 @@ import 'package:med_app/main.dart';
 import 'package:flutter_local_notifications/flutter_local_notifications.dart';
 import 'dart:math';
 
+// ignore: must_be_immutable
 class Cadastro extends StatelessWidget {
   final _form = GlobalKey<FormState>();
   var _dataInit = DataInit();

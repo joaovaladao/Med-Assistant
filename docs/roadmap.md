@@ -8,7 +8,8 @@
 | 18/03/2021 | 0.4 | Adicionando sprint 4 |Ítalo |
 | 24/03/2021 | 0.5 | Adicionando sprint 5 |Ítalo |
 | 30/03/2021 | 0.6 | Adicionando sprint 6 |Ítalo |
-| 6/04/2021 | 0.7 | Adicionando sprint 7 |Ítalo |
+| 06/04/2021 | 0.7 | Adicionando sprint 7 |Ítalo |
+| 16/04/2021 | 0.8 | Adicionando sprint 8 |Ítalo |
 
 
 ## Release 1
@@ -126,4 +127,21 @@
 | #110 |[Página "Medication" ](https://github.com/fga-eps-mds/MDS-2020-2-G9/issues/110)
 | #111 |[Code/#110 medication page](https://github.com/fga-eps-mds/MDS-2020-2-G9/pull/111)
 | #112 |[atualizar Roadmap com Sprint 6](https://github.com/fga-eps-mds/MDS-2020-2-G9/issues/112)
-| #113 |[atualizando roadmap](https://github.com/fga-eps-mds/MDS-2020-2-G9/pull/113)
+| #113 |[atualizando roadmap](https://github.com/fga-eps-mds/MDS-2020-2-G9/pull/113)git branch
+
+### Sprint 8
+| ID | Issue |
+|:--:| ------- | 
+| #108 |[Documento de riscos](https://github.com/fga-eps-mds/MDS-2020-2-G9/issues/108)
+| #114 |[Alterando documento de metodologia](https://github.com/fga-eps-mds/MDS-2020-2-G9/issues/114)
+| #115 |[Docs/#114 documento de metodologia](https://github.com/fga-eps-mds/MDS-2020-2-G9/pull/115)
+| #116 |[Documento de Visão](https://github.com/fga-eps-mds/MDS-2020-2-G9/issues/116)
+| #118 |[Página Medicações](https://github.com/fga-eps-mds/MDS-2020-2-G9/issues/118)
+| #119 |[Relatórios de Sprints](https://github.com/fga-eps-mds/MDS-2020-2-G9/issues/119)
+| #120 |[#119 Relatórios de Sprints](https://github.com/fga-eps-mds/MDS-2020-2-G9/pull/120)
+| #121 |[Atualizar o Roadmap](https://github.com/fga-eps-mds/MDS-2020-2-G9/issues/121)
+| #122 |[#121 adicionando a sprint 7 no roadmap" ](https://github.com/fga-eps-mds/MDS-2020-2-G9/pull/122)
+| #123 |[Dev/#118 medicacoes](https://github.com/fga-eps-mds/MDS-2020-2-G9/pull/123)
+| #124 |[#119 Redefinindo funções](https://github.com/fga-eps-mds/MDS-2020-2-G9/pull/124)
+| #125 |[Docs/#108 documento de riscos](https://github.com/fga-eps-mds/MDS-2020-2-G9/pull/125)
+| #126 |[docs/#116 criando categorias](https://github.com/fga-eps-mds/MDS-2020-2-G9/pull/126)

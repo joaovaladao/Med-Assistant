@@ -189,9 +189,11 @@ class Cadastro extends StatelessWidget {
                         description:  'description',//_formData['quantidade'],
                         name: 'name',//_formData['medicamento'],
                         days: new List.from([2, 3]),
-                        color: alarms.length,             
+                        color: alarms.length - 1,             
                       );
                       _dataInit.insertAlarm(alarmInfo);
+                      print("Tamanho do vetor: ");
+                      print(alarms.length);
  //-----------------------------------------------------
                       
  //------------------------------------------------Função usada para vibrar quando o botão for pressionado

@@ -45,8 +45,9 @@ class _BodyState extends State<Body> {
           child:FutureBuilder(
             future: _dataInit2.getAlarms(),
             builder: (context, snapshot){
+              if(snapshot.hasData)
                 return ListView(
-                children: alarms.map<Widget>((alarm)  {   //snapshot.data.map<Widget>((alarm)
+                children: snapshot.data.map<Widget>((alarm)  {   //snapshot.data.map<Widget>((alarm)
     //-------------------------Função que mapeia todos os alarmes cadastrados;
                 return Container(
                   margin: const EdgeInsets.symmetric(horizontal: 10, vertical: 5),
@@ -157,7 +158,10 @@ class _BodyState extends State<Body> {
                 )
               ]).toList(),
 //-------------------------função para retornar uma lista, e assim acessarmos todos os itens
-        );
+          );
+
+        return(Text("Loading...", style: TextStyle(color: Colors.white, fontSize: 28),));
+
         })),
         Container(padding: EdgeInsets.only(bottom: 8)),
       ],

@@ -33,23 +33,27 @@ class ColorsApp {
   final List<Color> colors;
   ColorsApp(this.colors);
 
+  static Color app0 = Colors.white38;
   static Color app1 = Color(0xFF7159FF);
   static Color app2 = Color(0xFF61A3FE);
   static Color app3 = Color(0xFF13B5B5);
   static Color app4 = Color(0xFFF39E38);
   static Color app5 = Color(0xFFC46197);
   static Color app6 = Color(0xFF62AB0F);
+  static Color app7 = Color(0xFF2a9160);
 }
 
 //--------------------------------------------Função para retornar as cores de cada alarme
 class ColorsTemplate {
   static List<Color> colorsTemplate = [
+    ColorsApp.app0,
     ColorsApp.app1,
     ColorsApp.app2,
     ColorsApp.app3,
     ColorsApp.app4,
     ColorsApp.app5,
     ColorsApp.app6,
+    ColorsApp.app7
   ];
 }
 const testes1 = Color(0xFF7159FF);

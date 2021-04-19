@@ -5,6 +5,7 @@ import 'package:med_app/screens/medicacoes/components/horario.dart';
 import 'alarm_info.dart';
 import 'package:med_app/main.dart';
 import 'package:flutter_local_notifications/flutter_local_notifications.dart';
+import 'dart:math';
 
 class Cadastro extends StatelessWidget {
   final _form = GlobalKey<FormState>();
@@ -183,17 +184,17 @@ class Cadastro extends StatelessWidget {
                     ),
                     onPressed: () {
                       _form.currentState.save();
+                      int rng = new Random().nextInt(7);
  //------------------------------------------------Função responsável por alocar os valores digitados na DB
                       var alarmInfo = AlarmInfo(
                         alarmDateTime: DateTime.now().add(Duration(hours: 2)),
-                        description:  'description',//_formData['quantidade'],
-                        name: 'name',//_formData['medicamento'],
+                        description:  _formData['quantidade'],
+                        name: _formData['medicamento'],
                         days: new List.from([2, 3]),
-                        color: alarms.length - 1,             
+                        color: rng,             
                       );
                       _dataInit.insertAlarm(alarmInfo);
-                      print("Tamanho do vetor: ");
-                      print(alarms.length);
+                      print(rng);
  //-----------------------------------------------------
                       
  //------------------------------------------------Função usada para vibrar quando o botão for pressionado

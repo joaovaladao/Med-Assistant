@@ -18,7 +18,7 @@
         <br /><sub><b>Vinícius Roriz</b><br><b>Desenvolvedor/ Arquiteto</b></sub></a><br /></td>
     </table>
 
-## 1. Objetivo da _Sprint 10_
+## 1. Objetivo da _Sprint 11_
 
 <p align="justify">Esta <i>Sprint</i> tem como objetivo:</p>
 
@@ -33,15 +33,15 @@
 
 ## 2. Tamanho da _Sprint_
 
-| Data de Início | 19/04/2021 |
+| Data de Início | 26/04/2021 |
 |:--|:--:|
-| **Data de Término** | **26/04/2021** |
+| **Data de Término** | **03/05/2021** |
 | **Duração** | **7 dias** |
 
 
 ## 3. Sprint Backlog
 
-[Milestone](https://github.com/fga-eps-mds/MDS-2020-2-G9/milestone/10) da _Sprint_
+[Milestone](https://github.com/fga-eps-mds/MDS-2020-2-G9/milestone/11) da _Sprint_
 
 
 ## 4. Débitos Acumulados

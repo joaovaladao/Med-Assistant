@@ -2,8 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:intl/intl.dart';
 import 'package:med_app/constants.dart';
 import 'package:med_app/dataInit.dart';
-import 'package:med_app/screens/medicacoes/medicacoes.dart';
-import 'alarm_info.dart';
 
 class Body extends StatefulWidget {
   @override
@@ -11,29 +9,7 @@ class Body extends StatefulWidget {
 }
 
 class _BodyState extends State<Body> {
-  /*Future<List<AlarmInfo>> _alarms;
-  DataInit _dataInit1 = DataInit();    //------Variável do banco de dados
-  DateTime _alarmTime;
 
-  @override
-    //---------------------Função para inicializar o banco de dados
-  void initState(){
-    _alarmTime = DateTime.now();
-    _dataInit1.initializeDatabase().then((value) {
-      print("--------------Banco de Dados foi Iniciado--------------");
-      loadAlarms();
-    });
-    super.initState();
-  }
-  //------------------------------------------------
-  
-  //---------------------Função para atualizar a lista de alarmes
-  void loadAlarms(){
-    _alarms = _dataInit1.getAlarms();
-    if(mounted) setState(() {});
-  }
-  //------------------------------------------------
-  */
   var _dataInit2 = DataInit();
 
   @override

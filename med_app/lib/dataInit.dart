@@ -83,7 +83,7 @@ class DataInit {
   }
  //-----------------------------------------------------
  
- //---------------------------------Função que atualiza a lista de alarmes
+ //---------------------------------Função que deleta um item lista de alarmes
   Future<int> deleteAlarms(int id) async {
     var db = await this.database;
 

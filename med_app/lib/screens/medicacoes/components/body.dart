@@ -116,11 +116,13 @@ class _BodyState extends State<Body> {
                               ),
                             ),
                             Spacer(flex: 20),
-    //-------------------------Seta pra baixo
-                            Icon(
-                              Icons.keyboard_arrow_down,
+    //-------------------------Botão de delete
+                            IconButton(
+                              icon: Icon(Icons.delete, size: 28),
                               color: Colors.white,
-                              size: 28,
+                              onPressed: (){
+                                _dataInit2.deleteAlarms(alarm.id);
+                              },
                             ),
                             Spacer(flex: 1),
                           ])

@@ -27,8 +27,9 @@ const neutralOrange = Color(0xFFe6961f);
 const darkGray = Color(0xFF595f67);
 const neutralGray = Color(0xFF969ca0);
 const lightGray = Color(0xFFb9b9b9);
+
 // Accent dos cards
-// 
+//
 class ColorsApp {
   final List<Color> colors;
   ColorsApp(this.colors);
@@ -56,6 +57,7 @@ class ColorsTemplate {
     ColorsApp.app7
   ];
 }
+
 const testes1 = Color(0xFF7159FF);
 const testes2 = Color(0xFF61A3FE);
 const testes3 = Color(0xFF13B5B5);
@@ -74,7 +76,9 @@ class GradientColors {
   static List<Color> fire = [Color(0xFFFF5DCD), Color(0xFFFF8484)];
   static List<Color> cleanSky = [Colors.blue, Colors.white];
   static List<Color> avela = [Colors.green, Colors.white];
+  static List<Color> verdao = [Colors.green, Colors.green];
   static List<Color> valads = [Colors.purple, Colors.lightBlue];
   static List<Color> semcor = [Colors.white10, Colors.white24];
+  static List<Color> serrinha = [Colors.green[300], Colors.green[500]];
 }
 //------------------------------------------------

@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:intl/intl.dart';
 import 'package:med_app/constants.dart';
 import 'package:med_app/dataInit.dart';
-import 'package:med_app/screens/medicacoes/medicacoes.dart';
 
 class Body extends StatefulWidget {
   @override

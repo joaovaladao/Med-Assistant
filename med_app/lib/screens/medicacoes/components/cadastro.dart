@@ -204,6 +204,7 @@ class Cadastro extends StatelessWidget {
                     
                       print(_formData);
                        showModalBottomSheet(
+                         backgroundColor: Colors.white,
                                   useRootNavigator: true,
                                   context: context,
                                   clipBehavior: Clip.antiAlias,
@@ -238,7 +239,7 @@ class Cadastro extends StatelessWidget {
                                                 title: Text('Definir os dias'),
                                                 trailing: IconButton(
                                                   icon: Icon(Icons.arrow_forward_ios, size: 20),
-                                                  color: Colors.white,
+                                                  color: Colors.black,
                                                   onPressed: () {
                                                     Navigator.push(
                                                       context,
@@ -247,7 +248,7 @@ class Cadastro extends StatelessWidget {
                                                   },
                                                 ),
                                               ),
-                                              ListTile(
+                                              /*ListTile(
                                                 title: Text('Sound'),
                                                 trailing: Icon(
                                                     Icons.arrow_forward_ios),
@@ -256,7 +257,7 @@ class Cadastro extends StatelessWidget {
                                                 title: Text('Title'),
                                                 trailing: Icon(
                                                     Icons.arrow_forward_ios),
-                                              ),
+                                              ),*/
 
                                               FloatingActionButton.extended(
                                                 onPressed: () async {

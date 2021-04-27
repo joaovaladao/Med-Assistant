@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:intl/intl.dart';
 import 'package:med_app/constants.dart';
 import 'package:med_app/dataInit.dart';
+import 'package:med_app/screens/medicacoes/medicacoes.dart';
 
 class Body extends StatefulWidget {
   @override
@@ -122,66 +123,67 @@ class _BodyState extends State<Body> {
                               color: Colors.white,
                               onPressed: (){
                                 _dataInit2.deleteAlarms(alarm.id);
-                              },
-                            ),
-                            Spacer(flex: 1),
-                          ])
-                    ],
-                  ),
-                );
-              }).followedBy([
-    //-------------------------função que adiciona um fundo falso ao descer a aplicação
-                Container(
-                  height: 80,
-                )
-              ]).toList(),
-//-------------------------função para retornar uma lista, e assim acessarmos todos os itens
-          );
-
-        return(Center(
-          child:Text("Loading...", style: TextStyle(color: Colors.white, fontSize: 20),)
-          )
-        );
-        })),
-        Container(padding: EdgeInsets.only(bottom: 8)),
-      ],
-    );
-  }
-
-//-------------------------Metodo para retornar a sequencia de dias da semana a partir de uma lista de ints
-  String weekdayDate(List<int> days) {
-    List<String> weekDays = new List();
-
-    if (days.length == 7) {
-      return 'Todos os dias';
-    } else {
-      for (int i = 0; i < days.length; i++) {
-        switch (days[i]) {
-          case 1:
-            weekDays.add('Dom');
-            break;
-          case 2:
-            weekDays.add('Seg');
-            break;
-          case 3:
-            weekDays.add('Ter');
-            break;
-          case 4:
-            weekDays.add('Qua');
-            break;
-          case 5:
-            weekDays.add('Qui');
-            break;
-          case 6:
-            weekDays.add('Sex');
-            break;
-          case 7:
-            weekDays.add('Sáb');
-            break;
-        }
-      }
-
-      return weekDays.join(', ');
-    }
-  }
-}
+                                                              },
+                                                            ),
+                                                            Spacer(flex: 1),
+                                                          ])
+                                                    ],
+                                                  ),
+                                                );
+                                              }).followedBy([
+                                    //-------------------------função que adiciona um fundo falso ao descer a aplicação
+                                                Container(
+                                                  height: 80,
+                                                )
+                                              ]).toList(),
+                                //-------------------------função para retornar uma lista, e assim acessarmos todos os itens
+                                          );
+                                
+                                        return(Center(
+                                          child:Text("Loading...", style: TextStyle(color: Colors.white, fontSize: 20),)
+                                          )
+                                        );
+                                        })),
+                                        Container(padding: EdgeInsets.only(bottom: 8)),
+                                      ],
+                                    );
+                                  }
+                                
+                                //-------------------------Metodo para retornar a sequencia de dias da semana a partir de uma lista de ints
+                                  String weekdayDate(List<int> days) {
+                                    List<String> weekDays = new List();
+                                
+                                    if (days.length == 7) {
+                                      return 'Todos os dias';
+                                    } else {
+                                      for (int i = 0; i < days.length; i++) {
+                                        switch (days[i]) {
+                                          case 1:
+                                            weekDays.add('Dom');
+                                            break;
+                                          case 2:
+                                            weekDays.add('Seg');
+                                            break;
+                                          case 3:
+                                            weekDays.add('Ter');
+                                            break;
+                                          case 4:
+                                            weekDays.add('Qua');
+                                            break;
+                                          case 5:
+                                            weekDays.add('Qui');
+                                            break;
+                                          case 6:
+                                            weekDays.add('Sex');
+                                            break;
+                                          case 7:
+                                            weekDays.add('Sáb');
+                                            break;
+                                        }
+                                      }
+                                
+                                      return weekDays.join(', ');
+                                    }
+                                  }
+                                }
+                    

@@ -221,7 +221,6 @@ class Cadastro extends StatelessWidget {
                                             children: [
                                               FlatButton(
                                                 onPressed: () async {
-                                                  var selectedTime =
                                                       await showTimePicker(
                                                     context: context,
                                                     initialTime:
@@ -237,8 +236,16 @@ class Cadastro extends StatelessWidget {
 
                                               ListTile(
                                                 title: Text('Definir os dias'),
-                                                trailing: Icon(
-                                                    Icons.arrow_forward_ios),
+                                                trailing: IconButton(
+                                                  icon: Icon(Icons.arrow_forward_ios, size: 20),
+                                                  color: Colors.white,
+                                                  onPressed: () {
+                                                    Navigator.push(
+                                                      context,
+                                                      MaterialPageRoute(builder: (context) => Horario()),
+                                                    );
+                                                  },
+                                                ),
                                               ),
                                               ListTile(
                                                 title: Text('Sound'),
@@ -263,7 +270,8 @@ class Cadastro extends StatelessWidget {
                                         );
                                       },
                                     );
-                                  },);
+                                  },
+                                );
                     },
                   ),
                 ),

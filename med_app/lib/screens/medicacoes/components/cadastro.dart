@@ -203,10 +203,75 @@ class Cadastro extends StatelessWidget {
  //-----------------------------------------------------
                     
                       print(_formData);
-                      Navigator.push(
-                        context,
-                        MaterialPageRoute(builder: (context) => Horario()),
-                      );
+                       showModalBottomSheet(
+                                  useRootNavigator: true,
+                                  context: context,
+                                  clipBehavior: Clip.antiAlias,
+                                  shape: RoundedRectangleBorder(
+                                    borderRadius: BorderRadius.vertical(
+                                      top: Radius.circular(24),
+                                    ),
+                                  ),
+                                  builder: (context) {
+                                    return StatefulBuilder(
+                                      builder: (context, setModalState) {
+                                        return Container(
+                                          padding: const EdgeInsets.all(32),
+                                          child: Column(
+                                            children: [
+                                              FlatButton(
+                                                onPressed: () async {
+                                                      await showTimePicker(
+                                                    context: context,
+                                                    initialTime:
+                                                        TimeOfDay.now(),
+                                                  );
+                                                },
+                                                child: Text(
+                                                  "Horário",
+                                                  style:
+                                                      TextStyle(fontSize: 32),
+                                                ),
+                                              ),
+
+                                              ListTile(
+                                                title: Text('Definir os dias'),
+                                                trailing: IconButton(
+                                                  icon: Icon(Icons.arrow_forward_ios, size: 20),
+                                                  color: Colors.white,
+                                                  onPressed: () {
+                                                    Navigator.push(
+                                                      context,
+                                                      MaterialPageRoute(builder: (context) => Horario()),
+                                                    );
+                                                  },
+                                                ),
+                                              ),
+                                              ListTile(
+                                                title: Text('Sound'),
+                                                trailing: Icon(
+                                                    Icons.arrow_forward_ios),
+                                              ),
+                                              ListTile(
+                                                title: Text('Title'),
+                                                trailing: Icon(
+                                                    Icons.arrow_forward_ios),
+                                              ),
+
+                                              FloatingActionButton.extended(
+                                                onPressed: () async {
+                                                  Navigator.pop(context);
+                                                  },
+                                                icon: Icon(Icons.alarm),
+                                                label: Text('Save'),
+                                                ),
+                                            ],
+                                          ),
+                                        );
+                                      },
+                                    );
+                                  },
+                                );
                     },
                   ),
                 ),

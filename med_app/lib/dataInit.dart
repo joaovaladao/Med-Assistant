@@ -82,4 +82,13 @@ class DataInit {
     return _alarms;
   }
  //-----------------------------------------------------
+ 
+ //---------------------------------Função que deleta um item lista de alarmes
+  Future<int> deleteAlarms(int id) async {
+    var db = await this.database;
+
+    return await db.delete(tableAlarm, where: '$columnId = ?', whereArgs: [id]);
+  }
+ //-----------------------------------------------------
 }
+

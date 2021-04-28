@@ -221,8 +221,7 @@ class Cadastro extends StatelessWidget {
                                             children: [
                                               FlatButton(
                                                 onPressed: () async {
-                                                  var selectedTime =
-                                                      await showTimePicker(
+                                                  var selectedTime = await showTimePicker(
                                                     context: context,
                                                     initialTime:TimeOfDay.now(),
                                                     );
@@ -252,9 +251,16 @@ class Cadastro extends StatelessWidget {
                                                   icon: Icon(Icons.arrow_forward_ios, size: 20),
                                                   color: Colors.black,
                                                   onPressed: () {
-                                                    Navigator.push(
-                                                      context,
-                                                      MaterialPageRoute(builder: (context) => Horario()),
+                                                    showModalBottomSheet<void>(
+                                                      context: context,
+                                                      shape: RoundedRectangleBorder(
+                                                        borderRadius: BorderRadius.vertical(
+                                                          top: Radius.circular(24),
+                                                        ),
+                                                        ),
+                                                      builder: (BuildContext context) {
+                                                        return Horario();
+                                                      },
                                                     );
                                                   },
                                                 ),

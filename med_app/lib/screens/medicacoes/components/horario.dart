@@ -14,10 +14,10 @@ class _HorarioState extends State<Horario> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
+      /*appBar: AppBar(
         title: Text('Dias da semana'),
         backgroundColor: neutralBlue,
-      ),
+      ),*/
       body: new ListView.builder(
           itemCount: checkBoxListTileModel.length,
           itemBuilder: (BuildContext context, int index) {
@@ -48,7 +48,9 @@ class _HorarioState extends State<Horario> {
             );
           }),
       floatingActionButton: FloatingActionButton.extended(
-        onPressed: () {},
+        onPressed: () {
+          Navigator.pop(context);
+        },
         backgroundColor: neutralCyan,
         label: Text('Continuar'),
         icon: const Icon(Icons.arrow_forward),

@@ -187,17 +187,16 @@ class Cadastro extends StatelessWidget {
                       _form.currentState.save();
                       int rng = new Random().nextInt(7);
  //------------------------------------------------Função responsável por alocar os valores digitados na DB
-                      var alarmInfo = AlarmInfo(
-                        alarmDateTime: DateTime.now().add(Duration(hours: 2)),
-                        description:  _formData['quantidade'],
-                        name: _formData['medicamento'],
-                        days: new List.from([2, 3]),
-                        color: rng,             
-                      );
-                      _dataInit.insertAlarm(alarmInfo);
+                      
                       print(rng);
  //-----------------------------------------------------
-                      
+                      var alarmInfo = AlarmInfo(
+                                                    //alarmDateTime: DateTime.now().add(Duration(hours: 2)),
+                                                    description:  _formData['quantidade'],
+                                                    name: _formData['medicamento'],
+                                                    days: new List.from([2, 3]),
+                                                    color: rng,             
+                                                  );
  //------------------------------------------------Função usada para vibrar quando o botão for pressionado
                       showNotification();
  //-----------------------------------------------------
@@ -222,11 +221,23 @@ class Cadastro extends StatelessWidget {
                                             children: [
                                               FlatButton(
                                                 onPressed: () async {
+                                                  var selectedTime =
                                                       await showTimePicker(
                                                     context: context,
-                                                    initialTime:
-                                                        TimeOfDay.now(),
-                                                  );
+                                                    initialTime:TimeOfDay.now(),
+                                                    );
+                                                  final td = DateTime.now();
+                                                  var selectedDateTime =
+                                                        DateTime(
+                                                            td.year,
+                                                            td.month,
+                                                            td.day,
+                                                            selectedTime.hour,
+                                                            selectedTime.minute
+                                                                );
+                                                  alarmInfo.alarmDateTime = selectedDateTime;
+                                                  print(selectedDateTime);
+                                                  
                                                 },
                                                 child: Text(
                                                   "Horário",
@@ -248,19 +259,12 @@ class Cadastro extends StatelessWidget {
                                                   },
                                                 ),
                                               ),
-                                              /*ListTile(
-                                                title: Text('Sound'),
-                                                trailing: Icon(
-                                                    Icons.arrow_forward_ios),
-                                              ),
-                                              ListTile(
-                                                title: Text('Title'),
-                                                trailing: Icon(
-                                                    Icons.arrow_forward_ios),
-                                              ),*/
 
                                               FloatingActionButton.extended(
+                                                foregroundColor: Colors.black54,
+                                                backgroundColor: Colors.cyan,
                                                 onPressed: () async {
+                                                  _dataInit.insertAlarm(alarmInfo);
                                                   Navigator.pop(context);
                                                   },
                                                 icon: Icon(Icons.alarm),

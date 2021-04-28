@@ -22,13 +22,16 @@ class _BodyState extends State<Body> {
       mainAxisAlignment: MainAxisAlignment.start,
       children: <Widget>[
         SizedBox(
-          height: 10,
+          height: 20,
         ),
 
         Text(
           "Calendário",
           style: TextStyle(
-              fontFamily: 'OpenSans', color: Colors.white, fontSize: 28),
+              fontFamily: 'OpenSans',
+              fontWeight: FontWeight.bold,
+              color: Colors.white,
+              fontSize: 28),
         ),
 
         Container(
@@ -36,23 +39,26 @@ class _BodyState extends State<Body> {
           padding: const EdgeInsets.symmetric(horizontal: 22, vertical: 15),
           decoration: BoxDecoration(
             borderRadius: BorderRadius.all(Radius.circular(18)),
-            gradient: LinearGradient(colors: GradientColors.semcor),
+            gradient: LinearGradient(colors: GradientColors.serrinha),
           ),
           //----------------------------------------------Função que retorna calendário
           child: TableCalendar(
               calendarStyle: CalendarStyle(
+                //Marcador de evento em baixo de cada dia
                 markersColor: Colors.white,
-                weekdayStyle: TextStyle(color: Colors.white),
+                weekdayStyle: TextStyle(fontSize: 20, color: Colors.white),
                 todayColor: Colors.orange,
-                selectedColor: Theme.of(context).primaryColor,
+                selectedColor: Colors.blue,
                 todayStyle: TextStyle(
                   fontWeight: FontWeight.bold,
                   fontSize: 18,
                   color: Colors.white,
                 ),
-                weekendStyle: TextStyle(color: Colors.white),
-                outsideWeekendStyle: TextStyle(color: Colors.white),
-                renderDaysOfWeek: false,
+                weekendStyle: TextStyle(color: Colors.red),
+                outsideWeekendStyle: TextStyle(color: Colors.red),
+                outsideDaysVisible: true,
+                outsideStyle: TextStyle(color: Colors.red),
+                renderDaysOfWeek: true,
               ),
               headerStyle: HeaderStyle(
                 leftChevronIcon: Icon(
@@ -65,15 +71,21 @@ class _BodyState extends State<Body> {
                   size: 15,
                   color: Colors.white,
                 ),
-                titleTextStyle: TextStyle(color: Colors.white, fontSize: 25),
+                titleTextStyle: TextStyle(
+                    fontFamily: 'OpenSans',
+                    fontWeight: FontWeight.bold,
+                    color: Colors.white,
+                    fontSize: 25),
                 formatButtonDecoration: BoxDecoration(
                   color: Colors.white,
                   borderRadius: BorderRadius.circular(20),
                 ),
               ),
+              startingDayOfWeek: StartingDayOfWeek.monday,
+              daysOfWeekStyle: DaysOfWeekStyle(),
               calendarController: calendarController),
         ),
-//--------------------------------------------------------
+//----------------Faz os botões em baixo do calendario----------------------------------------
         Row(
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: <Widget>[
@@ -85,9 +97,11 @@ class _BodyState extends State<Body> {
                 gradient: LinearGradient(colors: GradientColors.serrinha),
               ),
               child: Text(
-                "BEM =)",
+                "Bem =)",
                 style: TextStyle(
-                    fontFamily: 'OpenSans', color: Colors.white, fontSize: 25),
+                    fontWeight: FontWeight.bold,
+                    color: Colors.white,
+                    fontSize: 25),
               ),
             ),
             Container(
@@ -95,12 +109,14 @@ class _BodyState extends State<Body> {
               padding: const EdgeInsets.symmetric(horizontal: 40, vertical: 15),
               decoration: BoxDecoration(
                 borderRadius: BorderRadius.all(Radius.circular(18)),
-                gradient: LinearGradient(colors: GradientColors.fire),
+                gradient: LinearGradient(colors: GradientColors.orange),
               ),
               child: Text(
-                "MAL =(",
+                "Mal =(",
                 style: TextStyle(
-                    fontFamily: 'OpenSans', color: Colors.white, fontSize: 25),
+                    fontWeight: FontWeight.bold,
+                    color: Colors.white,
+                    fontSize: 25),
               ),
             ),
           ],

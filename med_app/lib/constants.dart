@@ -79,6 +79,7 @@ class GradientColors {
   static List<Color> verdao = [Colors.green, Colors.green];
   static List<Color> valads = [Colors.purple, Colors.lightBlue];
   static List<Color> semcor = [Colors.white10, Colors.white24];
-  static List<Color> serrinha = [Colors.green[300], Colors.green[500]];
+  static List<Color> serrinha = [Color(0xFF3caaf0), Color(0xFF3caaf0)];
+  static List<Color> orange = [Colors.orange, Colors.orange];
 }
 //------------------------------------------------

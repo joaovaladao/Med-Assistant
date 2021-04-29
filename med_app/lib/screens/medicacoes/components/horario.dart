@@ -15,10 +15,6 @@ class _HorarioState extends State<Horario> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      /*appBar: AppBar(
-        title: Text('Dias da semana'),
-        backgroundColor: neutralBlue,
-      ),*/
       body: new ListView.builder(
           itemCount: checkBoxListTileModel.length,
           itemBuilder: (BuildContext context, int index) {
@@ -37,7 +33,6 @@ class _HorarioState extends State<Horario> {
                         style: TextStyle(
                           color: Colors.white,
                           fontSize: 18,
-                          // fontWeight: FontWeight.w600,
                         ),
                       ),
                       value: checkBoxListTileModel[index].isCheck,
@@ -51,7 +46,6 @@ class _HorarioState extends State<Horario> {
       floatingActionButton: FloatingActionButton.extended(
         onPressed: () {
           List lista = funcaoRetorno(checkBoxListTileModel);
-          Retorno retorno = Retorno(listaFinal: lista);
           print(lista);
           Navigator.push(
               context,
@@ -65,26 +59,16 @@ class _HorarioState extends State<Horario> {
       ),
     );
   }
-
+//---------------------------------------Função para definir o estada (concertar)
   void itemChange(bool val, int index) {
     setState(() {
       checkBoxListTileModel[index].isCheck = val;
     });
   }
 }
-class Retorno{
-  var listaFinal = new List();
+//---------------------------------------------------------------------
 
-  List get listaFi{
-    return listaFinal;
-  }
-
-  set listaF(List lista){
-    listaFinal = lista;
-  }
-  Retorno({this.listaFinal});
-}
-
+//---------------------------------------Classe CheckBox
 class CheckBoxListTileModel {
   int dia;
   String title;
@@ -104,30 +88,20 @@ class CheckBoxListTileModel {
     ];
   }
 }
-  
+//---------------------------------------------------------------------
+
+
+//---------------------------------------Função que retorna os dias selecionados em forma de lista
 List funcaoRetorno (List<CheckBoxListTileModel> check) {
     var list = new List();
-    if (check[0].isCheck == true){
-      list.add(check[0].dia);
+    int contador = 0;
+
+    while(contador<7){
+      if (check[contador].isCheck == true){
+        list.add(check[contador].dia);
+      }
+      contador++;
     }
-    if (check[1].isCheck == true){
-      list.add(check[1].dia);
-    }
-    if (check[2].isCheck == true){
-      list.add(check[2].dia);
-    }
-    if (check[3].isCheck == true){
-      list.add(check[3].dia);
-    }
-    if (check[4].isCheck == true){
-      list.add(check[4].dia);
-    }
-    if (check[5].isCheck == true){
-      list.add(check[5].dia);
-    }
-    if (check[6].isCheck == true){
-      list.add(check[6].dia);
-    }
-    //List list = [check[0].dia, check[1].dia, check[2].dia,check[3].dia, check[3].dia,check[4].dia, check[5].dia,check[6].dia];
     return list;
 }
+//---------------------------------------------------------------------

@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:med_app/constants.dart';
 import 'package:med_app/dataInit.dart';
-import 'package:med_app/screens/medicacoes/components/horario.dart';
+//import 'package:med_app/screens/medicacoes/components/horario.dart';
 import 'alarm_info.dart';
 import 'package:med_app/main.dart';
 import 'package:flutter_local_notifications/flutter_local_notifications.dart';
@@ -188,17 +188,16 @@ class Cadastro extends StatelessWidget {
                     onPressed: () {
                       _form.currentState.save();
                       int rng = new Random().nextInt(7);
- //------------------------------------------------Função responsável por alocar os valores digitados na DB
-                      
-                      print(rng);
- //-----------------------------------------------------
+
+ //------------------------------------------------Variável que será armazenada no banco de dados
                       var alarmInfo = AlarmInfo(
-                                                    //alarmDateTime: DateTime.now().add(Duration(hours: 2)),
-                                                    description:  _formData['quantidade'],
-                                                    name: _formData['medicamento'],
-                                                    days: new List.from([2, 3, 4, 5, 6, 7, 1]),
-                                                    color: rng,             
-                                                  );
+                        description:  _formData['quantidade'],
+                        name: _formData['medicamento'],
+                        days: new List.from([2, 3, 4, 5, 6, 7, 1]),
+                        color: rng,             
+                        );
+ //-----------------------------------------------------
+
  //------------------------------------------------Função usada para vibrar quando o botão for pressionado
                       showNotification();
  //-----------------------------------------------------
@@ -221,6 +220,8 @@ class Cadastro extends StatelessWidget {
                                           padding: const EdgeInsets.all(32),
                                           child: Column(
                                             children: [
+
+//---------------------------------------Função para recolher o horário
                                               FlatButton(
                                                 onPressed: () async {
                                                   var selectedTime = await showTimePicker(
@@ -238,7 +239,8 @@ class Cadastro extends StatelessWidget {
                                                                 );
                                                   alarmInfo.alarmDateTime = selectedDateTime;
                                                   print(selectedDateTime);
-                                                  
+//---------------------------------------------------------------------
+                                               
                                                 },
                                                 child: Text(
                                                   "Horário",
@@ -262,6 +264,9 @@ class Cadastro extends StatelessWidget {
                                                         ),
                                                       builder: (BuildContext context) {
                                                             return Scaffold(
+
+//----------------------------------------------------------Código da página horário
+
                                                               body: new ListView.builder(
                                                                   itemCount: checkBoxListTileModel.length,
                                                                   itemBuilder: (BuildContext context, int index) {
@@ -307,6 +312,7 @@ class Cadastro extends StatelessWidget {
                                                                     borderRadius: BorderRadius.all(Radius.circular(10.0))),
                                                               ),
                                                             );
+//-----------------------------------------------------------------------------------------------------
                                                       },
                                                     );
                                                   },
@@ -316,10 +322,14 @@ class Cadastro extends StatelessWidget {
                                               FloatingActionButton.extended(
                                                 foregroundColor: Colors.black54,
                                                 backgroundColor: Colors.cyan,
+
+ //------------------------------------------------Função responsável por alocar os valores digitados na DB
                                                 onPressed: () async {
                                                   _dataInit.insertAlarm(alarmInfo);
                                                   Navigator.pop(context);
                                                   },
+//-----------------------------------------------------------------------------------------------------
+
                                                 icon: Icon(Icons.alarm),
                                                 label: Text('Save'),
                                                 ),
@@ -340,12 +350,15 @@ class Cadastro extends StatelessWidget {
       ),
     );
   }
+
+//---------------------------------------Função para definir o estada (concertar)
 void itemChange(bool val, int index) {
       checkBoxListTileModel[index].isCheck = val;
   }
-
+//---------------------------------------------------------------------
 }
 
+//---------------------------------------Classe CheckBox
 class CheckBoxListTileModel {
   int dia;
   String title;
@@ -365,7 +378,10 @@ class CheckBoxListTileModel {
     ];
   }
 }
+//---------------------------------------------------------------------
 
+
+//---------------------------------------Função que retorna os dias selecionados em forma de lista
 List funcaoRetorno (List<CheckBoxListTileModel> check) {
     var list = new List();
     if (check[0].isCheck == true){
@@ -389,6 +405,6 @@ List funcaoRetorno (List<CheckBoxListTileModel> check) {
     if (check[6].isCheck == true){
       list.add(check[6].dia);
     }
-    //List list = [check[0].dia, check[1].dia, check[2].dia,check[3].dia, check[3].dia,check[4].dia, check[5].dia,check[6].dia];
     return list;
 }
+//---------------------------------------------------------------------

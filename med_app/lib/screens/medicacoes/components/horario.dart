@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 //import 'package:intl/intl.dart';
 import 'package:med_app/constants.dart';
+import 'package:med_app/screens/medicacoes/components/cadastro.dart';
 //import 'alarm_info.dart';
 
 class Horario extends StatefulWidget {
@@ -49,7 +50,12 @@ class _HorarioState extends State<Horario> {
           }),
       floatingActionButton: FloatingActionButton.extended(
         onPressed: () {
-          Navigator.pop(context);
+          List lista = funcaoRetorno(checkBoxListTileModel);
+          Retorno retorno = Retorno(listaFinal: lista);
+          print(lista);
+          Navigator.push(
+              context,
+              MaterialPageRoute(builder: (context) => Cadastro()));
         },
         backgroundColor: neutralCyan,
         label: Text('Continuar'),
@@ -65,6 +71,18 @@ class _HorarioState extends State<Horario> {
       checkBoxListTileModel[index].isCheck = val;
     });
   }
+}
+class Retorno{
+  var listaFinal = new List();
+
+  List get listaFi{
+    return listaFinal;
+  }
+
+  set listaF(List lista){
+    listaFinal = lista;
+  }
+  Retorno({this.listaFinal});
 }
 
 class CheckBoxListTileModel {
@@ -85,4 +103,31 @@ class CheckBoxListTileModel {
       CheckBoxListTileModel(dia: 1, title: 'Domingo', isCheck: false),
     ];
   }
+}
+  
+List funcaoRetorno (List<CheckBoxListTileModel> check) {
+    var list = new List();
+    if (check[0].isCheck == true){
+      list.add(check[0].dia);
+    }
+    if (check[1].isCheck == true){
+      list.add(check[1].dia);
+    }
+    if (check[2].isCheck == true){
+      list.add(check[2].dia);
+    }
+    if (check[3].isCheck == true){
+      list.add(check[3].dia);
+    }
+    if (check[4].isCheck == true){
+      list.add(check[4].dia);
+    }
+    if (check[5].isCheck == true){
+      list.add(check[5].dia);
+    }
+    if (check[6].isCheck == true){
+      list.add(check[6].dia);
+    }
+    //List list = [check[0].dia, check[1].dia, check[2].dia,check[3].dia, check[3].dia,check[4].dia, check[5].dia,check[6].dia];
+    return list;
 }

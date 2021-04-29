@@ -47,9 +47,9 @@ class _HorarioState extends State<Horario> {
         onPressed: () {
           List lista = funcaoRetorno(checkBoxListTileModel);
           print(lista);
-          Navigator.push(
+          Navigator.pop(
               context,
-              MaterialPageRoute(builder: (context) => Cadastro()));
+              lista);
         },
         backgroundColor: neutralCyan,
         label: Text('Continuar'),

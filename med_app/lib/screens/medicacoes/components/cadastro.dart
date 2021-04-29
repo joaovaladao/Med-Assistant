@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:med_app/constants.dart';
 import 'package:med_app/dataInit.dart';
-//import 'package:med_app/screens/medicacoes/components/horario.dart';
+import 'package:med_app/screens/medicacoes/components/horario.dart';
 import 'alarm_info.dart';
 import 'package:med_app/main.dart';
 import 'package:flutter_local_notifications/flutter_local_notifications.dart';
@@ -9,12 +9,14 @@ import 'dart:math';
 
 // ignore: must_be_immutable
 class Cadastro extends StatelessWidget {
+  List namaste;
   List<CheckBoxListTileModel> checkBoxListTileModel =
       CheckBoxListTileModel.getDias();
   final _form = GlobalKey<FormState>();
   var _dataInit = DataInit();
   final Map<String, String> _formData =
       {}; 
+  Cadastro({this.namaste});
  //--------------------------------------Variável que armazena todos os dados do cadastro
 
   Future showNotification() async{  //Função que aciona Notificação ao dispositivo
@@ -254,8 +256,12 @@ class Cadastro extends StatelessWidget {
                                                 trailing: IconButton(
                                                   icon: Icon(Icons.arrow_forward_ios, size: 20),
                                                   color: Colors.black,
-                                                  onPressed: () {
-                                                    showModalBottomSheet<void>(
+                                                  onPressed: () async {
+                                                    namaste = await Navigator.push(
+                                                    context,
+                                                    MaterialPageRoute(builder: (context) => Horario()));
+                                                  },
+                                                    /*showModalBottomSheet<void>(
                                                       context: context,
                                                       shape: RoundedRectangleBorder(
                                                         borderRadius: BorderRadius.vertical(
@@ -263,10 +269,10 @@ class Cadastro extends StatelessWidget {
                                                         ),
                                                         ),
                                                       builder: (BuildContext context) {
-                                                            return Scaffold(
 
 //----------------------------------------------------------Código da página horário
-
+                                                            return Horario();
+                                                            return Scaffold(
                                                               body: new ListView.builder(
                                                                   itemCount: checkBoxListTileModel.length,
                                                                   itemBuilder: (BuildContext context, int index) {
@@ -315,7 +321,7 @@ class Cadastro extends StatelessWidget {
 //-----------------------------------------------------------------------------------------------------
                                                       },
                                                     );
-                                                  },
+                                                  },*/
                                                 ),
                                               ),
 
@@ -325,6 +331,11 @@ class Cadastro extends StatelessWidget {
 
  //------------------------------------------------Função responsável por alocar os valores digitados na DB
                                                 onPressed: () async {
+                                                  print(namaste);
+                                                  List <int> nova = new List.from([]);
+                                                  nova = namaste.cast<int>();
+                                                  alarmInfo.days = nova;
+
                                                   _dataInit.insertAlarm(alarmInfo);
                                                   Navigator.pop(context);
                                                   },

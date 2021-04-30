@@ -7,6 +7,7 @@ Data|Versão|Descrição|Autor
 21/03|0.4|Adição de tópico sobre Visão dos Casos de Uso|Thiago|
 21/03|0.5|Adição de tópico sobre Visão Lógica|Thiago|
 21/03|0.6|Adição de Referências|Thiago|
+26/04|0.7|Adição de Diagrama|Ítalo|
 
 
 ## 1 <a name="1">Introdução</a>
@@ -24,6 +25,10 @@ Data|Versão|Descrição|Autor
 * Visão Lógica: Descreve as interações entre as camadas e as tecnologias.
 * Referências: Emprega as fontes utilizadas nas pesquisas para relacionar as publicações que foram consultadas e citadas.
 
+#### 1.3.1 <a name="1_3_1">Diagrama de widget</a>
+![teste](assets/MDS-G9.png)
+
+
 ## 2 <a name="2">Representação de Arquitetura</a>
 ### 2.1 <a name="2_1">Flutter</a>
 <p align = "justify"> &emsp;&emsp; Para o desenvolvimento da interface do nosso aplicativo, foi escolhido o framework <a href="https://flutter.dev/">Flutter</a>, que utiliza a linguagem de programação <a href="https://dart.dev/">Dart</a>.</p>
@@ -33,12 +38,12 @@ Data|Versão|Descrição|Autor
 <p align = "justify"> &emsp;&emsp; Uma aplicação feita em <a href="https://flutter.dev/">Flutter</a>, é criada com base em um conjunto widgets que formam a interface do app. Cada widget possui uma funcionalidade, seja ela apenas visual ou interativa, os widgets são agrupados em uma estrutura de 'pai e filho', ou seja, um Widget pode conter dentro de si outros widgets, que desse modo, formam o layout desejado pelos desenvolvedores.</p>
 
 ## 3 <a name="3">Metas e Restrições de Arquitetura</a>
-### 4.1 <a name="4_1">Metas</a>
+### 3.1 <a name="4_1">Metas</a>
 * As principais funcionalidades do app devem funcionar de forma offline
 * Interface simples e intuitiva
 * Funcionalidades adicionais que melhoram a experiência do usuário
 
-### 4.1 <a name="4_1">Restrições</a>
+### 3.2 <a name="4_1">Restrições</a>
 * Aplicação devera funcionar no sistema Android.
 
 ## 4 <a name="4">Visão dos Casos de Uso</a>

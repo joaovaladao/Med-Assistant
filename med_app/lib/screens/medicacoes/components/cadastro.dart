@@ -9,10 +9,14 @@ import 'dart:math';
 
 // ignore: must_be_immutable
 class Cadastro extends StatelessWidget {
+  List namaste;
+  List<CheckBoxListTileModel> checkBoxListTileModel =
+      CheckBoxListTileModel.getDias();
   final _form = GlobalKey<FormState>();
   var _dataInit = DataInit();
   final Map<String, String> _formData =
       {}; 
+  Cadastro({this.namaste});
  //--------------------------------------Variável que armazena todos os dados do cadastro
 
   Future showNotification() async{  //Função que aciona Notificação ao dispositivo
@@ -155,7 +159,6 @@ class Cadastro extends StatelessWidget {
                    gradient: LinearGradient(
                      colors: GradientColors.valads,
                    ),
-                  //color: neutralBlue,
                   borderRadius: BorderRadius.all(Radius.circular(10)),
                 ),
                 child: SizedBox.expand(
@@ -186,24 +189,23 @@ class Cadastro extends StatelessWidget {
                     onPressed: () {
                       _form.currentState.save();
                       int rng = new Random().nextInt(7);
- //------------------------------------------------Função responsável por alocar os valores digitados na DB
+
+ //------------------------------------------------Variável que será armazenada no banco de dados
                       var alarmInfo = AlarmInfo(
-                        alarmDateTime: DateTime.now().add(Duration(hours: 2)),
                         description:  _formData['quantidade'],
                         name: _formData['medicamento'],
-                        days: new List.from([2, 3]),
+                        days: new List.from([2, 3, 4, 5, 6, 7, 1]),
                         color: rng,             
-                      );
-                      _dataInit.insertAlarm(alarmInfo);
-                      print(rng);
+                        );
  //-----------------------------------------------------
-                      
+
  //------------------------------------------------Função usada para vibrar quando o botão for pressionado
                       showNotification();
  //-----------------------------------------------------
                     
                       print(_formData);
                        showModalBottomSheet(
+                         backgroundColor: Colors.white,
                                   useRootNavigator: true,
                                   context: context,
                                   clipBehavior: Clip.antiAlias,
@@ -219,13 +221,27 @@ class Cadastro extends StatelessWidget {
                                           padding: const EdgeInsets.all(32),
                                           child: Column(
                                             children: [
+
+//---------------------------------------Função para recolher o horário
                                               FlatButton(
                                                 onPressed: () async {
-                                                      await showTimePicker(
+                                                  var selectedTime = await showTimePicker(
                                                     context: context,
-                                                    initialTime:
-                                                        TimeOfDay.now(),
-                                                  );
+                                                    initialTime:TimeOfDay.now(),
+                                                    );
+                                                  final td = DateTime.now();
+                                                  var selectedDateTime =
+                                                        DateTime(
+                                                            td.year,
+                                                            td.month,
+                                                            td.day,
+                                                            selectedTime.hour,
+                                                            selectedTime.minute
+                                                                );
+                                                  alarmInfo.alarmDateTime = selectedDateTime;
+                                                  print(selectedDateTime);
+//---------------------------------------------------------------------
+                                               
                                                 },
                                                 child: Text(
                                                   "Horário",
@@ -238,30 +254,32 @@ class Cadastro extends StatelessWidget {
                                                 title: Text('Definir os dias'),
                                                 trailing: IconButton(
                                                   icon: Icon(Icons.arrow_forward_ios, size: 20),
-                                                  color: Colors.white,
-                                                  onPressed: () {
-                                                    Navigator.push(
-                                                      context,
-                                                      MaterialPageRoute(builder: (context) => Horario()),
-                                                    );
+                                                  color: Colors.black,
+                                                  onPressed: () async {
+                                                    namaste = await Navigator.push(
+                                                    context,
+                                                    MaterialPageRoute(builder: (context) => Horario()));
                                                   },
                                                 ),
                                               ),
-                                              ListTile(
-                                                title: Text('Sound'),
-                                                trailing: Icon(
-                                                    Icons.arrow_forward_ios),
-                                              ),
-                                              ListTile(
-                                                title: Text('Title'),
-                                                trailing: Icon(
-                                                    Icons.arrow_forward_ios),
-                                              ),
 
                                               FloatingActionButton.extended(
+                                                foregroundColor: Colors.black54,
+                                                backgroundColor: Colors.cyan,
+
+ //------------------------------------------------Função responsável por alocar os valores digitados na DB
                                                 onPressed: () async {
+                                                  print(namaste);
+                                                  List <int> nova = new List.from([]);
+                                                  nova = namaste.cast<int>();
+                                                  alarmInfo.days = nova;
+
+                                                  _dataInit.insertAlarm(alarmInfo);
+                                                  Navigator.pop(context);
                                                   Navigator.pop(context);
                                                   },
+//-----------------------------------------------------------------------------------------------------
+
                                                 icon: Icon(Icons.alarm),
                                                 label: Text('Save'),
                                                 ),

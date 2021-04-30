@@ -40,7 +40,7 @@ factory AlarmInfo.fromMap(Map<String, dynamic> json) => AlarmInfo(
         "alarmDateTime": alarmDateTime.toIso8601String(),
         "description": description,
         "name": name,
-        "days": List<dynamic>.from(days.map((x) => x)),
+        "days": List<int>.from(days.map((x) => x)),
         "isActive": isActive,
         "color": color,
     };

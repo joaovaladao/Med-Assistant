@@ -1,7 +1,5 @@
 import 'package:flutter/material.dart';
-//import 'package:intl/intl.dart';
 import 'package:med_app/constants.dart';
-//import 'alarm_info.dart';
 
 class Horario extends StatefulWidget {
   @override
@@ -14,10 +12,6 @@ class _HorarioState extends State<Horario> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: Text('Dias da semana'),
-        backgroundColor: neutralBlue,
-      ),
       body: new ListView.builder(
           itemCount: checkBoxListTileModel.length,
           itemBuilder: (BuildContext context, int index) {
@@ -36,7 +30,6 @@ class _HorarioState extends State<Horario> {
                         style: TextStyle(
                           color: Colors.white,
                           fontSize: 18,
-                          // fontWeight: FontWeight.w600,
                         ),
                       ),
                       value: checkBoxListTileModel[index].isCheck,
@@ -48,7 +41,13 @@ class _HorarioState extends State<Horario> {
             );
           }),
       floatingActionButton: FloatingActionButton.extended(
-        onPressed: () {},
+        onPressed: () {
+          List lista = funcaoRetorno(checkBoxListTileModel);
+          print(lista);
+          Navigator.pop(
+              context,
+              lista);
+        },
         backgroundColor: neutralCyan,
         label: Text('Continuar'),
         icon: const Icon(Icons.arrow_forward),
@@ -57,14 +56,16 @@ class _HorarioState extends State<Horario> {
       ),
     );
   }
-
+//---------------------------------------Função para definir o estada (concertar)
   void itemChange(bool val, int index) {
     setState(() {
       checkBoxListTileModel[index].isCheck = val;
     });
   }
 }
+//---------------------------------------------------------------------
 
+//---------------------------------------Classe CheckBox
 class CheckBoxListTileModel {
   int dia;
   String title;
@@ -84,3 +85,20 @@ class CheckBoxListTileModel {
     ];
   }
 }
+//---------------------------------------------------------------------
+
+
+//---------------------------------------Função que retorna os dias selecionados em forma de lista
+List funcaoRetorno (List<CheckBoxListTileModel> check) {
+    var list = new List();
+    int contador = 0;
+
+    while(contador<7){
+      if (check[contador].isCheck == true){
+        list.add(check[contador].dia);
+      }
+      contador++;
+    }
+    return list;
+}
+//---------------------------------------------------------------------

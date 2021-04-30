@@ -159,7 +159,6 @@ class Cadastro extends StatelessWidget {
                    gradient: LinearGradient(
                      colors: GradientColors.valads,
                    ),
-                  //color: neutralBlue,
                   borderRadius: BorderRadius.all(Radius.circular(10)),
                 ),
                 child: SizedBox.expand(
@@ -261,67 +260,6 @@ class Cadastro extends StatelessWidget {
                                                     context,
                                                     MaterialPageRoute(builder: (context) => Horario()));
                                                   },
-                                                    /*showModalBottomSheet<void>(
-                                                      context: context,
-                                                      shape: RoundedRectangleBorder(
-                                                        borderRadius: BorderRadius.vertical(
-                                                          top: Radius.circular(24),
-                                                        ),
-                                                        ),
-                                                      builder: (BuildContext context) {
-
-//----------------------------------------------------------Código da página horário
-                                                            return Horario();
-                                                            return Scaffold(
-                                                              body: new ListView.builder(
-                                                                  itemCount: checkBoxListTileModel.length,
-                                                                  itemBuilder: (BuildContext context, int index) {
-                                                                    return Container(
-                                                                      margin: EdgeInsets.symmetric(horizontal: 20),
-                                                                      child: Column(
-                                                                        children: <Widget>[
-                                                                          SizedBox(
-                                                                            height: 10,
-                                                                          ),
-                                                                          new CheckboxListTile(
-                                                                              activeColor: neutralBlue,
-                                                                              dense: true,
-                                                                              title: new Text(
-                                                                                checkBoxListTileModel[index].title,
-                                                                                style: TextStyle(
-                                                                                  color: Colors.white,
-                                                                                  fontSize: 18,
-                                                                                  // fontWeight: FontWeight.w600,
-                                                                                ),
-                                                                              ),
-                                                                              value: checkBoxListTileModel[index].isCheck,
-                                                                              onChanged: (bool val) {
-                                                                                itemChange(val, index);
-                                                                              }),
-                                                                        ],
-                                                                      ),
-                                                                    );
-                                                                  }),
-                                                              floatingActionButton: FloatingActionButton.extended(
-                                                                onPressed: () {
-                                                                  List lista = funcaoRetorno(checkBoxListTileModel);
-                                                                  List <int> nova = new List.from([]);
-                                                                  nova = lista.cast<int>();
-                                                                  print(lista);
-                                                                  alarmInfo.days = nova; 
-                                                                  Navigator.pop(context);
-                                                                },
-                                                                backgroundColor: neutralCyan,
-                                                                label: Text('Continuar'),
-                                                                icon: const Icon(Icons.arrow_forward),
-                                                                shape: RoundedRectangleBorder(
-                                                                    borderRadius: BorderRadius.all(Radius.circular(10.0))),
-                                                              ),
-                                                            );
-//-----------------------------------------------------------------------------------------------------
-                                                      },
-                                                    );
-                                                  },*/
                                                 ),
                                               ),
 
@@ -337,6 +275,7 @@ class Cadastro extends StatelessWidget {
                                                   alarmInfo.days = nova;
 
                                                   _dataInit.insertAlarm(alarmInfo);
+                                                  Navigator.pop(context);
                                                   Navigator.pop(context);
                                                   },
 //-----------------------------------------------------------------------------------------------------
@@ -361,61 +300,4 @@ class Cadastro extends StatelessWidget {
       ),
     );
   }
-
-//---------------------------------------Função para definir o estada (concertar)
-void itemChange(bool val, int index) {
-      checkBoxListTileModel[index].isCheck = val;
-  }
-//---------------------------------------------------------------------
 }
-
-//---------------------------------------Classe CheckBox
-class CheckBoxListTileModel {
-  int dia;
-  String title;
-  bool isCheck;
-
-  CheckBoxListTileModel({this.dia, this.title, this.isCheck});
-
-  static List<CheckBoxListTileModel> getDias() {
-    return <CheckBoxListTileModel>[
-      CheckBoxListTileModel(dia: 2, title: 'Segunda-Feira', isCheck: false),
-      CheckBoxListTileModel(dia: 3, title: 'Terça-Feira', isCheck: false),
-      CheckBoxListTileModel(dia: 4, title: 'Quarta-Feira', isCheck: false),
-      CheckBoxListTileModel(dia: 5, title: 'Quinta-Feira', isCheck: false),
-      CheckBoxListTileModel(dia: 6, title: 'Sexta-Feira', isCheck: false),
-      CheckBoxListTileModel(dia: 7, title: 'Sábado', isCheck: false),
-      CheckBoxListTileModel(dia: 1, title: 'Domingo', isCheck: false),
-    ];
-  }
-}
-//---------------------------------------------------------------------
-
-
-//---------------------------------------Função que retorna os dias selecionados em forma de lista
-List funcaoRetorno (List<CheckBoxListTileModel> check) {
-    var list = new List();
-    if (check[0].isCheck == true){
-      list.add(check[0].dia);
-    }
-    if (check[1].isCheck == true){
-      list.add(check[1].dia);
-    }
-    if (check[2].isCheck == true){
-      list.add(check[2].dia);
-    }
-    if (check[3].isCheck == true){
-      list.add(check[3].dia);
-    }
-    if (check[4].isCheck == true){
-      list.add(check[4].dia);
-    }
-    if (check[5].isCheck == true){
-      list.add(check[5].dia);
-    }
-    if (check[6].isCheck == true){
-      list.add(check[6].dia);
-    }
-    return list;
-}
-//---------------------------------------------------------------------

@@ -19,7 +19,7 @@ class Cadastro extends StatelessWidget {
   Cadastro({this.namaste});
  //--------------------------------------Variável que armazena todos os dados do cadastro
 
-  Future showNotification() async{  //Função que aciona Notificação ao dispositivo
+  Future showNotification(int hash, DateTime dateTime, String nome, String description) async{  //Função que aciona Notificação ao dispositivo
     var androidDetails = new AndroidNotificationDetails("channelId", "channelName", "channelDescription",
      sound: RawResourceAndroidNotificationSound('drama_total'),
      priority: Priority.High,
@@ -27,11 +27,13 @@ class Cadastro extends StatelessWidget {
      );
     var iosDetails = new IOSNotificationDetails(sound: 'android_music.wav');
     var generalNotification = new NotificationDetails(androidDetails, iosDetails);
-    await flutterLocalNotificationsPlugin.show(
-      0,
-      alarms[0].name,
-      alarms[0].description,
+    await flutterLocalNotificationsPlugin.schedule(
+      hash,
+      nome,
+      description,
+      dateTime,
       generalNotification,
+      payload: hash.toString(),
       );
   }
 
@@ -200,7 +202,10 @@ class Cadastro extends StatelessWidget {
  //-----------------------------------------------------
 
  //------------------------------------------------Função usada para vibrar quando o botão for pressionado
-                      showNotification();
+              DateTime now = DateTime.now().toUtc().add(
+                Duration(seconds: 10),
+              );
+              showNotification(01,now,'text','titulo');
  //-----------------------------------------------------
                     
                       print(_formData);
@@ -275,6 +280,7 @@ class Cadastro extends StatelessWidget {
                                                   alarmInfo.days = nova;
 
                                                   _dataInit.insertAlarm(alarmInfo);
+                                                  
                                                   Navigator.pop(context);
                                                   Navigator.pop(context);
                                                   },

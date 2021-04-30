@@ -65,10 +65,10 @@ class _BodyState extends State<Body> {
                             Switch(
                                 value: true,//alarm.isActive,
                                 activeColor: Colors.white,
-                                onChanged: (value) {/*
+                                onChanged: (value) {
                                   setState(() {
                                     alarm.setActive(value);
-                                  });*/
+                                  });
                                 }),
                           ]),
     //-------------------------Row para organizar os dados que vão aparecer por ultimo na box
@@ -116,7 +116,7 @@ class _BodyState extends State<Body> {
                               ),
                             ),
                             Spacer(flex: 20),
-    //-------------------------Botão de delete
+//------------------------------------Botão de delete
                             IconButton(
                               icon: Icon(Icons.delete, size: 28),
                               color: Colors.white,
@@ -130,12 +130,12 @@ class _BodyState extends State<Body> {
                                                   ),
                                                 );
                                               }).followedBy([
-                                    //-------------------------função que adiciona um fundo falso ao descer a aplicação
+//----------------------------------------------função que adiciona um fundo falso ao descer a aplicação
                                                 Container(
                                                   height: 80,
                                                 )
                                               ]).toList(),
-                                //-------------------------função para retornar uma lista, e assim acessarmos todos os itens
+//------------------------------------------------função para retornar uma lista, e assim acessarmos todos os itens
                                           );
                                 
                                         return(Center(
@@ -148,7 +148,7 @@ class _BodyState extends State<Body> {
                                     );
                                   }
                                 
-                                //-------------------------Metodo para retornar a sequencia de dias da semana a partir de uma lista de ints
+//------------------------------------------Metodo para retornar a sequencia de dias da semana a partir de uma lista de ints
                                   String weekdayDate(List<int> days) {
                                     List<String> weekDays = new List();
                                 

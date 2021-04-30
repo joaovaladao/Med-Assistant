@@ -11,6 +11,7 @@
 | 06/04/2021 | 0.7 | Adicionando sprint 7 |Ítalo |
 | 16/04/2021 | 0.8 | Adicionando sprint 8 |Ítalo |
 | 30/04/2021 | 0.9 | Adicionando sprint 9 |Ítalo |
+| 30/04/2021 | 1.0 | Adicionando sprint 10 |Ítalo |
 
 
 ## Release 1
@@ -166,3 +167,9 @@
 | #139 |[Integração Contínua no GitHub](https://github.com/fga-eps-mds/MDS-2020-2-G9/issues/139)
 | #142 |[#138 Atualizando o documento de riscos](https://github.com/fga-eps-mds/MDS-2020-2-G9/pull/142)
 | #143 |[#141 atulizar o roadmap](https://github.com/fga-eps-mds/MDS-2020-2-G9/pull/143)
+
+
+### Sprint 10
+| ID | Issue |
+|:--:| ------- | 
+| #149 |[Semana de Folga!!!](https://github.com/fga-eps-mds/MDS-2020-2-G9/issues/149)

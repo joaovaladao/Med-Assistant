@@ -9,6 +9,7 @@ import 'dart:math';
 
 // ignore: must_be_immutable
 class Cadastro extends StatelessWidget {
+  int i = 0;
   List namaste;
   List<CheckBoxListTileModel> checkBoxListTileModel =
       CheckBoxListTileModel.getDias();
@@ -19,7 +20,7 @@ class Cadastro extends StatelessWidget {
   Cadastro({this.namaste});
  //--------------------------------------Variável que armazena todos os dados do cadastro
 
-  Future showNotification(int hash, DateTime dateTime, String nome, String description) async{  //Função que aciona Notificação ao dispositivo
+  Future showNotification(int hash, DateTime dateTime, String nome, String description, {String sound}) async{  //Função que aciona Notificação ao dispositivo
     var androidDetails = new AndroidNotificationDetails("channelId", "channelName", "channelDescription",
      sound: RawResourceAndroidNotificationSound('drama_total'),
      priority: Priority.High,
@@ -202,10 +203,11 @@ class Cadastro extends StatelessWidget {
  //-----------------------------------------------------
 
  //------------------------------------------------Função usada para vibrar quando o botão for pressionado
-              DateTime now = DateTime.now().toUtc().add(
+              /*DateTime now = DateTime.now().toUtc().add(
                 Duration(seconds: 10),
               );
-              showNotification(01,now,'text','titulo');
+              showNotification(i,now,alarmInfo.name,alarmInfo.description);
+              i++;*/
  //-----------------------------------------------------
                     
                       print(_formData);
@@ -245,6 +247,8 @@ class Cadastro extends StatelessWidget {
                                                                 );
                                                   alarmInfo.alarmDateTime = selectedDateTime;
                                                   print(selectedDateTime);
+                                                  showNotification(i,selectedDateTime,alarmInfo.name,alarmInfo.description);
+                                                  i++;
 //---------------------------------------------------------------------
                                                
                                                 },

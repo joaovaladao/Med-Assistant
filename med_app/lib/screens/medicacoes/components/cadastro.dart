@@ -28,14 +28,21 @@ class Cadastro extends StatelessWidget {
      );
     var iosDetails = new IOSNotificationDetails(sound: 'android_music.wav');
     var generalNotification = new NotificationDetails(androidDetails, iosDetails);
-    await flutterLocalNotificationsPlugin.schedule(
+    /*await flutterLocalNotificationsPlugin.schedule(
       hash,
       nome,
       description,
       dateTime,
       generalNotification,
       payload: hash.toString(),
-      );
+      );*/
+      var time = new Time(dateTime.hour,dateTime.minute,dateTime.second);
+      await flutterLocalNotificationsPlugin.showDailyAtTime(
+        hash,
+        nome,
+        description,
+        time,
+        generalNotification);
   }
 
   @override
@@ -247,8 +254,11 @@ class Cadastro extends StatelessWidget {
                                                                 );
                                                   alarmInfo.alarmDateTime = selectedDateTime;
                                                   print(selectedDateTime);
+                                                  i = alarmInfo.id;
+                                                  if (i == null){
+                                                    i = 0;
+                                                  }
                                                   showNotification(i,selectedDateTime,alarmInfo.name,alarmInfo.description);
-                                                  i++;
 //---------------------------------------------------------------------
                                                
                                                 },

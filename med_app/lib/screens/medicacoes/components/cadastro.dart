@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:med_app/constants.dart';
 import 'package:med_app/dataInit.dart';
 import 'package:med_app/screens/medicacoes/components/horario.dart';
+import 'package:med_app/screens/medicacoes/components/notification.dart';
 import 'alarm_info.dart';
 import 'package:med_app/main.dart';
 import 'package:flutter_local_notifications/flutter_local_notifications.dart';
@@ -258,7 +259,7 @@ class Cadastro extends StatelessWidget {
                                                   if (i == null){
                                                     i = 0;
                                                   }
-                                                  showNotification(i,selectedDateTime,alarmInfo.name,alarmInfo.description);
+                                                  await notificationPlugin.scheduleNotification(/*i,selectedDateTime,alarmInfo.name,alarmInfo.description*/);
 //---------------------------------------------------------------------
                                                
                                                 },

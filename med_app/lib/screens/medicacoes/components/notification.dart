@@ -1,8 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_local_notifications/flutter_local_notifications.dart';
-import 'package:path_provider/path_provider.dart';
-import 'dart:io' show File, Platform;
-import 'package:http/http.dart' as http;
+import 'dart:io' show Platform;
 import 'package:rxdart/subjects.dart';
 class NotificationPlugin {
   //
@@ -71,7 +69,6 @@ setOnNotificationClick(Function onNotificationClick) async {
       priority: Priority.High,
       sound: RawResourceAndroidNotificationSound('drama_total'),
       timeoutAfter: 5000,
-      //styleInformation: DefaultStyleInformation(true, true),
     );
     var iosChannelSpecifics = IOSNotificationDetails();
     var platformChannelSpecifics =
@@ -92,6 +89,14 @@ setOnNotificationClick(Function onNotificationClick) async {
      );
     var iosDetails = new IOSNotificationDetails(sound: 'android_music.wav');
     var generalNotification = new NotificationDetails(androidDetails, iosDetails);
+    await flutterLocalNotificationsPlugin.schedule(
+      hash,
+      nome,
+      description,
+      dateTime,
+      generalNotification,
+      payload: hash.toString(),
+      );
       var time = new Time(dateTime.hour,dateTime.minute,dateTime.second);
       await flutterLocalNotificationsPlugin.showDailyAtTime(
         hash,

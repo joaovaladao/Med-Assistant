@@ -63,7 +63,6 @@ class _MedicacoesState extends State<Medicacoes> {
           size: 35,
         ),
       ),
-      //floatingActionButtonLocation: FloatingActionButtonLocation.centerFloat,
     );
   }
   onNotificationInLowerVersions(ReceivedNotification receivedNotification){}

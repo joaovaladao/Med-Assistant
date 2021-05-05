@@ -4,8 +4,6 @@ import 'package:med_app/dataInit.dart';
 import 'package:med_app/screens/medicacoes/components/horario.dart';
 import 'package:med_app/screens/medicacoes/components/notification.dart';
 import 'alarm_info.dart';
-import 'package:med_app/main.dart';
-import 'package:flutter_local_notifications/flutter_local_notifications.dart';
 import 'dart:math';
 
 // ignore: must_be_immutable
@@ -19,32 +17,6 @@ class Cadastro extends StatelessWidget {
   final Map<String, String> _formData =
       {}; 
   Cadastro({this.namaste});
- //--------------------------------------Variável que armazena todos os dados do cadastro
-
-  Future showNotification(int hash, DateTime dateTime, String nome, String description, {String sound}) async{  //Função que aciona Notificação ao dispositivo
-    var androidDetails = new AndroidNotificationDetails("channelId", "channelName", "channelDescription",
-     sound: RawResourceAndroidNotificationSound('drama_total'),
-     priority: Priority.High,
-     importance: Importance.Max,
-     );
-    var iosDetails = new IOSNotificationDetails(sound: 'android_music.wav');
-    var generalNotification = new NotificationDetails(androidDetails, iosDetails);
-    /*await flutterLocalNotificationsPlugin.schedule(
-      hash,
-      nome,
-      description,
-      dateTime,
-      generalNotification,
-      payload: hash.toString(),
-      );*/
-      var time = new Time(dateTime.hour,dateTime.minute,dateTime.second);
-      await flutterLocalNotificationsPlugin.showDailyAtTime(
-        hash,
-        nome,
-        description,
-        time,
-        generalNotification);
-  }
 
   @override
   Widget build(BuildContext context) {
@@ -208,17 +180,7 @@ class Cadastro extends StatelessWidget {
                         days: new List.from([2, 3, 4, 5, 6, 7, 1]),
                         color: rng,             
                         );
- //-----------------------------------------------------
-
- //------------------------------------------------Função usada para vibrar quando o botão for pressionado
-              /*DateTime now = DateTime.now().toUtc().add(
-                Duration(seconds: 10),
-              );
-              showNotification(i,now,alarmInfo.name,alarmInfo.description);
-              i++;*/
- //-----------------------------------------------------
-                    
-                      print(_formData);
+ //-----------------------------------------------------                  
                        showModalBottomSheet(
                          backgroundColor: Colors.white,
                                   useRootNavigator: true,
@@ -259,7 +221,7 @@ class Cadastro extends StatelessWidget {
                                                   if (i == null){
                                                     i = 0;
                                                   }
-                                                  await notificationPlugin.scheduleNotification(/*i,selectedDateTime,alarmInfo.name,alarmInfo.description*/);
+                                                  await notificationPlugin.showNotification(i,selectedDateTime,alarmInfo.name,alarmInfo.description);
 //---------------------------------------------------------------------
                                                
                                                 },

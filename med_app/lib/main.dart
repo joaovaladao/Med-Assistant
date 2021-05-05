@@ -10,15 +10,6 @@ final  FlutterLocalNotificationsPlugin flutterLocalNotificationsPlugin =
   
   //--------------------Main;
 void main() async{
-  WidgetsFlutterBinding.ensureInitialized();
-    var androidInitiliaze = new AndroidInitializationSettings('ic_launcher');
-    var iosInitialize = new IOSInitializationSettings();
-    var initializationSettings = new InitializationSettings(androidInitiliaze, iosInitialize);
-    await flutterLocalNotificationsPlugin.initialize(initializationSettings,
-      onSelectNotification: (String payload) async {
-    if (payload != null) {
-      debugPrint('notification payload: ' + payload);
-    }});
 
   runApp(MyApp());
 }

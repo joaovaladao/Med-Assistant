@@ -8,7 +8,7 @@ import 'dart:math';
 
 // ignore: must_be_immutable
 class Cadastro extends StatelessWidget {
-  int i = 0;
+  int i = 0, count = 0;
   List namaste;
   List<CheckBoxListTileModel> checkBoxListTileModel =
       CheckBoxListTileModel.getDias();
@@ -221,7 +221,7 @@ class Cadastro extends StatelessWidget {
                                                   if (i == null){
                                                     i = 0;
                                                   }
-                                                  await notificationPlugin.showNotification(i,selectedDateTime,alarmInfo.name,alarmInfo.description);
+                                                  await notificationPlugin.scheduleNotification(i,selectedDateTime,alarmInfo.name,alarmInfo.description);
 //---------------------------------------------------------------------
                                                
                                                 },
@@ -257,6 +257,8 @@ class Cadastro extends StatelessWidget {
                                                   alarmInfo.days = nova;
 
                                                   _dataInit.insertAlarm(alarmInfo);
+                                                  count = await notificationPlugin.getPendingNotificationCount();
+                                                  print("count: $count");
                                                   
                                                   Navigator.pop(context);
                                                   Navigator.pop(context);

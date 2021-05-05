@@ -68,7 +68,7 @@ setOnNotificationClick(Function onNotificationClick) async {
       importance: Importance.Max,
       priority: Priority.High,
       sound: RawResourceAndroidNotificationSound('drama_total'),
-      timeoutAfter: 5000,
+      timeoutAfter: 500000,
     );
     var iosChannelSpecifics = IOSNotificationDetails();
     var platformChannelSpecifics =
@@ -106,50 +106,54 @@ setOnNotificationClick(Function onNotificationClick) async {
         generalNotification);
   }*/
 
-Future<void> showDailyAtTime() async {
-    var time = Time(21, 3, 0);
+Future<void> showDailyAtTime(int hash, DateTime dateTime, String nome, String description, {String sound}) async {
+    var time = new Time(dateTime.hour,dateTime.minute,dateTime.second);
     var androidChannelSpecifics = AndroidNotificationDetails(
       'CHANNEL_ID 4',
       'CHANNEL_NAME 4',
       "CHANNEL_DESCRIPTION 4",
       importance: Importance.Max,
       priority: Priority.High,
+      sound: RawResourceAndroidNotificationSound('drama_total'),
+      timeoutAfter: 500000,
     );
     var iosChannelSpecifics = IOSNotificationDetails();
     var platformChannelSpecifics =
         NotificationDetails(androidChannelSpecifics, iosChannelSpecifics);
     await flutterLocalNotificationsPlugin.showDailyAtTime(
-      0,
-      'Test Title at ${time.hour}:${time.minute}.${time.second}',
-      'Test Body', //null
+      hash,
+      nome,
+      description, //null
       time,
       platformChannelSpecifics,
-      payload: 'Test Payload',
+      payload: hash.toString(),
     );
   }
-Future<void> showWeeklyAtDayTime() async {
-    var time = Time(21, 5, 0);
+Future<void> showWeeklyAtDayTime(int hash, DateTime dateTime, String nome, String description, {String sound}) async {
+    var time = new Time(dateTime.hour,dateTime.minute,dateTime.second);
     var androidChannelSpecifics = AndroidNotificationDetails(
       'CHANNEL_ID 5',
       'CHANNEL_NAME 5',
       "CHANNEL_DESCRIPTION 5",
       importance: Importance.Max,
       priority: Priority.High,
+      sound: RawResourceAndroidNotificationSound('drama_total'),
+      timeoutAfter: 500000,
     );
     var iosChannelSpecifics = IOSNotificationDetails();
     var platformChannelSpecifics =
         NotificationDetails(androidChannelSpecifics, iosChannelSpecifics);
     await flutterLocalNotificationsPlugin.showWeeklyAtDayAndTime(
-      0,
-      'Test Title at ${time.hour}:${time.minute}.${time.second}',
-      'Test Body', //null
-      Day.Saturday,
+      hash,
+      nome,
+      description, //null
+      Day.Friday,
       time,
       platformChannelSpecifics,
-      payload: 'Test Payload',
+      payload: hash.toString(),
     );
   }
-Future<void> repeatNotification() async {
+Future<void> repeatNotification(int hash, DateTime dateTime, String nome, String description, {String sound}) async {
     var androidChannelSpecifics = AndroidNotificationDetails(
       'CHANNEL_ID 3',
       'CHANNEL_NAME 3',
@@ -157,28 +161,28 @@ Future<void> repeatNotification() async {
       importance: Importance.Max,
       priority: Priority.High,
       styleInformation: DefaultStyleInformation(true, true),
+      sound: RawResourceAndroidNotificationSound('drama_total'),
+      timeoutAfter: 5000,
     );
     var iosChannelSpecifics = IOSNotificationDetails();
     var platformChannelSpecifics =
         NotificationDetails(androidChannelSpecifics, iosChannelSpecifics);
     await flutterLocalNotificationsPlugin.periodicallyShow(
-      0,
-      'Repeating Test Title',
-      'Repeating Test Body',
+      hash,
+      nome,
+      description,
       RepeatInterval.EveryMinute,
       platformChannelSpecifics,
-      payload: 'Test Payload',
+      payload: hash.toString(),
     );
   }
-Future<void> scheduleNotification() async {
-    var scheduleNotificationDateTime = DateTime.now().add(Duration(seconds: 5));
+Future<void> scheduleNotification(int hash, DateTime dateTime, String nome, String description, {String sound}) async {
+    //var scheduleNotificationDateTime = DateTime.now().add(Duration(seconds: 5));
     var androidChannelSpecifics = AndroidNotificationDetails(
       'CHANNEL_ID 1',
       'CHANNEL_NAME 1',
       "CHANNEL_DESCRIPTION 1",
-      //icon: 'secondary_icon',
       sound: RawResourceAndroidNotificationSound('drama_total'),
-      //largeIcon: DrawableResourceAndroidBitmap('large_notf_icon'),
       enableLights: true,
       color: const Color.fromARGB(255, 255, 0, 0),
       ledColor: const Color.fromARGB(255, 255, 0, 0),
@@ -187,7 +191,7 @@ Future<void> scheduleNotification() async {
       importance: Importance.Max,
       priority: Priority.High,
       playSound: true,
-      timeoutAfter: 5000,
+      timeoutAfter: 500000,
       styleInformation: DefaultStyleInformation(true, true),
     );
     var iosChannelSpecifics = IOSNotificationDetails(
@@ -198,12 +202,12 @@ Future<void> scheduleNotification() async {
       iosChannelSpecifics,
     );
     await flutterLocalNotificationsPlugin.schedule(
-      0,
-      'Test Title',
-      'Test Body',
-      scheduleNotificationDateTime,
+      hash,
+      nome,
+      description,
+      dateTime,
       platformChannelSpecifics,
-      payload: 'Test Payload',
+      payload: hash.toString(),
     );
   }
 Future<int> getPendingNotificationCount() async {

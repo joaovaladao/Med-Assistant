@@ -4,6 +4,7 @@ import 'package:med_app/constants.dart';
 import 'package:med_app/dataInit.dart';
 import 'package:med_app/screens/medicacoes/components/alarm_info.dart';
 import 'package:med_app/screens/medicacoes/components/body.dart';
+import 'package:med_app/screens/medicacoes/components/notification.dart';
 import 'components/cadastro.dart';
 
 class Medicacoes extends StatefulWidget {
@@ -22,6 +23,8 @@ class _MedicacoesState extends State<Medicacoes> {
   //---------------------Função para inicializar o banco de dados
   void initState(){
     //_alarmTime = DateTime.now();
+    notificationPlugin.setListenerForLowerVersions(onNotificationInLowerVersions);
+    notificationPlugin.setOnNotificationClick(onNotificationClick);
     _dataInit1.initializeDatabase().then((value) {
       print("--------------Banco de Dados foi Iniciado--------------");
       loadAlarms();
@@ -60,9 +63,10 @@ class _MedicacoesState extends State<Medicacoes> {
           size: 35,
         ),
       ),
-      //floatingActionButtonLocation: FloatingActionButtonLocation.centerFloat,
     );
   }
+  onNotificationInLowerVersions(ReceivedNotification receivedNotification){}
+  onNotificationClick(String payload){}
 }
 
 AppBar buildAppBar() {

@@ -2,13 +2,13 @@ import 'package:flutter/material.dart';
 import 'package:med_app/constants.dart';
 import 'package:med_app/dataInit.dart';
 import 'package:med_app/screens/medicacoes/components/horario.dart';
+import 'package:med_app/screens/medicacoes/components/notification.dart';
 import 'alarm_info.dart';
-import 'package:med_app/main.dart';
-import 'package:flutter_local_notifications/flutter_local_notifications.dart';
 import 'dart:math';
 
 // ignore: must_be_immutable
 class Cadastro extends StatelessWidget {
+  int i = 0, count = 0;
   List namaste;
   List<CheckBoxListTileModel> checkBoxListTileModel =
       CheckBoxListTileModel.getDias();
@@ -17,23 +17,6 @@ class Cadastro extends StatelessWidget {
   final Map<String, String> _formData =
       {}; 
   Cadastro({this.namaste});
- //--------------------------------------Variável que armazena todos os dados do cadastro
-
-  Future showNotification() async{  //Função que aciona Notificação ao dispositivo
-    var androidDetails = new AndroidNotificationDetails("channelId", "channelName", "channelDescription",
-     sound: RawResourceAndroidNotificationSound('drama_total'),
-     priority: Priority.High,
-     importance: Importance.Max,
-     );
-    var iosDetails = new IOSNotificationDetails(sound: 'android_music.wav');
-    var generalNotification = new NotificationDetails(androidDetails, iosDetails);
-    await flutterLocalNotificationsPlugin.show(
-      0,
-      alarms[0].name,
-      alarms[0].description,
-      generalNotification,
-      );
-  }
 
   @override
   Widget build(BuildContext context) {
@@ -197,13 +180,7 @@ class Cadastro extends StatelessWidget {
                         days: new List.from([2, 3, 4, 5, 6, 7, 1]),
                         color: rng,             
                         );
- //-----------------------------------------------------
-
- //------------------------------------------------Função usada para vibrar quando o botão for pressionado
-                      showNotification();
- //-----------------------------------------------------
-                    
-                      print(_formData);
+ //-----------------------------------------------------                  
                        showModalBottomSheet(
                          backgroundColor: Colors.white,
                                   useRootNavigator: true,
@@ -240,6 +217,11 @@ class Cadastro extends StatelessWidget {
                                                                 );
                                                   alarmInfo.alarmDateTime = selectedDateTime;
                                                   print(selectedDateTime);
+                                                  i = alarmInfo.id;
+                                                  if (i == null){
+                                                    i = 0;
+                                                  }
+                                                  await notificationPlugin.scheduleNotification(i,selectedDateTime,alarmInfo.name,alarmInfo.description);
 //---------------------------------------------------------------------
                                                
                                                 },
@@ -275,6 +257,9 @@ class Cadastro extends StatelessWidget {
                                                   alarmInfo.days = nova;
 
                                                   _dataInit.insertAlarm(alarmInfo);
+                                                  count = await notificationPlugin.getPendingNotificationCount();
+                                                  print("count: $count");
+                                                  
                                                   Navigator.pop(context);
                                                   Navigator.pop(context);
                                                   },

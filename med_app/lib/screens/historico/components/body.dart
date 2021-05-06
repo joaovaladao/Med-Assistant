@@ -1,4 +1,5 @@
 import 'dart:convert';
+import 'package:med_app/constants.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'package:flutter/material.dart';
 import 'package:table_calendar/table_calendar.dart';
@@ -57,55 +58,105 @@ class _BodyState extends State<Body> {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: <Widget>[
-            TableCalendar(
-              events: _events,
-              initialCalendarFormat: CalendarFormat.month,
-              calendarStyle: CalendarStyle(
+            SizedBox(
+              height: 20,
+            ),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: <Widget>[
+                Text(
+                  "Calendário",
+                  style: TextStyle(
+                      fontFamily: 'OpenSans',
+                      fontWeight: FontWeight.bold,
+                      color: Colors.white,
+                      fontSize: 28),
+                ),
+              ],
+            ),
+            Container(
+              margin: const EdgeInsets.fromLTRB(10, 30, 10, 10),
+              padding: const EdgeInsets.symmetric(horizontal: 22, vertical: 15),
+              decoration: BoxDecoration(
+                borderRadius: BorderRadius.all(Radius.circular(18)),
+                gradient: LinearGradient(colors: GradientColors.serrinha),
+              ),
+              //----------------------------------------------Função que retorna calendário
+              child: TableCalendar(
+                events: _events,
+                initialCalendarFormat: CalendarFormat.month,
+                calendarStyle: CalendarStyle(
                   canEventMarkersOverflow: true,
                   todayColor: Colors.orange,
-                  selectedColor: Theme.of(context).primaryColor,
+                  selectedColor: Colors.blue,
+                  weekdayStyle: TextStyle(fontSize: 20, color: Colors.white),
                   todayStyle: TextStyle(
                       fontWeight: FontWeight.bold,
-                      fontSize: 18.0,
-                      color: Colors.white)),
-              headerStyle: HeaderStyle(
-                centerHeaderTitle: true,
-                formatButtonDecoration: BoxDecoration(
-                  color: Colors.orange,
-                  borderRadius: BorderRadius.circular(20.0),
+                      fontSize: 18,
+                      color: Colors.white),
+                  weekendStyle: TextStyle(color: Colors.red),
+                  outsideWeekendStyle: TextStyle(color: Colors.red),
+                  outsideDaysVisible: true,
+                  outsideStyle: TextStyle(color: Colors.red),
+                  renderDaysOfWeek: true,
                 ),
-                formatButtonTextStyle: TextStyle(color: Colors.white),
-                formatButtonShowsNext: false,
-              ),
-              startingDayOfWeek: StartingDayOfWeek.monday,
-              /*onDaySelected: (date, events) {
+                headerStyle: HeaderStyle(
+                  leftChevronIcon: Icon(
+                    Icons.arrow_back_ios,
+                    size: 15,
+                    color: Colors.white,
+                  ),
+                  rightChevronIcon: Icon(
+                    Icons.arrow_forward_ios,
+                    size: 15,
+                    color: Colors.white,
+                  ),
+                  titleTextStyle: TextStyle(
+                      fontFamily: 'OpenSans',
+                      fontWeight: FontWeight.bold,
+                      color: Colors.white,
+                      fontSize: 25),
+                  formatButtonDecoration: BoxDecoration(
+                    color: Colors.white,
+                    borderRadius: BorderRadius.circular(20),
+                  ),
+                ),
+                startingDayOfWeek: StartingDayOfWeek.monday,
+                /*onDaySelected: (date, events) {
                 setState(() {
                   _selectedEvents = events;
                 });
               },*/
-              builders: CalendarBuilders(
-                selectedDayBuilder: (context, date, events) => Container(
+                builders: CalendarBuilders(
+                  selectedDayBuilder: (context, date, events) => Container(
                     margin: const EdgeInsets.all(4.0),
                     alignment: Alignment.center,
                     decoration: BoxDecoration(
-                        color: Theme.of(context).primaryColor,
-                        borderRadius: BorderRadius.circular(10.0)),
+                      color: Theme.of(context).primaryColor,
+                      shape: BoxShape.circle,
+                      //borderRadius: BorderRadius.circular(10.0)
+                    ),
                     child: Text(
                       date.day.toString(),
                       style: TextStyle(color: Colors.white),
-                    )),
-                todayDayBuilder: (context, date, events) => Container(
+                    ),
+                  ),
+                  todayDayBuilder: (context, date, events) => Container(
                     margin: const EdgeInsets.all(4.0),
                     alignment: Alignment.center,
                     decoration: BoxDecoration(
-                        color: Colors.orange,
-                        borderRadius: BorderRadius.circular(10.0)),
+                      color: Colors.orange,
+                      shape: BoxShape.circle,
+                      //borderRadius: BorderRadius.circular(10.0)
+                    ),
                     child: Text(
                       date.day.toString(),
                       style: TextStyle(color: Colors.white),
-                    )),
+                    ),
+                  ),
+                ),
+                calendarController: _controller,
               ),
-              calendarController: _controller,
             ),
             ..._selectedEvents.map((event) => ListTile(
                   title: Text(event),

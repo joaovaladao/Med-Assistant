@@ -62,10 +62,11 @@ class DataInit {
   //-----------------------------------------------------
      
   //---------------------------------Banco de dados traduzido em Jason
-  void insertAlarm(AlarmInfo alarmInfo) async {
+  insertAlarm(AlarmInfo alarmInfo) async {
     var db = await this.database;
     var result = await db.insert(tableAlarm, alarmInfo.toMap());
-    print('result : $result');
+    print('Quantidade de alarmes : $result');
+    return result;
   }
   //-----------------------------------------------------
 

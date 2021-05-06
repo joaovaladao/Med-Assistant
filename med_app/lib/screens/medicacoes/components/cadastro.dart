@@ -181,6 +181,7 @@ class Cadastro extends StatelessWidget {
                         days: new List.from([2, 3, 4, 5, 6, 7, 1]),
                         color: rng,             
                         );
+                        print("Color: $rng");
  //-----------------------------------------------------                  
                        showModalBottomSheet(
                          backgroundColor: Colors.white,

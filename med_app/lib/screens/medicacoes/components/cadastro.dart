@@ -9,6 +9,7 @@ import 'dart:math';
 // ignore: must_be_immutable
 class Cadastro extends StatelessWidget {
   int i = 0, count = 0;
+  DateTime selectedDateTime;
   List namaste;
   List<CheckBoxListTileModel> checkBoxListTileModel =
       CheckBoxListTileModel.getDias();
@@ -180,6 +181,7 @@ class Cadastro extends StatelessWidget {
                         days: new List.from([2, 3, 4, 5, 6, 7, 1]),
                         color: rng,             
                         );
+                        print("Color: $rng");
  //-----------------------------------------------------                  
                        showModalBottomSheet(
                          backgroundColor: Colors.white,
@@ -207,7 +209,7 @@ class Cadastro extends StatelessWidget {
                                                     initialTime:TimeOfDay.now(),
                                                     );
                                                   final td = DateTime.now();
-                                                  var selectedDateTime =
+                                                  selectedDateTime =
                                                         DateTime(
                                                             td.year,
                                                             td.month,
@@ -216,12 +218,10 @@ class Cadastro extends StatelessWidget {
                                                             selectedTime.minute
                                                                 );
                                                   alarmInfo.alarmDateTime = selectedDateTime;
-                                                  print(selectedDateTime);
-                                                  i = alarmInfo.id;
+                                                  print("Horário: $selectedDateTime");
                                                   if (i == null){
                                                     i = 0;
                                                   }
-                                                  await notificationPlugin.scheduleNotification(i,selectedDateTime,alarmInfo.name,alarmInfo.description);
 //---------------------------------------------------------------------
                                                
                                                 },
@@ -251,14 +251,17 @@ class Cadastro extends StatelessWidget {
 
  //------------------------------------------------Função responsável por alocar os valores digitados na DB
                                                 onPressed: () async {
-                                                  print(namaste);
+                                                  print("Dias: $namaste");
                                                   List <int> nova = new List.from([]);
                                                   nova = namaste.cast<int>();
                                                   alarmInfo.days = nova;
 
-                                                  _dataInit.insertAlarm(alarmInfo);
+                                                  i = await _dataInit.insertAlarm(alarmInfo);
+                                                  alarmInfo.id = i;
+                                                  await notificationPlugin.showDailyAtTime(i,selectedDateTime,alarmInfo.name,alarmInfo.description);
+                                                  print("HashID: $i");
                                                   count = await notificationPlugin.getPendingNotificationCount();
-                                                  print("count: $count");
+                                                  print("Notificações Pendentes: $count");
                                                   
                                                   Navigator.pop(context);
                                                   Navigator.pop(context);

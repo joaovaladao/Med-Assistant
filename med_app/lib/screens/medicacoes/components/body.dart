@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:intl/intl.dart';
 import 'package:med_app/constants.dart';
 import 'package:med_app/dataInit.dart';
+import 'package:med_app/screens/medicacoes/components/alarm_info.dart';
+import 'package:med_app/screens/medicacoes/components/notification.dart';
 
 class Body extends StatefulWidget {
   @override
@@ -120,8 +122,13 @@ class _BodyState extends State<Body> {
                             IconButton(
                               icon: Icon(Icons.delete, size: 28),
                               color: Colors.white,
-                              onPressed: (){
+                              onPressed: () async {
                                 _dataInit2.deleteAlarms(alarm.id);
+                                var id = alarm.id;
+                                await notificationPlugin.cancelNotification(alarm.id);
+                                var count = await notificationPlugin.getPendingNotificationCount();
+                                print("Notificações Pendentes após deleção: $count");
+                                print("Id do alarme deletado: $id");
                                                               },
                                                             ),
                                                             Spacer(flex: 1),

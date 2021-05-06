@@ -191,8 +191,8 @@ Future<int> getPendingNotificationCount() async {
         await flutterLocalNotificationsPlugin.pendingNotificationRequests();
     return p.length;
   }
-Future<void> cancelNotification() async {
-    await flutterLocalNotificationsPlugin.cancel(0);
+Future<void> cancelNotification(int id) async {
+    await flutterLocalNotificationsPlugin.cancel(id);
   }
 Future<void> cancelAllNotification() async {
     await flutterLocalNotificationsPlugin.cancelAll();

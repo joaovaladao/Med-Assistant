@@ -81,30 +81,6 @@ setOnNotificationClick(Function onNotificationClick) async {
       payload: hash.toString(), // Notification Payload
     );
 }
-  /*Future showNotification(int hash, DateTime dateTime, String nome, String description, {String sound}) async{  //Função que aciona Notificação ao dispositivo
-    var androidDetails = new AndroidNotificationDetails("channelId", "channelName", "channelDescription",
-     sound: RawResourceAndroidNotificationSound('drama_total'),
-     priority: Priority.High,
-     importance: Importance.Max,
-     );
-    var iosDetails = new IOSNotificationDetails(sound: 'android_music.wav');
-    var generalNotification = new NotificationDetails(androidDetails, iosDetails);
-    await flutterLocalNotificationsPlugin.schedule(
-      hash,
-      nome,
-      description,
-      dateTime,
-      generalNotification,
-      payload: hash.toString(),
-      );
-      var time = new Time(dateTime.hour,dateTime.minute,dateTime.second);
-      await flutterLocalNotificationsPlugin.showDailyAtTime(
-        hash,
-        nome,
-        description,
-        time,
-        generalNotification);
-  }*/
 
 Future<void> showDailyAtTime(int hash, DateTime dateTime, String nome, String description, {String sound}) async {
     var time = new Time(dateTime.hour,dateTime.minute,dateTime.second);

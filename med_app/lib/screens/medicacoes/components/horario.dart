@@ -43,7 +43,6 @@ class _HorarioState extends State<Horario> {
       floatingActionButton: FloatingActionButton.extended(
         onPressed: () {
           List lista = funcaoRetorno(checkBoxListTileModel);
-          print(lista);
           Navigator.pop(
               context,
               lista);

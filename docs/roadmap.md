@@ -12,7 +12,7 @@
 | 16/04/2021 | 0.8 | Adicionando sprint 8 |Ítalo |
 | 30/04/2021 | 0.9 | Adicionando sprint 9 |Ítalo |
 | 30/04/2021 | 1.0 | Adicionando sprint 10 |Ítalo |
-| 30/05/2021 | 1.0 | Adicionando sprint 11 |Ítalo |
+| 10/05/2021 | 1.1 | Adicionando sprint 11 |Ítalo |
 
 
 ## Release 1
@@ -132,6 +132,7 @@
 | #112 |[atualizar Roadmap com Sprint 6](https://github.com/fga-eps-mds/MDS-2020-2-G9/issues/112)
 | #113 |[atualizando roadmap](https://github.com/fga-eps-mds/MDS-2020-2-G9/pull/113)git branch
 
+## Release 2
 ### Sprint 8
 | ID | Issue |
 |:--:| ------- | 

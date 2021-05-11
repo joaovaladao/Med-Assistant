@@ -22,3 +22,6 @@
     - [Sprint 7](./Sprints/Planejamento/Sprint_7.md)
     - [Sprint 8](./Sprints/Planejamento/Sprint_8.md)
     - [Sprint 9](./Sprints/Planejamento/Sprint_9.md)
+    - [Sprint 11](./Sprints/Planejamento/Sprint_11.md)
+    - [Sprint 12](./Sprints/Planejamento/Sprint_12.md)
+    - [Sprint 13](./Sprints/Planejamento/Sprint_13.md)

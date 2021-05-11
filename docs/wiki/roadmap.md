@@ -1,4 +1,4 @@
-# RoadMap
+## RoadMap
 
 |Data|Versão|Alteração|Autor|
 |:-:|:-:|:-:|:-:|
@@ -8,7 +8,11 @@
 | 18/03/2021 | 0.4 | Adicionando sprint 4 |Ítalo |
 | 24/03/2021 | 0.5 | Adicionando sprint 5 |Ítalo |
 | 30/03/2021 | 0.6 | Adicionando sprint 6 |Ítalo |
-| 6/04/2021 | 0.7 | Adicionando sprint 7 |Ítalo |
+| 06/04/2021 | 0.7 | Adicionando sprint 7 |Ítalo |
+| 16/04/2021 | 0.8 | Adicionando sprint 8 |Ítalo |
+| 30/04/2021 | 0.9 | Adicionando sprint 9 |Ítalo |
+| 30/04/2021 | 1.0 | Adicionando sprint 10 |Ítalo |
+| 10/05/2021 | 1.1 | Adicionando sprint 11 |Ítalo |
 
 
 ## Release 1
@@ -126,4 +130,64 @@
 | #110 |[Página "Medication" ](https://github.com/fga-eps-mds/MDS-2020-2-G9/issues/110)
 | #111 |[Code/#110 medication page](https://github.com/fga-eps-mds/MDS-2020-2-G9/pull/111)
 | #112 |[atualizar Roadmap com Sprint 6](https://github.com/fga-eps-mds/MDS-2020-2-G9/issues/112)
-| #113 |[atualizando roadmap](https://github.com/fga-eps-mds/MDS-2020-2-G9/pull/113)
+| #113 |[atualizando roadmap](https://github.com/fga-eps-mds/MDS-2020-2-G9/pull/113)git branch
+
+## Release 2
+### Sprint 8
+| ID | Issue |
+|:--:| ------- | 
+| #108 |[Documento de riscos](https://github.com/fga-eps-mds/MDS-2020-2-G9/issues/108)
+| #114 |[Alterando documento de metodologia](https://github.com/fga-eps-mds/MDS-2020-2-G9/issues/114)
+| #115 |[Docs/#114 documento de metodologia](https://github.com/fga-eps-mds/MDS-2020-2-G9/pull/115)
+| #116 |[Documento de Visão](https://github.com/fga-eps-mds/MDS-2020-2-G9/issues/116)
+| #118 |[Página Medicações](https://github.com/fga-eps-mds/MDS-2020-2-G9/issues/118)
+| #119 |[Relatórios de Sprints](https://github.com/fga-eps-mds/MDS-2020-2-G9/issues/119)
+| #120 |[#119 Relatórios de Sprints](https://github.com/fga-eps-mds/MDS-2020-2-G9/pull/120)
+| #121 |[Atualizar o Roadmap](https://github.com/fga-eps-mds/MDS-2020-2-G9/issues/121)
+| #122 |[#121 adicionando a sprint 7 no roadmap" ](https://github.com/fga-eps-mds/MDS-2020-2-G9/pull/122)
+| #123 |[Dev/#118 medicacoes](https://github.com/fga-eps-mds/MDS-2020-2-G9/pull/123)
+| #124 |[#119 Redefinindo funções](https://github.com/fga-eps-mds/MDS-2020-2-G9/pull/124)
+| #125 |[Docs/#108 documento de riscos](https://github.com/fga-eps-mds/MDS-2020-2-G9/pull/125)
+| #126 |[docs/#116 criando categorias](https://github.com/fga-eps-mds/MDS-2020-2-G9/pull/126)
+
+### Sprint 9
+| ID | Issue |
+|:--:| ------- | 
+| #117 |[Banco de Dados ](https://github.com/fga-eps-mds/MDS-2020-2-G9/issues/117)
+| #127 |[Página "Histórico"](https://github.com/fga-eps-mds/MDS-2020-2-G9/issues/127)
+| #128 |[Pagina "Medicação" - Funcionalidades](https://github.com/fga-eps-mds/MDS-2020-2-G9/issues/128)
+| #129 |[#127 Implementação do calendário](https://github.com/fga-eps-mds/MDS-2020-2-G9/pull/129)
+| #130 |[Local Notifications](https://github.com/fga-eps-mds/MDS-2020-2-G9/issues/130)
+| #131 |[Dev/#130 Local Notification](https://github.com/fga-eps-mds/MDS-2020-2-G9/pull/131)
+| #132 |[Relatório das Sprints](https://github.com/fga-eps-mds/MDS-2020-2-G9/issues/132)
+| #133 |[#132 Relatórios de Sprints](https://github.com/fga-eps-mds/MDS-2020-2-G9/pull/133)
+| #134 |[#118 página de cadastros](https://github.com/fga-eps-mds/MDS-2020-2-G9/pull/134)
+| #135 |[Atualizar GH pages](https://github.com/fga-eps-mds/MDS-2020-2-G9/issues/135)
+| #136 |[Incompatibilidade entre os Pull requests](https://github.com/fga-eps-mds/MDS-2020-2-G9/issues/136)
+| #137 |[Criação de um banco de dados](https://github.com/fga-eps-mds/MDS-2020-2-G9/pull/137)
+| #138 |[Burndown chart do documento de riscos](https://github.com/fga-eps-mds/MDS-2020-2-G9/issues/138)
+| #139 |[Integração Contínua no GitHub](https://github.com/fga-eps-mds/MDS-2020-2-G9/issues/139)
+| #142 |[#138 Atualizando o documento de riscos](https://github.com/fga-eps-mds/MDS-2020-2-G9/pull/142)
+| #143 |[#141 atulizar o roadmap](https://github.com/fga-eps-mds/MDS-2020-2-G9/pull/143)
+
+### Sprint 10
+| ID | Issue |
+|:--:| ------- | 
+| #149 |[Semana de Folga!!!](https://github.com/fga-eps-mds/MDS-2020-2-G9/issues/149)
+
+### Sprint 11
+| ID | Issue |
+|:--:| ------- | 
+| #140 |[Organizar a arquitetura](https://github.com/fga-eps-mds/MDS-2020-2-G9/issues/140)
+| #141 |[Atualizar o Roadmap](https://github.com/fga-eps-mds/MDS-2020-2-G9/issues/141)
+| #144 |[Relatórios de Sprints](https://github.com/fga-eps-mds/MDS-2020-2-G9/issues/144)
+| #145 |[#144 Relatórios das Sprints ](https://github.com/fga-eps-mds/MDS-2020-2-G9/pull/145)  
+| #146 |[Problemas com os teste do GitHub Actions](https://github.com/fga-eps-mds/MDS-2020-2-G9/issues/146)
+| #147 |[#146 Testes do GitHub Actions](https://github.com/fga-eps-mds/MDS-2020-2-G9/pull/147)  
+| #150 |[Função de Deletar valores do banco de dados](https://github.com/fga-eps-mds/MDS-2020-2-G9/issues/150)
+| #151 |[função de Deletar dados SQlite](https://github.com/fga-eps-mds/MDS-2020-2-G9/pull/151)  
+| #153 |[adicionando diagrama](https://github.com/fga-eps-mds/MDS-2020-2-G9/pull/153)  
+| #154 |[Dados da página de cadastro](https://github.com/fga-eps-mds/MDS-2020-2-G9/issues/154)
+| #155 |[Dados da página de cadastro](https://github.com/fga-eps-mds/MDS-2020-2-G9/pull/155)  
+| #157 |[Atualizar o Roadmap](https://github.com/fga-eps-mds/MDS-2020-2-G9/issues/157) 
+| #158 |[Att_Roadmap](https://github.com/fga-eps-mds/MDS-2020-2-G9/pull/158)  

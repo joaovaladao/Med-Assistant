@@ -22,8 +22,8 @@
 
 <p align="justify">Esta <i>Sprint</i> tem como objetivo:</p>
 
-- Criar e finalizar as funções da página de calendário;
-- Criar e finalizar as funções da página de configurações;
+- Criar e finalizar as funções da página Calendário;
+- Criar e finalizar as funções da página Configurações;
 - Definir uma Splash Screen;
 - Criar ícones da logo de diversos tamanhos, para substituir o ícone do flutter;
 - Substituir a música da notificação (arquivo mp3);
@@ -47,4 +47,4 @@
 
 Objetivos não alcançados em sprints passadas
 
-- Bugs na página do calendário;
+- Bugs na página Calendário;

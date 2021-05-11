@@ -29,7 +29,7 @@ class _HistoricoState extends State<Historico> {
     return Scaffold(
         appBar: PreferredSize(
             child: buildAppBar(), preferredSize: Size.fromHeight(65.0)),
-        body: Body(alarmes: alarmes,));
+        body: Body(/*alarmInfo: alarmes[0],*/));
   }
 }
 

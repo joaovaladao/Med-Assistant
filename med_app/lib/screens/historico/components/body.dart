@@ -3,7 +3,18 @@ import 'package:med_app/constants.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'package:flutter/material.dart';
 import 'package:table_calendar/table_calendar.dart';
-//import 'package:med_app/constants.dart';
+import 'package:flutter/material.dart';
+import 'package:intl/date_symbol_data_local.dart';
+import 'package:table_calendar/table_calendar.dart';
+
+// Example holidays
+final Map<DateTime, List> _holidays = {
+  DateTime(2020, 1, 1): ['New Year\'s Day'],
+  DateTime(2020, 1, 6): ['Epiphany'],
+  DateTime(2020, 2, 14): ['Valentine\'s Day'],
+  DateTime(2020, 4, 21): ['Easter Sunday'],
+  DateTime(2020, 4, 22): ['Easter Monday'],
+};
 
 class Body extends StatefulWidget {
   @override
@@ -79,7 +90,7 @@ class _BodyState extends State<Body> {
               padding: const EdgeInsets.symmetric(horizontal: 22, vertical: 15),
               decoration: BoxDecoration(
                 borderRadius: BorderRadius.all(Radius.circular(18)),
-                gradient: LinearGradient(colors: GradientColors.serrinha),
+                gradient: LinearGradient(colors: GradientColors.calendar),
               ),
               //----------------------------------------------Função que retorna calendário
               child: TableCalendar(
@@ -94,10 +105,10 @@ class _BodyState extends State<Body> {
                       fontWeight: FontWeight.bold,
                       fontSize: 18,
                       color: Colors.white),
-                  weekendStyle: TextStyle(color: Colors.red),
-                  outsideWeekendStyle: TextStyle(color: Colors.red),
+                  weekendStyle: TextStyle(fontSize: 20, color: Colors.white),
+                  outsideWeekendStyle: TextStyle(color: Colors.white),
                   outsideDaysVisible: true,
-                  outsideStyle: TextStyle(color: Colors.red),
+                  outsideStyle: TextStyle(fontSize: 20,color: Colors.white60),
                   renderDaysOfWeek: true,
                 ),
                 headerStyle: HeaderStyle(
@@ -122,11 +133,8 @@ class _BodyState extends State<Body> {
                   ),
                 ),
                 startingDayOfWeek: StartingDayOfWeek.monday,
-                /*onDaySelected: (date, events) {
-                setState(() {
-                  _selectedEvents = events;
-                });
-              },*/
+                onDaySelected: _onDaySelected,
+                
                 builders: CalendarBuilders(
                   selectedDayBuilder: (context, date, events) => Container(
                     margin: const EdgeInsets.all(4.0),
@@ -158,8 +166,17 @@ class _BodyState extends State<Body> {
                 calendarController: _controller,
               ),
             ),
+            Padding(
+              padding: const EdgeInsets.all(8.0),
+              child: Text("Eventos",
+              style: TextStyle(fontSize: 25,fontWeight: FontWeight.bold, color: Colors.white),),
+            ),
             ..._selectedEvents.map((event) => ListTile(
-                  title: Text(event),
+              contentPadding: EdgeInsets.symmetric(horizontal:16, vertical: 0),
+                  title: Text(
+                    event,
+                    style: TextStyle(color: Colors.white, fontSize: 20),
+                  ),
                 )),
           ],
         ),
@@ -171,6 +188,13 @@ class _BodyState extends State<Body> {
     );
   }
 
+  void _onDaySelected(DateTime day, List events, List holidays) {
+    print('CALLBACK: _onDaySelected');
+    setState(() {
+      _selectedEvents = events;
+    });
+  }
+  
   _showAddDialog() async {
     await showDialog(
         context: context,

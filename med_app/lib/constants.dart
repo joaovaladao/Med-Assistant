@@ -81,5 +81,6 @@ class GradientColors {
   static List<Color> semcor = [Colors.white10, Colors.white24];
   static List<Color> serrinha = [Color(0xFF3caaf0), Color(0xFF3caaf0)];
   static List<Color> orange = [Colors.orange, Colors.orange];
+  static List<Color> calendar = [Colors.lightBlueAccent, Colors.blueAccent];
 }
 //------------------------------------------------

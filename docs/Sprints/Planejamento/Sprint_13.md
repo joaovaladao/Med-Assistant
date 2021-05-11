@@ -18,12 +18,14 @@
         <br /><sub><b>Vinícius Roriz</b><br><b>Desenvolvedor/ Arquiteto</b></sub></a><br /></td>
     </table>
 
-## 1. Objetivo da _Sprint 12_
+## 1. Objetivo da _Sprint 13_
 
 <p align="justify">Esta <i>Sprint</i> tem como objetivo:</p>
 
 - Criar e finalizar as funções da página Calendário;
+- Atualizar o layout do calendário;
 - Criar e finalizar as funções da página Configurações;
+- Definir um botão de ajuda, para explicar as funcionalidades da aplicação;
 - Definir uma Splash Screen;
 - Criar ícones da logo de diversos tamanhos, para substituir o ícone do flutter;
 - Substituir a música da notificação (arquivo mp3);

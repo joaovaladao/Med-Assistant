@@ -83,6 +83,22 @@ class DataInit {
   }
  //-----------------------------------------------------
  
+ //---------------------------------Função que retorna um alarme pela ID
+  Future<AlarmInfo> getAlarm(int id) async {
+
+    var db = await this.database;
+    List<Map> maps = await db.query(tableAlarm, 
+    columns: [columnId, columnName, columnDescription, columnDateTime, columnDays, columnIsActive, columnColor],
+    where: "$columnId = ?",
+    whereArgs: [id],);
+
+    if(maps.length>0)
+      return AlarmInfo.fromMap(maps.first);
+    else
+      return null;
+  }
+ //-----------------------------------------------------
+
  //---------------------------------Função que deleta um item lista de alarmes
   Future<int> deleteAlarms(int id) async {
     var db = await this.database;

@@ -133,11 +133,6 @@ class _BodyState extends State<Body> {
                   ),
                 ),
                 startingDayOfWeek: StartingDayOfWeek.monday,
-                /*onDaySelected: (date, events) {
-                setState(() {
-                  _selectedEvents = events;
-                });
-              },*/
                 onDaySelected: _onDaySelected,
                 
                 builders: CalendarBuilders(
@@ -171,8 +166,17 @@ class _BodyState extends State<Body> {
                 calendarController: _controller,
               ),
             ),
+            Padding(
+              padding: const EdgeInsets.all(8.0),
+              child: Text("Eventos",
+              style: TextStyle(fontSize: 25,fontWeight: FontWeight.bold, color: Colors.white),),
+            ),
             ..._selectedEvents.map((event) => ListTile(
-                  title: Text(event),
+              contentPadding: EdgeInsets.symmetric(horizontal:16, vertical: 0),
+                  title: Text(
+                    event,
+                    style: TextStyle(color: Colors.white, fontSize: 20),
+                  ),
                 )),
           ],
         ),

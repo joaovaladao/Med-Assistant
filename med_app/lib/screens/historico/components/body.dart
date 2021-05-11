@@ -4,17 +4,8 @@ import 'package:shared_preferences/shared_preferences.dart';
 import 'package:flutter/material.dart';
 import 'package:table_calendar/table_calendar.dart';
 import 'package:flutter/material.dart';
-import 'package:intl/date_symbol_data_local.dart';
+//import 'package:intl/date_symbol_data_local.dart';
 import 'package:table_calendar/table_calendar.dart';
-
-// Example holidays
-final Map<DateTime, List> _holidays = {
-  DateTime(2020, 1, 1): ['New Year\'s Day'],
-  DateTime(2020, 1, 6): ['Epiphany'],
-  DateTime(2020, 2, 14): ['Valentine\'s Day'],
-  DateTime(2020, 4, 21): ['Easter Sunday'],
-  DateTime(2020, 4, 22): ['Easter Monday'],
-};
 
 class Body extends StatefulWidget {
   @override
@@ -108,7 +99,7 @@ class _BodyState extends State<Body> {
                   weekendStyle: TextStyle(fontSize: 20, color: Colors.white),
                   outsideWeekendStyle: TextStyle(color: Colors.white),
                   outsideDaysVisible: true,
-                  outsideStyle: TextStyle(fontSize: 20,color: Colors.white60),
+                  outsideStyle: TextStyle(fontSize: 20, color: Colors.white60),
                   renderDaysOfWeek: true,
                 ),
                 headerStyle: HeaderStyle(
@@ -134,7 +125,6 @@ class _BodyState extends State<Body> {
                 ),
                 startingDayOfWeek: StartingDayOfWeek.monday,
                 onDaySelected: _onDaySelected,
-                
                 builders: CalendarBuilders(
                   selectedDayBuilder: (context, date, events) => Container(
                     margin: const EdgeInsets.all(4.0),
@@ -168,11 +158,17 @@ class _BodyState extends State<Body> {
             ),
             Padding(
               padding: const EdgeInsets.all(8.0),
-              child: Text("Eventos",
-              style: TextStyle(fontSize: 25,fontWeight: FontWeight.bold, color: Colors.white),),
+              child: Text(
+                "Eventos",
+                style: TextStyle(
+                    fontSize: 25,
+                    fontWeight: FontWeight.bold,
+                    color: Colors.white),
+              ),
             ),
             ..._selectedEvents.map((event) => ListTile(
-              contentPadding: EdgeInsets.symmetric(horizontal:16, vertical: 0),
+                  contentPadding:
+                      EdgeInsets.symmetric(horizontal: 16, vertical: 0),
                   title: Text(
                     event,
                     style: TextStyle(color: Colors.white, fontSize: 20),
@@ -194,7 +190,7 @@ class _BodyState extends State<Body> {
       _selectedEvents = events;
     });
   }
-  
+
   _showAddDialog() async {
     await showDialog(
         context: context,

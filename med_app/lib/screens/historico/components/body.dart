@@ -9,10 +9,10 @@ import 'package:table_calendar/table_calendar.dart';
 
 // ignore: must_be_immutable
 class Body extends StatefulWidget {
-  final List<AlarmInfo> alarmes = List<AlarmInfo>();
-  final AlarmInfo alarmInfo;
+  final String nameAlarm;
+  final String descripAlarm;
 
-  Body({this.alarmInfo});
+  Body({this.nameAlarm, this.descripAlarm});
 
   @override
   _BodyState createState() => _BodyState();
@@ -37,12 +37,13 @@ class _BodyState extends State<Body> {
     _events = {};
     _selectedEvents = [];
     initPrefs();
-    if(widget.alarmInfo == null){
+    if(widget.nameAlarm == null){
       print("null foi recebido");
       editaAlarm = AlarmInfo(id: 0, name: "Amoxicilina", description: "1 pílula");
     }
     else{
-      editaAlarm = AlarmInfo.fromMap(widget.alarmInfo.toMap());
+      print("alarme foi recebido");
+      editaAlarm = AlarmInfo(id: 0, name: widget.nameAlarm, description: widget.descripAlarm);
     }
       _nomeController.text = editaAlarm.name;
       _descriptionController.text = editaAlarm.description;
@@ -74,12 +75,10 @@ class _BodyState extends State<Body> {
 
   @override
   Widget build(BuildContext context) {
-    //print(widget.alarmes[0].name);
     return Scaffold(
       body: SingleChildScrollView(
         child: FutureBuilder(
           future: _dataInit.getAlarms(),
-          // ignore: missing_return
           builder: (context, snapshot) {
             if(snapshot.hasData){
               return Column(
@@ -158,7 +157,6 @@ class _BodyState extends State<Body> {
                         decoration: BoxDecoration(
                           color: Theme.of(context).primaryColor,
                           shape: BoxShape.circle,
-                          //borderRadius: BorderRadius.circular(10.0)
                         ),
                         child: Text(
                           date.day.toString(),
@@ -190,7 +188,7 @@ class _BodyState extends State<Body> {
                 ..._selectedEvents.map((event) => ListTile(
                   contentPadding: EdgeInsets.symmetric(horizontal:16, vertical: 0),
                       title: Text(
-                        _nomeController.text,
+                        event,
                         //widget.alarmes[0].name ?? "",
                         style: TextStyle(color: Colors.white, fontSize: 20),
                       ),
@@ -239,10 +237,10 @@ class _BodyState extends State<Body> {
                     if (_eventController.text.isEmpty) return;
                     if (_events[_controller.selectedDay] != null) {
                       _events[_controller.selectedDay]
-                          .add(_eventController.text);
+                          .add(_nomeController.text);
                     } else {
                       _events[_controller.selectedDay] = [
-                       _eventController.text
+                       _nomeController.text
                       ];
                     }
                     prefs.setString("events", json.encode(encodeMap(_events)));
@@ -256,8 +254,4 @@ class _BodyState extends State<Body> {
       _selectedEvents = _events[_controller.selectedDay];
     });
   }
-  Future<String> getFutureDados() async =>
-      await Future.delayed(Duration(seconds: 10), () {
-        return 'Dados recebidos...';
-      });
 }

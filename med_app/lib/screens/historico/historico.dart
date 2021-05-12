@@ -20,16 +20,24 @@ class _HistoricoState extends State<Historico> {
     super.initState();
 
     db.getAlarms().then((lista) {
-      alarmes = lista;
+      setState(() {
+        alarmes = lista;
+      });
     });
   }
 
   @override
   Widget build(BuildContext context) {
+    if(alarmes.isEmpty){
+      return Center(
+        child: Text("loading...", style: TextStyle(color: Colors.white, fontSize: 20),),);
+    }
+    else{
     return Scaffold(
         appBar: PreferredSize(
             child: buildAppBar(), preferredSize: Size.fromHeight(65.0)),
-        body: Body(/*alarmInfo: alarmes[0],*/));
+        body: Body(nameAlarm: alarmes[0].name, descripAlarm: alarmes[0].description));
+    }
   }
 }
 

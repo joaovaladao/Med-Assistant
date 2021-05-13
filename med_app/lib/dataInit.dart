@@ -3,7 +3,7 @@ import 'package:sqflite/sqlite_api.dart';
 import 'package:med_app/screens/medicacoes/components/alarm_info.dart';
 
 //---------------------------------Página de Suporta ao banco de dados
-//
+
 final String tableAlarm = 'alarm';
 final String columnId = 'id';
 final String columnDateTime = 'alarmDateTime';
@@ -13,7 +13,7 @@ final String columnDays = 'days';
 final String columnIsActive = 'isActive';
 final String columnColor = 'color';
 
-//---------------------------------Funções para verificar se o anco de dados está ativado
+//---------------------------------Funções para verificar se o banco de dados está ativado
 class DataInit {
   static Database _database;
   static DataInit _dataInit;

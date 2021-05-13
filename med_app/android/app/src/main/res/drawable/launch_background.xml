@@ -7,6 +7,6 @@
     <item>
         <bitmap
             android:gravity="center"
-            android:src="@drawable/teste_launch" />
+            android:src="@drawable/medassistant" />
     </item>
 </layer-list>

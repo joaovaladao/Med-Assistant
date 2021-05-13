@@ -29,10 +29,8 @@ class _HistoricoState extends State<Historico> {
   @override
   Widget build(BuildContext context) {
     if(alarmes.isEmpty){
-      return Scaffold(
-        appBar: PreferredSize(
-            child: buildAppBar(), preferredSize: Size.fromHeight(65.0)),
-        body: Body());}
+      return Center(
+        child: Text("loading..", style: TextStyle(color: Colors.white, fontSize: 20),));}
     else{
     return Scaffold(
         appBar: PreferredSize(

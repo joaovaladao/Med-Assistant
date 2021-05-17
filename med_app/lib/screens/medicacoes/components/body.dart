@@ -12,6 +12,7 @@ class Body extends StatefulWidget {
 class _BodyState extends State<Body> {
 
   var _dataInit2 = DataInit();
+  
 
   @override
   Widget build(BuildContext context) {

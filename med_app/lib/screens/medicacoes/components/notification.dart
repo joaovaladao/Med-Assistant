@@ -92,6 +92,10 @@ Future<void> showDailyAtTime(int hash, DateTime dateTime, String nome, String de
       priority: Priority.High,
       sound: RawResourceAndroidNotificationSound('drama_total'),
       timeoutAfter: 500000,
+      color: const Color.fromARGB(255, 255, 0, 0),
+      ledColor: const Color.fromARGB(255, 255, 0, 0),
+      ledOnMs: 1000,
+      ledOffMs: 500,
     );
     var iosChannelSpecifics = IOSNotificationDetails();
     var platformChannelSpecifics =
@@ -139,6 +143,10 @@ Future<void> repeatNotification(int hash, DateTime dateTime, String nome, String
       styleInformation: DefaultStyleInformation(true, true),
       sound: RawResourceAndroidNotificationSound('drama_total'),
       timeoutAfter: 5000,
+      color: const Color.fromARGB(255, 255, 0, 0),
+      ledColor: const Color.fromARGB(255, 255, 0, 0),
+      ledOnMs: 1000,
+      ledOffMs: 500,
     );
     var iosChannelSpecifics = IOSNotificationDetails();
     var platformChannelSpecifics =

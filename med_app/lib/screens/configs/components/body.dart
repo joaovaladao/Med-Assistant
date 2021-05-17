@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 //import 'package:med_app/constants.dart';
 import 'package:med_app/screens/configs/components/option_models.dart';
+import 'package:med_app/screens/configs/components/musicas.dart';
+import 'package:med_app/constants.dart';
 
 class Body extends StatefulWidget {
   @override
@@ -50,8 +52,14 @@ class _BodyState extends State<Body> {
               //selected = selectedOption == index - 1,
               onTap: (){
                 setState(() {
-                  selectedOption == index - 1;
+                  selectedOption = index - 1;
+                  if(selectedOption ==  0){
+                      Navigator.push(
+                          context,
+                          MaterialPageRoute(builder: (context) => Musicas()));
+                  }
                 });
+                
               }
             ),
           );

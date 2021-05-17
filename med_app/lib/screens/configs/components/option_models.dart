@@ -6,14 +6,15 @@ class Option {
   String subtitle;
 
   Option({this.icon, this.title, this.subtitle});
+
 }
 
 final options = [
   Option(
-    icon: Icon(Icons.dashboard, size: 40.0),
-    title: 'Option One',
-    subtitle: 'Lorem ipsum dolor sit amet, consect.',
-  ),
+    icon: Icon(Icons.audiotrack_sharp, size: 40.0),
+    title: 'Toques',
+    subtitle: 'Escolher toques para o alarm.',
+  ), 
   Option(
     icon: Icon(Icons.do_not_disturb, size: 40.0),
     title: 'Option Two',
@@ -33,12 +34,12 @@ final options = [
     icon: Icon(Icons.watch_later, size: 40.0),
     title: 'Option Five',
     subtitle: 'Lorem ipsum dolor sit amet, consect.',
-  ),
+  ),      
   Option(
-    icon: Icon(Icons.fastfood, size: 40.0),
+    icon: Icon(Icons.dashboard, size: 40.0),
     title: 'Option Six',
     subtitle: 'Lorem ipsum dolor sit amet, consect.',
-  ),
+  ),                                     //musica
   Option(
     icon: Icon(Icons.local_airport, size: 40.0),
     title: 'Option Seven',

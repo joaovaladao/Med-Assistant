@@ -13,6 +13,8 @@
 | 30/04/2021 | 0.9 | Adicionando sprint 9 |Ítalo |
 | 30/04/2021 | 1.0 | Adicionando sprint 10 |Ítalo |
 | 10/05/2021 | 1.1 | Adicionando sprint 11 |Ítalo |
+| 16/05/2021 | 1.2 | Adicionando sprint 12 |Ítalo |
+| 17/05/2021 | 1.3 | Adicionando sprint 12 |Ítalo |
 
 
 ## Release 1
@@ -190,4 +192,39 @@
 | #154 |[Dados da página de cadastro](https://github.com/fga-eps-mds/MDS-2020-2-G9/issues/154)
 | #155 |[Dados da página de cadastro](https://github.com/fga-eps-mds/MDS-2020-2-G9/pull/155)  
 | #157 |[Atualizar o Roadmap](https://github.com/fga-eps-mds/MDS-2020-2-G9/issues/157) 
-| #158 |[Att_Roadmap](https://github.com/fga-eps-mds/MDS-2020-2-G9/pull/158)  
+| #158 |[Att_Roadmap](https://github.com/fga-eps-mds/MDS-2020-2-G9/pull/158)
+
+### Sprint 12
+| ID | Issue |
+|:--:| ------- | 
+| #152 |[#148 Atualizando a pagina historico ](https://github.com/fga-eps-mds/MDS-2020-2-G9/pull/152)
+| #156 |[Aprendendo lista dinâmica](https://github.com/fga-eps-mds/MDS-2020-2-G9/issues/156)
+| #159 |[#156 Sincronizando as notificações com os horários ](https://github.com/fga-eps-mds/MDS-2020-2-G9/pull/159) 
+| #160 |[Relatório das Sprints](https://github.com/fga-eps-mds/MDS-2020-2-G9/issues/160)
+| #161 |[#160 Preview Sprint 12 ](https://github.com/fga-eps-mds/MDS-2020-2-G9/pull/161) 
+| #163 |[Formatar os dados da página de Cadastro](https://github.com/fga-eps-mds/MDS-2020-2-G9/issues/163)
+| #164 |[#148 Melhorando o funcionamento da pagina historico](https://github.com/fga-eps-mds/MDS-2020-2-G9/pull/164)  
+| #166 |[Notificações diárias](https://github.com/fga-eps-mds/MDS-2020-2-G9/issues/166)  
+| #167 |[#166 Notificações diárias](https://github.com/fga-eps-mds/MDS-2020-2-G9/pull/167)  
+| #168 |[Splash Screen](https://github.com/fga-eps-mds/MDS-2020-2-G9/issues/168) 
+| #169 |[#168 Splash Screen ](https://github.com/fga-eps-mds/MDS-2020-2-G9/pull/169)  
+| #171 |[Atualizando o Roadmap](https://github.com/fga-eps-mds/MDS-2020-2-G9/issues/171)
+| #172 |[Att_Roadmap ](https://github.com/fga-eps-mds/MDS-2020-2-G9/pull/172)  
+
+### Sprint 13
+| ID | Issue |
+|:--:| ------- | 
+| #148 |[Atualizando a página histórico. ](https://github.com/fga-eps-mds/MDS-2020-2-G9/issues/148)  
+| #162 |[Atualizando a página configurações.](https://github.com/fga-eps-mds/MDS-2020-2-G9/issues/162)  
+| #165 |[#148 Consertando erro nas branchs](https://github.com/fga-eps-mds/MDS-2020-2-G9/pull/165) 
+| #173 |[Relatório das Sprints](https://github.com/fga-eps-mds/MDS-2020-2-G9/issues/173)
+| #174 |[#173 Relatório das Sprints ](https://github.com/fga-eps-mds/MDS-2020-2-G9/pull/174)
+| #175 |[Assets ](https://github.com/fga-eps-mds/MDS-2020-2-G9/issues/175) 
+| #176 |[Calendário](https://github.com/fga-eps-mds/MDS-2020-2-G9/pull/176) 
+| #177 |[Atualiza GH pages](https://github.com/fga-eps-mds/MDS-2020-2-G9/issues/177)
+| #178 |[#148 consertando eventos no calendario](https://github.com/fga-eps-mds/MDS-2020-2-G9/pull/178) 
+| #179 |[#175 assets ](https://github.com/fga-eps-mds/MDS-2020-2-G9/pull/179)  
+| #170 |[#162 layout da pagina configuracoes](https://github.com/fga-eps-mds/MDS-2020-2-G9/pull/170) 
+| #180 |[Todos estão preparados para apresentar?](https://github.com/fga-eps-mds/MDS-2020-2-G9/issues/180)
+| #181 |[Atualizar o Roadmap](https://github.com/fga-eps-mds/MDS-2020-2-G9/issues/181)
+| #182 |[#181 Att_Roadmap](https://github.com/fga-eps-mds/MDS-2020-2-G9/pull/182)  

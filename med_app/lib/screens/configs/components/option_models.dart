@@ -45,9 +45,4 @@ final options = [
     title: 'Option Seven',
     subtitle: 'Lorem ipsum dolor sit amet, consect.',
   ),
-  Option(
-    icon: Icon(Icons.settings, size: 40.0),
-    title: 'Option Eight',
-    subtitle: 'Lorem ipsum dolor sit amet, consect.',
-  ),
 ];

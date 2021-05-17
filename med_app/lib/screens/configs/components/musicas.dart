@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:med_app/constants.dart';
-import 'package:med_app/screens/medicacoes/components/horario.dart';
 /*
 class Option_1 {
   bool val;
@@ -68,9 +67,9 @@ class _MusicasState extends State<Musicas> {
             Align(
               alignment: Alignment(-1, 0),    
             child: Text(
-              'MUSICA_1',
+              'Drama Total',
               style: TextStyle(
-                color: Colors.black, 
+                color: Colors.white, 
                 fontSize: 24.0,
               ),
             ),),
@@ -172,18 +171,5 @@ AppBar buildAppBar() {
     centerTitle: true,
     backgroundColor: darkCyan,
     elevation: 0,
-    actions: <Widget>[
-      FlatButton(
-        textColor: Colors.white,
-        child: Text(
-          'HELP',
-          style: TextStyle(
-            fontSize: 16.0,
-            fontWeight: FontWeight.bold,
-          ),
-        ),
-        onPressed: () => print('HELP'),
-      ),
-    ],  
   );
 }

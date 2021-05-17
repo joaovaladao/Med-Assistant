@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 //import 'package:med_app/constants.dart';
 import 'package:med_app/screens/configs/components/option_models.dart';
 import 'package:med_app/screens/configs/components/musicas.dart';
-import 'package:med_app/constants.dart';
 
 class Body extends StatefulWidget {
   @override
@@ -65,7 +64,7 @@ class _BodyState extends State<Body> {
           );
         },
       )
-    );
+    );/*
     bottomSheet: Container(
       width: double.infinity,
       height: 80.0,
@@ -92,6 +91,6 @@ class _BodyState extends State<Body> {
           ],
         ),
       ),
-    );
+    );*/
   }
 }

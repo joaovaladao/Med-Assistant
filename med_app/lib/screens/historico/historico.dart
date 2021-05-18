@@ -14,6 +14,7 @@ class Historico extends StatefulWidget {
 class _HistoricoState extends State<Historico> {
   DataInit db = DataInit();
   List<AlarmInfo> alarmes = List<AlarmInfo>();
+  int tam = 0;
 
   @override
   void initState(){
@@ -22,6 +23,8 @@ class _HistoricoState extends State<Historico> {
     db.getAlarms().then((lista) {
       setState(() {
         alarmes = lista;
+        tam = alarmes.length - 1;
+        //print(alarmes.length);
       });
     });
   }
@@ -35,7 +38,7 @@ class _HistoricoState extends State<Historico> {
     return Scaffold(
         appBar: PreferredSize(
             child: buildAppBar(), preferredSize: Size.fromHeight(65.0)),
-        body: Body(nameAlarm: alarmes[0].name, descripAlarm: alarmes[0].description));
+        body: Body(nameAlarm: alarmes[tam].name, descripAlarm: alarmes[tam].description));
     }
   }
 }

@@ -60,19 +60,26 @@ class _MusicasState extends State<Musicas> {
                   padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 1),
                   decoration: BoxDecoration(
                 borderRadius: BorderRadius.all(Radius.circular(18)),
-                gradient: LinearGradient(colors: GradientColors.serrinha),
+                gradient: LinearGradient(colors: GradientColors.fire),
                   ),
             child: Column(
               children: <Widget>[
             Align(
               alignment: Alignment(-1, 0),    
-            child: Text(
-              'Drama Total',
-              style: TextStyle(
-                color: Colors.white, 
-                fontSize: 24.0,
-              ),
-            ),),
+            child: Column(
+              children: <Widget>[ 
+                Text(
+                'Drama Total',
+                style: TextStyle(
+                  color: Colors.white, 
+                  fontSize: 24.0,
+                  fontWeight: FontWeight.bold
+                  ),
+                ),
+                Text("Música de abertura da melhor série animada", style: TextStyle(fontSize: 15, color: Colors.white),),
+              ],
+            ),
+            ),
             Align(
               alignment: Alignment(1,0),
               child: Switch(
@@ -81,7 +88,8 @@ class _MusicasState extends State<Musicas> {
                 if(val == false)
                 onSwitchValueChanged(newVal);
               },
-          ),),]
+          ),)
+          ,]
           ),
           
           
@@ -92,17 +100,19 @@ class _MusicasState extends State<Musicas> {
                   padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 1),
                   decoration: BoxDecoration(
                 borderRadius: BorderRadius.all(Radius.circular(18)),
-                gradient: LinearGradient(colors: GradientColors.serrinha),
+                gradient: LinearGradient(colors: GradientColors.mango),
                   ),
             child: Column(
               children: <Widget>[
             Align(
               alignment: Alignment(-1, 0),    
-            child: Text(
-              'MUSICA_2',
-              style: TextStyle(
-                color: Colors.black, 
-                fontSize: 24.0,
+            child: Center(
+              child: Text(
+                'MUSICA_2',
+                style: TextStyle(
+                  color: Colors.white, 
+                  fontSize: 24.0,
+                ),
               ),
             ),),
             Align(
@@ -125,17 +135,19 @@ class _MusicasState extends State<Musicas> {
                   padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 1),
                   decoration: BoxDecoration(
                 borderRadius: BorderRadius.all(Radius.circular(18)),
-                gradient: LinearGradient(colors: GradientColors.serrinha),
+                gradient: LinearGradient(colors: GradientColors.mango),
                   ),
             child: Column(
               children: <Widget>[
             Align(
               alignment: Alignment(-1, 0),    
-            child: Text(
-              'MUSICA_3',
-              style: TextStyle(
-                color: Colors.black, 
-                fontSize: 24.0,
+            child: Center(
+              child: Text(
+                'MUSICA_3',
+                style: TextStyle(
+                  color: Colors.white, 
+                  fontSize: 24.0,
+                ),
               ),
             ),),
             Align(

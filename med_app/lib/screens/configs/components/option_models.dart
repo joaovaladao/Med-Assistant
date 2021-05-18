@@ -16,9 +16,9 @@ final options = [
     subtitle: 'Escolher toques para o alarm.',
   ), 
   Option(
-    icon: Icon(Icons.do_not_disturb, size: 40.0),
-    title: 'Option Two',
-    subtitle: 'Lorem ipsum dolor sit amet, consect.',
+    icon: Icon(Icons.help, size: 40.0),
+    title: 'Help',
+    subtitle: 'Sobre o aplicativo.',
   ),
   Option(
     icon: Icon(Icons.account_circle, size: 40.0),

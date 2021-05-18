@@ -28,19 +28,6 @@ AppBar buildAppBar() {
     title: Text('Med Assistant'),
     centerTitle: true,
     backgroundColor: darkCyan,
-    elevation: 0,
-    actions: <Widget>[
-      FlatButton(
-        textColor: Colors.white,
-        child: Text(
-          'HELP',
-          style: TextStyle(
-            fontSize: 16.0,
-            fontWeight: FontWeight.bold,
-          ),
-        ),
-        onPressed: () => print('HELP'),
-      ),
-    ],  
+    elevation: 0,  
   );
 }

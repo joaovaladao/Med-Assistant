@@ -227,14 +227,14 @@ class _BodyState extends State<Body> {
     await showDialog(
         context: context,
         builder: (context) => AlertDialog(
-              content: TextField(
-                controller: _eventController,
-              ),
+              //content: TextField(
+                //controller: _eventController,
+              //),
               actions: <Widget>[
                 FlatButton(
-                  child: Text("Save"),
+                  child: Center(child: Text("Save")),
                   onPressed: () {
-                    if (_eventController.text.isEmpty) return;
+                    //if (_eventController.text.isEmpty) return;
                     if (_events[_controller.selectedDay] != null) {
                       _events[_controller.selectedDay]
                           .add(_nomeController.text);

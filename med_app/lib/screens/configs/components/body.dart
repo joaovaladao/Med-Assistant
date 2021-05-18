@@ -49,7 +49,7 @@ class _BodyState extends State<Body> {
                 ),
               ),
               //selected = selectedOption == index - 1,
-              onTap: (){
+onTap: (){
                 setState(() {
                   selectedOption = index - 1;
                   if(selectedOption ==  0){
@@ -57,8 +57,38 @@ class _BodyState extends State<Body> {
                           context,
                           MaterialPageRoute(builder: (context) => Musicas()));
                   }
+                  if(selectedOption ==  1){
+                    showModalBottomSheet<void>(
+                      context: context,
+                      shape: RoundedRectangleBorder(borderRadius: BorderRadius.vertical(top: Radius.circular(24))),
+                      builder: (BuildContext context) {
+                        return Container(
+                          height: 400,
+                          color: Colors.white,
+                            child: Column(
+                              mainAxisAlignment: MainAxisAlignment.start,
+                              mainAxisSize: MainAxisSize.min,
+                              children: <Widget>[
+                                SizedBox(height: 10),
+                                const Text('Med Assistence', style: TextStyle(fontSize: 20),),
+                                Text("Versão 0.1 -------- Atualizada 17/05/2021"),
+                                SizedBox(height: 15),
+                                Text("Como cadastrar um novo medicamento:", style: TextStyle(fontSize: 18), textAlign: TextAlign.start),
+                                Text("  1 -Toque no segundo ícone da appbar com o símbolo de uma\n  maleta de remédios chamada Medicações\n  2 - Toque no ícone de mais(+) na parte inferior direita da página\n  3 - Informe o nome quantidade e a duração, e depois selecione o\n  botão de Definir Horário\n  4 - Toque em horário e selecione um horário\n  5 - Toque na seta(>) localizada na linha abaixo de cadastro para\n  selecionar os dias\n  6 - Selecione os dias desejados e depois selecione o botão de\n  salvar\n  7 - Recarregue a página S2"),
+                                SizedBox(height: 15),
+                                ElevatedButton(
+                                  child: const Text('Close'),
+                                  onPressed: () => Navigator.pop(context),
+                                ),
+                                Spacer(),
+                              ],
+                            ),
+                        );
+                      },
+                    );
+                  }
                 });
-                
+
               }
             ),
           );

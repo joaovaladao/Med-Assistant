@@ -46,10 +46,17 @@ Vídeo ajuda para instalar o ambiente de trabalho.
 ---
 
 ## Apresentação
+### Release 01:
 
 <b>Slides :</b> https://docs.google.com/presentation/d/1hG5Rirlpc9o5VA5o8gxl5AWCEoui_iAno6OKQUu4aIw/edit#slide=id.g35ed75ccf_022
 
 <b>Vídeo :</b> https://www.youtube.com/watch?v=55HeVJXf7L4&t=5s&ab_channel=Jo%C3%A3oVictorValad%C3%A3o
+
+### Release 02:
+
+<b>Slides :</b> https://docs.google.com/presentation/d/1K8WMIs8du5ZG_DOLlOgxyaLajENa7MDy_4iJLWVqcOc/edit?usp=sharing
+
+<b>Vídeo :</b> https://www.youtube.com/watch?v=Suadjd3Xst0&ab_channel=Jo%C3%A3oVictorValad%C3%A3o
 
 ---
 

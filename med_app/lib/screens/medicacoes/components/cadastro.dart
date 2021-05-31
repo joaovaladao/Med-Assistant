@@ -6,6 +6,8 @@ import 'package:med_app/screens/medicacoes/components/notification.dart';
 import 'alarm_info.dart';
 import 'dart:math';
 
+import 'labels.dart';
+
 // ignore: must_be_immutable
 class Cadastro extends StatelessWidget {
   int i = 0, count = 0;
@@ -42,84 +44,15 @@ class Cadastro extends StatelessWidget {
               SizedBox(
                 height: 10,
               ),
-              Container(
-                margin: const EdgeInsets.symmetric(horizontal: 2, vertical: 2),
-                padding:
-                    const EdgeInsets.symmetric(horizontal: 22, vertical: 5),
-                decoration: BoxDecoration(
-                  color: lighterBackground,
-                  borderRadius: BorderRadius.all(Radius.circular(15)),
-                ),
-                child: TextFormField(
- //---------------------------------------------------Funções para inserir os dados
-                  keyboardType: TextInputType.name,
-                  decoration: InputDecoration(
-                      border: InputBorder.none,
-                      labelText: "Nome",
-                      labelStyle: TextStyle(
-                          color: Colors.white54,
-                          fontWeight: FontWeight.w400,
-                          fontSize: 18)),
-                  style: TextStyle(color: Colors.white),
-                  onSaved: (value) =>
-                      _formData['medicamento'] = value, 
- //-----------------------------------------------------Salva o nome
-                ),
-              ),
+              Labels(formData: _formData),
               SizedBox(
                 height: 10,
               ),
-              Container(
-                margin: const EdgeInsets.symmetric(horizontal: 2, vertical: 2),
-                padding:
-                    const EdgeInsets.symmetric(horizontal: 22, vertical: 5),
-                decoration: BoxDecoration(
-                  color: lighterBackground,
-                  borderRadius: BorderRadius.all(Radius.circular(15)),
-                ),
-                child: TextFormField(
- //-----------------------------------------------------Funções para inserir os dados
-                  keyboardType: TextInputType.name,
-                  decoration: InputDecoration(
-                      border: InputBorder.none,
-                      labelText: "Quantidade",
-                      labelStyle: TextStyle(
-                          color: Colors.white54,
-                          fontWeight: FontWeight.w400,
-                          fontSize: 18)),
-                  style: TextStyle(color: Colors.white),
-                  onSaved: (value) =>
-                      _formData['quantidade'] = value, 
- //-----------------------------------------------------Salva a quantidade
-                ),
-              ),
+              Seclabel(formData: _formData),
               SizedBox(
                 height: 10,
               ),
-              Container(
-                margin: const EdgeInsets.symmetric(horizontal: 2, vertical: 2),
-                padding:
-                    const EdgeInsets.symmetric(horizontal: 22, vertical: 5),
-                decoration: BoxDecoration(
-                  color: lighterBackground,
-                  borderRadius: BorderRadius.all(Radius.circular(15)),
-                ),
-                child: TextFormField(
- //-----------------------------------------------------Funções para inserir os dados
-                  keyboardType: TextInputType.name,
-                  decoration: InputDecoration(
-                      border: InputBorder.none,
-                      labelText: "Duração",
-                      labelStyle: TextStyle(
-                          color: Colors.white54,
-                          fontWeight: FontWeight.w400,
-                          fontSize: 18)),
-                  style: TextStyle(color: Colors.white),
-                  onSaved: (value) =>
-                      _formData['duração'] = value, 
- //-----------------------------------------------------Salva o nome
-                ),
-              ),
+              Thirlabel(formData: _formData),
               Container(
  //-----------------------------------------------------Cria botão de cancelar
                 height: 40,
@@ -289,3 +222,5 @@ class Cadastro extends StatelessWidget {
     );
   }
 }
+
+

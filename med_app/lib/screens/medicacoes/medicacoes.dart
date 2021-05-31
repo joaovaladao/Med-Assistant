@@ -1,4 +1,3 @@
-// Dedicado à pagina de medicacoes
 import 'package:flutter/material.dart';
 import 'package:med_app/constants.dart';
 import 'package:med_app/dataInit.dart';

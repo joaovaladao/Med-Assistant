@@ -1,6 +1,3 @@
-//import 'package:flutter/material.dart';
-//import 'package:med_app/constants.dart';
-
 class AlarmInfo {
   int id;
   DateTime alarmDateTime; //-------Horário para ser disparado

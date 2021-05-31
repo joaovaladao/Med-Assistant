@@ -3,6 +3,7 @@ import 'package:intl/intl.dart';
 import 'package:med_app/constants.dart';
 import 'package:med_app/dataInit.dart';
 import 'package:med_app/screens/medicacoes/components/notification.dart';
+import 'boxes.dart';
 
 class Body extends StatefulWidget {
   @override
@@ -42,28 +43,7 @@ class _BodyState extends State<Body> {
                       Row(
                           mainAxisAlignment: MainAxisAlignment.spaceBetween,
                           children: <Widget>[
-                            Row(
-                              children: <Widget>[
-    //-------------------------Nome do alarme
-                                Text(
-                                  alarm.name,
-                                  style: TextStyle(
-                                    color: Colors.white,
-                                    fontFamily: 'OpenSans',
-                                    fontWeight: FontWeight.w600,
-                                    fontSize: 21,
-                                    shadows: [
-                                      Shadow(
-                                        blurRadius: 6.0,
-                                        color: darkerBackground.withAlpha(80),
-                                        offset: Offset(1.0, 1.0),
-                                      ),
-                                    ],
-                                  ),
-                                ),
-                                SizedBox(width: 8),
-                              ],
-                            ),
+                            Boxes(name: alarm.name),
                             Switch(
                                 value: true,//alarm.isActive,
                                 activeColor: Colors.white,
@@ -78,21 +58,7 @@ class _BodyState extends State<Body> {
                           mainAxisAlignment: MainAxisAlignment.spaceBetween,
                           children: <Widget>[
     //-------------------------Dias da semana
-                            Text(
-                              weekdayDate(alarm.days),
-                              style: TextStyle(
-                                color: Colors.white,
-                                fontWeight: FontWeight.w700,
-                                fontSize: 16,
-                                shadows: [
-                                  Shadow(
-                                    blurRadius: 6.0,
-                                    color: darkerBackground.withAlpha(80),
-                                    offset: Offset(1.0, 1.0),
-                                  ),
-                                ],
-                              ),
-                            ),
+                            Days(days: alarm.days),
                             Spacer(flex: 1),
     //-------------------------Bolinha
                             Icon(
@@ -129,67 +95,30 @@ class _BodyState extends State<Body> {
                                 var count = await notificationPlugin.getPendingNotificationCount();
                                 print("Notificações Pendentes após deleção: $count");
                                 print("Id do alarme deletado: $id");
-                                                              },
-                                                            ),
-                                                            Spacer(flex: 1),
-                                                          ])
-                                                    ],
-                                                  ),
-                                                );
-                                              }).followedBy([
+                                  },
+                                ),
+                                Spacer(flex: 1),
+                              ])
+                        ],
+                      ),
+                    );
+                  }).followedBy([
 //----------------------------------------------função que adiciona um fundo falso ao descer a aplicação
-                                                Container(
-                                                  height: 80,
-                                                )
-                                              ]).toList(),
+                    Container(
+                      height: 80,
+                    )
+                  ]).toList(),
 //------------------------------------------------função para retornar uma lista, e assim acessarmos todos os itens
-                                          );
-                                
-                                        return(Center(
-                                          child:Text("Loading...", style: TextStyle(color: Colors.white, fontSize: 20),)
-                                          )
-                                        );
-                                        })),
-                                        Container(padding: EdgeInsets.only(bottom: 8)),
-                                      ],
-                                    );
-                                  }
-                                
-//------------------------------------------Metodo para retornar a sequencia de dias da semana a partir de uma lista de ints
-                                  String weekdayDate(List<int> days) {
-                                    List<String> weekDays = new List();
-                                
-                                    if (days.length == 7) {
-                                      return 'Todos os dias';
-                                    } else {
-                                      for (int i = 0; i < days.length; i++) {
-                                        switch (days[i]) {
-                                          case 1:
-                                            weekDays.add('Dom');
-                                            break;
-                                          case 2:
-                                            weekDays.add('Seg');
-                                            break;
-                                          case 3:
-                                            weekDays.add('Ter');
-                                            break;
-                                          case 4:
-                                            weekDays.add('Qua');
-                                            break;
-                                          case 5:
-                                            weekDays.add('Qui');
-                                            break;
-                                          case 6:
-                                            weekDays.add('Sex');
-                                            break;
-                                          case 7:
-                                            weekDays.add('Sáb');
-                                            break;
-                                        }
-                                      }
-                                
-                                      return weekDays.join(', ');
-                                    }
-                                  }
-                                }
+              );
+    
+            return(Center(
+              child:Text("Loading...", style: TextStyle(color: Colors.white, fontSize: 20),)
+              )
+            );
+            })),
+            Container(padding: EdgeInsets.only(bottom: 8)),
+          ],
+        );
+      }
+    }
                     

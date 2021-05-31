@@ -5,7 +5,6 @@ import 'package:med_app/screens/medicacoes/components/horario.dart';
 import 'package:med_app/screens/medicacoes/components/notification.dart';
 import 'alarm_info.dart';
 import 'dart:math';
-
 import 'labels.dart';
 
 // ignore: must_be_immutable

@@ -102,18 +102,19 @@ class Cadastro extends StatelessWidget {
                         ),
                       ],
                     ),
-                    onPressed: () {
+                    onPressed: () async{
                       _form.currentState.save();
-                      int rng = new Random().nextInt(8);
+                      //int rng = new Random().nextInt(8);
+                      int cor = await _dataInit.qtdAlarms();
 
  //------------------------------------------------Variável que será armazenada no banco de dados
                       var alarmInfo = AlarmInfo(
                         description:  _formData['quantidade'],
                         name: _formData['medicamento'],
                         days: new List.from([2, 3, 4, 5, 6, 7, 1]),
-                        color: rng,             
+                        color: cor%8,             
                         );
-                        print("Color: $rng");
+                        print("Color: $cor");
  //-----------------------------------------------------                  
                        showModalBottomSheet(
                          backgroundColor: Colors.white,

@@ -107,5 +107,12 @@ class DataInit {
     return await db.delete(tableAlarm, where: '$columnId = ?', whereArgs: [id]);
   }
  //-----------------------------------------------------
+
+ Future<int> qtdAlarms() async{
+    var db = await this.database;
+    var result = await db.query(tableAlarm);
+    print('Quantidade de alarmes : $result');
+    return result.length;
+ }
 }
 

@@ -104,7 +104,7 @@ class Cadastro extends StatelessWidget {
                     ),
                     onPressed: () {
                       _form.currentState.save();
-                      int rng = new Random().nextInt(7);
+                      int rng = new Random().nextInt(8);
 
  //------------------------------------------------Variável que será armazenada no banco de dados
                       var alarmInfo = AlarmInfo(

@@ -32,7 +32,8 @@ class _BodyState extends State<Body> {
                   margin: const EdgeInsets.symmetric(horizontal: 10, vertical: 5),
                   padding: const EdgeInsets.symmetric(horizontal: 22, vertical: 15),
                   decoration: BoxDecoration(
-                    color: ColorsTemplate.colorsTemplate[alarm.color],
+                    gradient: LinearGradient(colors: GradientTemplate.gradientTemplate[alarm.color].colors),
+                    //color: ColorsTemplate.colorsTemplate[alarm.color],
     //-------------------------colorsTemplate é uma lista com 6 cores salvas no arquivo de constantes
                     borderRadius: BorderRadius.all(Radius.circular(18)),
                   ),

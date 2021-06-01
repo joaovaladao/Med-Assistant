@@ -83,4 +83,18 @@ class GradientColors {
   static List<Color> orange = [Colors.orange, Colors.orange];
   static List<Color> calendar = [Colors.lightBlueAccent, Colors.blueAccent];
 }
+
+class GradientTemplate {
+  static List<GradientColors> gradientTemplate = [
+    GradientColors(GradientColors.sky),
+    GradientColors(GradientColors.sunset),
+    GradientColors(GradientColors.sea),
+    GradientColors(GradientColors.mango),
+    GradientColors(GradientColors.fire),
+    GradientColors(GradientColors.cleanSky),
+    GradientColors(GradientColors.avela),
+    GradientColors(GradientColors.valads),
+    GradientColors(GradientColors.serrinha),
+  ];
+}
 //------------------------------------------------
